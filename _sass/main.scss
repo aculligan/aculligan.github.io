@@ -1,0 +1,666 @@
+@import 'palette';
+
+body {
+  background-color: $white;
+  color: $white;
+  font-family: $font-stack;
+  margin: 0;
+  padding: 0;
+}
+
+.window-div {
+  background-color: $black;
+  height: 100vh;
+  width: 100vw;
+}
+
+.hidden {
+  display: none;
+}
+
+.left-div {
+  background-color: $black;
+  height: 100vh;
+}
+
+.page-div {
+  display: none;
+}
+
+.top-div {
+  height: 15vh;
+}
+
+.right-div {
+  margin-left: 10vw;
+  padding: 5vh 0 7vh 0;
+  width: 80vw;
+}
+
+.nav-up {
+  top: -40px;
+}
+
+.h2-div {
+  font-size: 6vw;
+  font-weight: 400;
+  height: 6vh;
+  margin: 0;
+  padding: 15vh 0 0 0;
+  text-align: center;
+}
+
+.h2-page {
+  font-size: 12vw;
+}
+
+.h2-top {
+  height: 4vh;
+  padding: 2vh 0 0 0;
+}
+
+.p-center {
+  line-height: 32px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.p-title {
+  font-size: 7vw;
+  font-weight: 600;
+  margin-top: 7vh;
+  text-align: center;
+}
+
+.p-title-first {
+  margin-top: 0;
+}
+
+.main-title {
+  font-size: 8vw;
+  font-weight: 600;
+  margin-top: 0;
+  text-align: center;
+}
+
+.text-indent {
+  text-indent: 30px;
+}
+
+ul {
+  padding-left: 25px;
+  line-height: 30px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.p-justify {
+  line-height: 30px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.right-div a {
+  color: inherit;
+}
+
+.svg-div {
+  height: 40vh;
+  margin: 9vh 30vw 0 30vw;
+  width: 40vw;
+}
+
+.h1-div {
+  font-family: $font-stack;
+  font-size: 12vw;
+  height: 12vh;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.h1-window {
+  padding: 6vh 0 0 0;
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.h1-window-top {
+  padding: 10vh 0 0 0;
+}
+
+.h1-window-bottom {
+  padding: 0;
+}
+
+.h1-page {
+  font-size: 17vw;
+}
+
+.h1-top {
+  font-size: 9vw;
+  height: 5vh;
+  margin: 2vh 0 0 10px;
+}
+
+.h1-page a,
+.h1-top a {
+  color: $white;
+  text-decoration: none;
+}
+
+.h1-page a:hover,
+.h1-top a:hover {
+  color: $white;
+  text-decoration: underline;
+}
+
+.typed-cursor {
+  animation: blink 1s infinite;
+  color: $green-lime;
+  margin-left: -7px;
+  margin-right: -5px;
+}
+
+@keyframes blink {
+  to {
+    opacity: .0;
+  }
+}
+
+
+.svg-window {
+  margin: 0 30vw 0 30vw;
+}
+
+.bottom-svg {
+  border-radius: 50px;
+  bottom: 3vh;
+  height: 4vh;
+  max-height: 30px;
+  max-width: 30px;
+  padding: 7px;
+  position: fixed;
+  width: 4vh;
+}
+
+.bottom-left-svg {
+  left: 3vw;
+}
+
+.bottom-right-svg {
+  right: 3vw;
+}
+
+.bottom-svg {
+  &:hover,
+  &:focus,
+  &:active {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+}
+
+.main-menu {
+  font-size: 5vw;
+  height: 5vh;
+  margin: -17vh 0 0 0;
+  padding: 0 0 2vh 0;
+  text-align: center;
+  width: 100vw;
+  z-index: 1000;
+  a {
+    color: $white;
+    padding: 20px 0;
+    text-decoration: none;
+  }
+}
+
+.menu-page {
+  border-bottom: 2px solid $gray;
+  height: inherit;
+  margin: 0;
+  padding: 2vh 0;
+  a {
+    padding: 0;
+  }
+}
+
+.slash {
+  color: $gray;
+}
+
+.top-menu {
+  border: 0;
+  position: fixed;
+  top: 0;
+}
+
+.work {
+  padding: 2vw;
+}
+
+.black {
+  color: $black;
+}
+
+a .black:hover {
+  text-decoration: underline;
+}
+
+.green {
+  color: $green;
+}
+
+.green-div {
+  background-color: $green;
+}
+
+.blue {
+  color: $blue;
+}
+
+a .blue:hover {
+  text-decoration: underline;
+}
+
+.blue-div {
+  background-color: $blue;
+}
+
+.red {
+  color: $red;
+}
+
+a .red:hover {
+  text-decoration: underline;
+}
+
+.purple {
+  color: $purple;
+}
+
+a .purple:hover {
+  text-decoration: underline;
+}
+
+.purple-div {
+  background-color: $purple;
+}
+
+.orange {
+  color: $orange;
+}
+
+a .orange:hover {
+  text-decoration: underline;
+}
+
+.orange-div {
+  background-color: $orange;
+}
+
+.white {
+  color: $white;
+}
+
+.nav-content {
+  margin-left: -5vw;
+  margin-top: 5vh;
+  width: 90vw;
+  ul {
+    line-height: inherit;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.nav-li {
+  display: inline-block;
+  font-size: 4.3vw;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.nav-content a {
+  color: $white;
+  text-decoration: none;
+  &:hover {
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+.app-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.app-list-item {
+  display: inline-block;
+  position: relative;
+}
+
+.app-tile {
+  text-decoration: none;
+}
+
+.app-list-item,
+.img-screenshot {
+  border-radius: 3px;
+  border: 2px solid $gray-light;
+  cursor: pointer;
+  margin: 0 0 1vh 0;
+  transition: 0.3s;
+  width: 80vw;
+}
+
+.app-list-item {
+  background-color: $white;
+  height: 30vw;
+}
+
+.text-content {
+  -moz-transition: opacity 300ms;
+  -o-transition: opacity 300ms;
+  -webkit-transition: opacity 300ms;
+  cursor: pointer;
+  display: table;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: opacity 300ms;
+  width: 100%;
+}
+
+.text-content-white {
+  background: rgba(255, 255, 255, 1);
+  color: $black;
+}
+
+.text-content-green {
+  background: rgba(120, 163, 0, 1);
+  color: $white;
+}
+
+.text-content-algae {
+  background: rgba(3, 54, 61, 1);
+  color: $white;
+}
+
+.app-list .app-list-item:hover span.text-content {
+  opacity: 1;
+}
+
+.tip-title,
+.text-content span {
+  display: table-cell;
+  font-size: 4vw;
+  line-height: 8vw;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.tip-title {
+  font-size: 6vw;
+  padding: 11vw 5px;
+  vertical-align: initial;
+}
+
+.img-screenshot {
+  padding: 2px 0;
+}
+
+.app-tile-logo {
+  border-radius: 1px;
+  height: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+.img-screenshot:hover {
+  opacity: 0.5;
+}
+
+.img-screenshot-gif {
+  background-color: $white;
+}
+
+.no-top-margin {
+  margin-top: 0;
+}
+
+.emoji {
+  height: 16px;
+  vertical-align: text-top;
+  width: 16px;
+}
+
+.social-image {
+  background-color: $gray-dark;
+  border-radius: 1vh;
+  color: $white;
+  height: 5vh;
+  max-height: 50px;
+  max-width: 50px;
+  padding: 1vh;
+  width: 5vh;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.p-footer {
+  margin-bottom: -3vh;
+  margin-top: 5em;
+}
+
+.copy-contact {
+  margin-top: 2em;
+}
+
+.footer-contact {
+  background: $white;
+  bottom: 3vh;
+  left: 0;
+  position: fixed;
+  width: 100vw;
+}
+
+code {
+  background: $black;
+  border: 1px solid $black;
+  color: $white;
+  padding: 0 5px;
+}
+
+@media screen and (min-width: 568px) {
+
+  .left-div {
+    float: left;
+    width: 50%;
+  }
+
+  .fixed-div {
+    position: fixed;
+  }
+
+  .top-div {
+    display: none;
+  }
+
+  .right-div {
+    float: right;
+    font-size: 2vw;
+    padding: 10vh 0 6vh 0;
+    position: absolute;
+    right: 5vw;
+    top: 9vh;
+    width: 40vw;
+  }
+
+  .right-div-contact {
+    top: 5vh;
+  }
+
+  .page-div {
+    display: block;
+  }
+
+  .h2-div {
+    font-size: 3vw;
+  }
+
+  .h2-page {
+    font-size: 6vw;
+  }
+
+  .h1-page .typed-cursor {
+    margin-left: -20px;
+  }
+
+  .h1-div {
+    font-size: 6vw;
+  }
+
+  .h1-page {
+    font-size: 8vw;
+  }
+
+  .h1-window-top,
+  .h1-window-bottom {
+    padding: 6vh 0 0 0;
+  }
+
+  .svg-div {
+    margin: 9vh 10vw 5vh 10vw;
+    width: 30vw;
+  }
+
+  .svg-window {
+    margin: 0 35vw 0 35vw;
+  }
+
+  .main-menu {
+    float: right;
+    font-size: 5vw;
+    height: 45vh;
+    margin: 0;
+    padding: 27.5vh 12.5vw 0 0;
+    text-align: center;
+    width: 25vw;
+    a {
+      display: inline-block;
+      line-height: 15vh;
+      padding: 0;
+    }
+  }
+
+  .menu-page {
+    background-color: $white;
+    border-bottom: 2px $gray solid;
+    font-size: 3vw;
+    height: inherit;
+    left: 50vw;
+    padding: 2vh 0;
+    position: fixed;
+    width: 50vw;
+    a {
+      line-height: 5vh;
+      padding: 0 1vw;
+    }
+  }
+
+  .slash {
+    display: none;
+  }
+
+  .menu-page .slash {
+    display: inline-block;
+  }
+
+  .bottom-left-svg {
+    left: 51vw;
+  }
+
+  .bottom-right-svg {
+    right: 1vw;
+  }
+
+  .p-justify,
+  ul {
+    line-height: 4vw;
+  }
+
+  .nav-content {
+    margin-left: -2.5vw;
+    margin-top: 10vh;
+    width: 45vw;
+  }
+
+  .nav-li {
+    font-size: 2vw;
+  }
+
+  .p-title {
+    font-size: 4vw;
+    margin-top: 10vh;
+  }
+
+  .p-title-first {
+    margin-top: 0;
+  }
+
+  .p-center {
+    line-height: 4vw;
+  }
+
+  .main-title {
+    font-size: 5vw;
+  }
+
+  .app-list-item,
+  .img-screenshot {
+    width: 18vw;
+  }
+
+  .app-list-item {
+    height: 7vw;
+  }
+
+  .text-content span {
+    font-size: 1vw;
+    line-height: 1.4vw;
+  }
+
+  .tip-title {
+    font-size: 1.4vw;
+    line-height: 1.4vw;
+    padding: 2.8vw 10px;
+  }
+
+  .emoji {
+    height: 2vw;
+    margin-bottom: 0.5vw;
+    width: 2vw;
+  }
+
+  .no-top-margin {
+    margin-top: 0;
+  }
+
+  .footer-contact {
+    left: 50vw;
+    width: 50vw;
+  }
+}

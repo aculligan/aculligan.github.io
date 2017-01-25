@@ -1,0 +1,23 @@
+      <ul class="app-list">
+        {% for tip in site.tips %}
+        <li class="app-list-item">
+          <a class="app-tile" title="{{ tip.title }}" href="{{ tip.permalink }}">
+            <span class="tip-title">{{ tip.title }}</span>
+            <span class="text-content text-content-white">
+              <span>
+                {% if tip.logo contains 'zendesk' %}
+                <g-emoji>
+                  <img align="absmiddle" class="emoji" src="{{ site.baseurl }}/CDN/Universal_App_Assets/img/emoji/zendesk.png">
+                </g-emoji>
+                {% endif %}
+                {% if tip.logo contains 'chrome' %}
+                <g-emoji>
+                  <img align="absmiddle" class="emoji" src="{{ site.baseurl }}/CDN/Universal_App_Assets/img/emoji/chrome.png">
+                </g-emoji>
+                {% endif %}<br>{{ tip.description }}
+              </span>
+            </span>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>

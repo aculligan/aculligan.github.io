@@ -1,0 +1,26 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+  <body>
+    <div class="top-div purple-div">
+{% include top-div.html %}
+    </div>
+    <div class="left-div fixed-div purple-div page-div">
+      {% include h2-div.html %}
+{% include svg-mail.html %}
+      {% include h1-div.html %}
+    </div>
+    <div>
+{% include menu-contact.html %}
+    </div>
+    <div class="right-div right-div-contact purple"> 
+{{ content }}
+    </div>
+{% include svg-law.html %}
+{% include body-scripts.html %}
+  </body>
+</html>

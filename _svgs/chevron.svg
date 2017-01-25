@@ -1,0 +1,15 @@
+---
+---
+
+<symbol
+  id="chevron-svg"
+  viewBox="0 0 14 14">
+  <path
+    class="menu-btn-arrow-stroke"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    d="M4 6l3 3 3-3"
+    stroke-linecap="round"
+    stroke-linejoin="round"/>
+</symbol>

@@ -1,0 +1,35 @@
+---
+layout: tips
+permalink: /tips/moderatorcontrols
+title: Community Moderator Controls
+description: Add controls to Zendesk Community comments for Moderators
+published-url: https://github.com/aculligan/Zendesk_Help_Center_Community_Moderator_Controls/blob/master/script.js
+cdn: Zendesk_Help_Center_Community_Moderator_Controls
+tags: ['tip']
+require: ['emoji', 'modal', 'menu', 'nav-bar', 'arrow-up', 'arrow-up']
+---
+
+{% include apps-head.html %}
+      {% include apps-about.html %}
+      {% include tips-type.html %}
+      <p class="p-justify text-indent">Someone asked if it was possible to add checkboxes at the bottom of Zendesk Help Center Community comment editor so moderators could mark a Community Post as "Answered" or "Closed for comments" at the same time they posted a reply.</p>
+      <p class="p-justify text-indent">This can be done by using JavaScript to add the chekboxes and make API calls to update the post.</p>
+      <p class="p-justify text-indent">Quick note before starting: This is customization that is not supported by Zendesk, and you might need a web developer to help you if you have issues.</p>
+      <p class="p-justify text-indent">Go to your Zendesk Help Center's Edit Theme page and add <a href="https://github.com/aculligan/Zendesk_Help_Center_Community_Moderator_Controls/blob/master/script.js" target="_blank">this</a> code at the top of the JS page.</p>
+      <p class="p-justify text-indent">Save and publish the changes, and that's it.</p>
+      {% include apps-screencaps.html %}
+      <p class="p-center p-screenshots">
+        <img class="img-screenshot" src="{{ site.url }}/CDN/Tips/{{ page.cdn }}/screenshot-1.png"/>
+        <img class="img-screenshot" src="{{ site.url }}/CDN/Tips/{{ page.cdn }}/screenshot-2.gif"/>
+      </p>
+{% include apps-modal.html %}
+{% include apps-code.html %}
+      {% include apps-code-zendesk.html %}
+      {% include apps-bugs.html %}
+      <ul class="ul-features">
+        <li>No known issues at this time.</li>
+      </ul>
+{% include apps-found-bug.html %}
+{% include apps-license.html %}
+{% include apps-more.html %}
+      {% include copyright.html %}

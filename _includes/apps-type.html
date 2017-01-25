@@ -1,0 +1,5 @@
+{% if page.tags contains 'extension' and page.tags contains 'zendesk' and page.tags contains 'chrome' %}
+        <li><g-emoji>:chrome:</g-emoji> <g-emoji>:zendesk:</g-emoji> This is a Chrome Extension for Zendesk.</li>
+{% elsif page.tags contains 'app' and page.tags contains 'zendesk' %}
+        <li><g-emoji>:zendesk:</g-emoji> This is a Zendesk App.</li>
+{% endif %}

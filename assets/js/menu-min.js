@@ -1,0 +1,1 @@
+'use strict';(function(){var a=$('h3'),b=$('.nav-content ul');a.attr('id',function(c){return'section-'+(c+1)}),a.each(function(){var c=$(this).text().slice(0,-1),d=$(this).attr('id');b.append('<li class="nav-li"><a href="#'+d+'">'+c+'</a></li>')})})();

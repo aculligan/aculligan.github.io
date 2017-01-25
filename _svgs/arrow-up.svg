@@ -1,0 +1,11 @@
+---
+---
+
+<symbol
+  id="arrow-up-svg"
+  viewBox="0 0 10 16">
+  <path
+    fill="#f8f8f8"
+    d="M5 3L0 9h3v4h4V9h3z">
+  </path>
+</symbol>

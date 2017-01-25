@@ -1,0 +1,9 @@
+---
+layout: compress
+---
+
+<svg xmlns="http://www.w3.org/2000/svg">
+{% for svg in site.svgs %}
+{{ svg.content }}
+{% endfor %}
+</svg>

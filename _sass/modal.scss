@@ -1,0 +1,141 @@
+@import 'palette';
+
+.screenshot-modal {
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  height: 100%;
+  left: 0;
+  overflow: auto;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100vw;
+  z-index: 2000;
+}
+
+.modal-content {
+  animation-duration: 0.3s;
+  -webkit-animation-duration: 0.3s;
+  animation-name: zoom;
+  -webkit-animation-name: zoom;
+  display: block;
+  margin: auto;
+  width: 95vw;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.modal-arrow,
+.modal-close,
+.modal-minus,
+.modal-zoom {
+  background-color: $white;
+  border-radius: 50px;
+  color: $black;
+  cursor: pointer;
+  display: block;
+  font-size: 5vh;
+  font-weight: bold;
+  height: 2.4vh;
+  line-height: 1.9vh;
+  padding: 1vh;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s;
+  width: 2.4vh;
+}
+
+.modal-x {
+  margin: 25vh 0 1vh 90vw;
+  text-align: center;
+}
+
+.modal-arrow {
+  margin-top: 1vh;
+}
+
+.modal-next {
+  margin-left: 50px;
+}
+
+.modal-glass {
+  display: none;
+  text-align: center;
+}
+
+@media screen and (min-width: 568px) {
+  .modal-arrow:hover,
+  .modal-close:hover,
+  .modal-minus:hover,
+  .modal-zoom:hover {
+    color: $gray-low;
+  }
+
+  .screenshot-modal {
+    background-color: $black;
+    width: 50vw;
+  }
+
+  .modal-content {
+    width: 47.5vw;
+  }
+
+  .modal-x {
+    display: block;
+    margin: 15vh 0 1vh 45vw;
+  }
+
+  .modal-glass {
+    display: block;
+    left: 1vw;
+    margin-top: 15vh;
+    position: absolute;
+  }
+
+  .modal-minus {
+    display: none;
+  }
+
+  .full-modal {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100vw;
+  }
+
+  .full-image {
+    height: 85vh;
+    width: inherit;
+  }
+
+  .full-x {
+    margin: 1vh 0 1vh 90vw;
+  }
+
+  .full-zoom {
+    display: none;
+  }
+
+  .full-glass {
+    left: 0;
+    margin: 1vh 0 1vh 5vw;
+  }
+  
+  .full-minus {
+    display: block;
+  }
+}

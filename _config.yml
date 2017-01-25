@@ -1,0 +1,50 @@
+# Site settings
+title : Web Developer
+description: Alex Culligan portfolio
+baseurl: ''
+url: 'https://aculligan.github.io'
+collections:
+  apps:
+  svgs:
+  tips:
+# Site settings
+
+# Author info
+author :
+  name : Alex Culligan
+  title: Front End Web Developer
+  email : support@alexculligan.com
+  github :
+    user: aculligan
+    url: https://github.com/aculligan
+  linkedin:
+    user: alexanderculligan
+    url: https://www.linkedin.com/in/alexanderculligan
+  ruby-gems:
+    user: aculligan
+    url: https://rubygems.org/profiles/aculligan
+  ko-fi:
+    user: A026GRR
+    url: https://ko-fi.com/A026GRR
+# Author info
+
+# Build settings
+safe: false
+#theme: devterm
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-babel
+exclude: ['LICENSE.txt', 'README.md', 'assets/css/full', 'assets/js/full', '_templates',]
+# Build settings
+
+# Compress HTML settings
+# More info here: http://jch.penibelst.de/
+compress_html:
+  blanklines: true
+  comments: ['<!-- ', ' -->']
+# Compress HTML settings

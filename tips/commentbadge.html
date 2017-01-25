@@ -1,0 +1,38 @@
+---
+layout: tips
+permalink: /tips/commentbadge
+title: Comment Ticket Badge
+description: Show the status of tickets created from comments in Zendesk Help Center
+published-url: https://github.com/aculligan/Zendesk_Help_Center_comment_ticket_badge/blob/master/script.js
+cdn: Zendesk_Help_Center_comment_ticket_badge
+tags: ['tip']
+require: ['emoji', 'modal', 'menu', 'nav-bar', 'arrow-up']
+---
+
+{% include apps-head.html %}
+      {% include apps-about.html %}
+      {% include tips-type.html %}
+      <p class="p-justify text-indent">Someone asked if it was possible to look up the status of a ticket that was created from a Zendesk Help Center comment and make changes based on that.</p>
+      <p class="p-justify text-indent">That is definitely possible by making an API call that gets the ticket information.</p>
+      <p class="p-justify text-indent">In this example, I am changing the existing badge with the ticket number to also include the current status and status color.</p>
+      <p class="p-justify text-indent">There are other actions you can do with this code, like changing the background color of the whole comment div, adding pop-up alerts, making the comment disappear, etc.</p>
+      <p class="p-justify text-indent">This will work on all Zendesk Help Center templates for both Article and Community post comments.</p>
+      <p class="p-justify text-indent">Quick note before starting: This is customization that is not supported by Zendesk, and you might need a web developer to help you if you have issues.</p>
+      <p class="p-justify text-indent">Go to your Zendesk Help Center's Edit Theme page and add <a href="{{ page.published-url }}" target="_blank">this</a> code at the top of the JS page.</p>
+      <p class="p-justify text-indent">Save and publish the changes, and that's it.</p>
+      {% include apps-screencaps.html %}
+      <p class="p-center p-screenshots">
+        <img class="img-screenshot" src="{{ site.url }}/CDN/Tips/{{ page.cdn }}/screenshot-1.png"/>
+        <img class="img-screenshot" src="{{ site.url }}/CDN/Tips/{{ page.cdn }}/screenshot-2.png"/>
+      </p>
+{% include apps-modal.html %}
+{% include apps-code.html %}
+      {% include apps-code-zendesk.html %}
+      {% include apps-bugs.html %}
+      <ul class="ul-features">
+        <li>No known issues at this time.</li>
+      </ul>
+{% include apps-found-bug.html %}
+{% include apps-license.html %}
+{% include apps-more.html %}
+      {% include copyright.html %}

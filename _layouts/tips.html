@@ -1,0 +1,29 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+  <body>
+    <div class="top-div orange-div">
+{% include top-div.html %}
+    </div>
+    <div class="left-div fixed-div orange-div page-div">
+      {% include h2-div.html %}
+{% include svg-light-bulb.html %}
+      {% include h1-div.html %}
+    </div>
+    <div>
+{% include menu-tips.html %} 
+    </div>
+    <div class="right-div orange"> 
+{{ content }}
+    </div>
+{% if page.require contains 'arrow-up' %}
+{% include svg-arrow-up.html %}
+{% endif %}
+{% include svg-law.html %}
+{% include body-scripts.html %}
+  </body>
+</html>
