@@ -1,20 +1,20 @@
-       <ul class="work-list">
+       <ul class="app-list">
         {% for work in site.works %}
-        <li class="work-list-item">
-          <a class="work-tile" title="{{ work.title }}" href="{{ work.permalink }}">
-            <img class="work-tile-logo" alt="{{ work.title }}" src="{{ site.baseurl }}/{{ work.cdn }}/img/logo-promotion.png">
-            <span class="text-content text-content-{{ work.background }}">
+        <li class="app-list-item">
+          <a class="app-tile" title="{{ app.title }}" href="{{ app.permalink }}">
+            <img class="app-tile-logo" alt="{{ app.title }}" src="{{ site.baseurl }}/{{ app.cdn }}/img/logo-promotion.png">
+            <span class="text-content text-content-{{ app.background }}">
               <span>
-                {% if work.logo contains 'chrome' %}
+                {% if app.logo contains 'chrome' %}
                 <g-emoji>
                   <img align="absmiddle" class="emoji" src="{{ site.baseurl }}/CDN/Universal_App_Assets/img/emoji/chrome.png">
                 </g-emoji>
                 {% endif %}
-                {% if work.logo contains 'zendesk' %}
+                {% if app.logo contains 'zendesk' %}
                 <g-emoji>
                   <img align="absmiddle" class="emoji" src="{{ site.baseurl }}/CDN/Universal_App_Assets/img/emoji/zendesk.png">
                 </g-emoji>
-                {% endif %}<br>{{ work.description }}
+                {% endif %}<br>{{ app.description }}
               </span>
             </span>
           </a>
