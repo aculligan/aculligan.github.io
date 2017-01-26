@@ -337,23 +337,23 @@ a .orange:hover {
   }
 }
 
-.app-list {
+.work-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
-.app-list-item {
+.work-list-item {
   display: inline-block;
   position: relative;
 }
 
-.app-tile {
+.work-tile {
   text-decoration: none;
 }
 
-.app-list-item,
+.work-list-item,
 .img-screenshot {
   border-radius: 3px;
   border: 2px solid $gray-light;
@@ -363,7 +363,7 @@ a .orange:hover {
   width: 80vw;
 }
 
-.app-list-item {
+.work-list-item {
   background-color: $white;
   height: 30vw;
 }
@@ -398,7 +398,7 @@ a .orange:hover {
   color: $white;
 }
 
-.app-list .app-list-item:hover span.text-content {
+.work-list .work-list-item:hover span.text-content {
   opacity: 1;
 }
 
@@ -421,7 +421,7 @@ a .orange:hover {
   padding: 2px 0;
 }
 
-.app-tile-logo {
+.work-tile-logo {
   border-radius: 1px;
   height: 100%;
   padding: 0;
@@ -629,12 +629,12 @@ code {
     font-size: 5vw;
   }
 
-  .app-list-item,
+  .work-list-item,
   .img-screenshot {
     width: 18vw;
   }
 
-  .app-list-item {
+  .work-list-item {
     height: 7vw;
   }
 
