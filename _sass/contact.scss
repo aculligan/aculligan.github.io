@@ -13,7 +13,7 @@ fieldset {
 }
 
 .contact-field {
-  background-color: $white;
+  background-color: $smoke;
   border: 1px solid $gray;
   border-radius: 3px;
   color: $purple;
@@ -34,7 +34,7 @@ fieldset {
 
 .contact-field:focus,
 .open-menu-btn {
-  background-color: $white;
+  background-color: $smoke;
   border-color: $purple;
   outline: 0;
 }
@@ -84,7 +84,7 @@ fieldset {
 }
 
 .menu {
-  background-color: $white;
+  background-color: $smoke;
   border-radius: 0 0 3px 3px;
   border-top: 0;
   border-color: $purple-light;
@@ -113,7 +113,7 @@ fieldset {
   &:hover {
     background-color: $purple-light;
     border-radius: 3px;
-    color: $white;
+    color: $smoke;
     outline: 0;
   }
 }
@@ -150,7 +150,7 @@ fieldset {
   background-color: $purple;
   border: 1px solid $purple;
   border-radius: 4px;
-  color: $white;
+  color: $smoke;
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
@@ -165,14 +165,14 @@ fieldset {
   }
   &:active,
   &:hover {
-    background-color: $white;
+    background-color: $smoke;
     border-color: $purple;
     color: $purple;
   }
   &:disabled {
     background-color: $gray;
     border-color: transparent;
-    color: $white;
+    color: $smoke;
     cursor: default;
   }
 }
@@ -180,11 +180,11 @@ fieldset {
 .contact-submit-disabled {
   background-color: $gray;
   border-color: transparent;
-  color: $white;
+  color: $smoke;
   cursor: default;
 }
 
 .contact-submit:focus {
-  box-shadow: 0 0 3px 0 $white inset, 0 0 2px 2px $purple;
+  box-shadow: 0 0 3px 0 $smoke inset, 0 0 2px 2px $purple;
   outline: none;
 }
