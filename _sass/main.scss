@@ -398,6 +398,16 @@ a .orange:hover {
   color: $white;
 }
 
+.text-content-black {
+  background: rgba(51, 51, 51, 1);
+  color: $white;
+}
+
+.text-content-ruby {
+  background: rgba(235, 86, 56, 1);
+  color: $white;
+}
+
 .work-list .work-list-item:hover span.text-content {
   opacity: 1;
 }
