@@ -98,13 +98,13 @@
 
   .modal-x {
     display: block;
-    margin: 15vh 0 1vh 45vw;
+    float: right;
+    margin: 15vh 2vh 1vh 0;
   }
 
   .modal-glass {
     display: block;
-    left: 1vw;
-    margin-top: 15vh;
+    margin: 15vh 0 1vh 2vh;
     position: absolute;
   }
 
@@ -119,11 +119,13 @@
 
   .full-image {
     height: 85vh;
+    margin-top: 5vh;
     width: inherit;
   }
 
   .full-x {
-    margin: 1vh 0 1vh 90vw;
+    float: right;
+    margin: 1vh 5vh 1vh 0;
   }
 
   .full-zoom {
@@ -132,7 +134,7 @@
 
   .full-glass {
     left: 0;
-    margin: 1vh 0 1vh 5vw;
+    margin: 1vh 0 1vh 5vh;
   }
   
   .full-minus {

@@ -109,12 +109,8 @@ fieldset {
     margin-bottom: 5px;
   }
   &:active,
+  &:focus,
   &:hover {
-    background-color: $purple-light;
-    border-radius: 3px;
-    color: $white;
-  }
-  &:focus {
     background-color: $purple-light;
     border-radius: 3px;
     color: $white;
@@ -186,12 +182,6 @@ fieldset {
   border-color: transparent;
   color: $white;
   cursor: default;
-  &:hover {
-    background-color: $gray;
-    border-color: transparent;
-    color: $white;
-    cursor: default;
-  }
 }
 
 .contact-submit:focus {

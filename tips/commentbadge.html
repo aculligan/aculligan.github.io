@@ -9,8 +9,8 @@ tags: ['tip']
 require: ['emoji', 'modal', 'menu', 'nav-bar', 'arrow-up']
 ---
 
-{% include apps-head.html %}
-      {% include apps-about.html %}
+{% include work-head.html %}
+      {% include work-about.html %}
       {% include tips-type.html %}
       <p class="p-justify text-indent">Someone asked if it was possible to look up the status of a ticket that was created from a Zendesk Help Center comment and make changes based on that.</p>
       <p class="p-justify text-indent">That is definitely possible by making an API call that gets the ticket information.</p>
@@ -20,19 +20,19 @@ require: ['emoji', 'modal', 'menu', 'nav-bar', 'arrow-up']
       <p class="p-justify text-indent">Quick note before starting: This is customization that is not supported by Zendesk, and you might need a web developer to help you if you have issues.</p>
       <p class="p-justify text-indent">Go to your Zendesk Help Center's Edit Theme page and add <a href="{{ page.published-url }}" target="_blank">this</a> code at the top of the JS page.</p>
       <p class="p-justify text-indent">Save and publish the changes, and that's it.</p>
-      {% include apps-screencaps.html %}
+      {% include work-screencaps.html %}
       <p class="p-center p-screenshots">
         <img class="img-screenshot" src="{{ site.url }}/CDN/Tips/{{ page.cdn }}/screenshot-1.png"/>
         <img class="img-screenshot" src="{{ site.url }}/CDN/Tips/{{ page.cdn }}/screenshot-2.png"/>
       </p>
-{% include apps-modal.html %}
-{% include apps-code.html %}
-      {% include apps-code-zendesk.html %}
-      {% include apps-bugs.html %}
+{% include work-modal.html %}
+{% include work-code.html %}
+      {% include work-code-zendesk.html %}
+      {% include work-bugs.html %}
       <ul class="ul-features">
         <li>No known issues at this time.</li>
       </ul>
-{% include apps-found-bug.html %}
-{% include apps-license.html %}
-{% include apps-more.html %}
+{% include work-found-bug.html %}
+{% include work-license.html %}
+{% include work-more.html %}
       {% include copyright.html %}

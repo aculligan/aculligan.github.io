@@ -35,9 +35,9 @@
       typeSpeed: 100
     });
   };
-  const typeApps = function typeInApps(){
+  const typeWork = function typeInWork(){
     $('.title').typed({
-      strings: ['<span>{</span><a href="https://aculligan.github.io/apps">apps</a><span>}<span>'],
+      strings: ['<span>{</span><a href="https://aculligan.github.io/work">work</a><span>}<span>'],
       showCursor: false,
       typeSpeed: 100
     });
@@ -82,8 +82,8 @@
     if (lastCharURL === '/') {
       typeIndex();
     }
-    if (windowURL.indexOf('apps') > 0) {
-      typeApps();
+    if (windowURL.indexOf('work') > 0) {
+      typeWork();
       takeLicense();
       takeTop();
     }
