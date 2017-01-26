@@ -1,8 +1,8 @@
 @import 'palette';
 
 body {
-  background-color: $white;
-  color: $white;
+  background-color: $smoke;
+  color: $smoke;
   font-family: $font-stack;
   margin: 0;
   padding: 0;
@@ -150,13 +150,13 @@ ul {
 
 .h1-page a,
 .h1-top a {
-  color: $white;
+  color: $smoke;
   text-decoration: none;
 }
 
 .h1-page a:hover,
 .h1-top a:hover {
-  color: $white;
+  color: $smoke;
   text-decoration: underline;
 }
 
@@ -215,7 +215,7 @@ ul {
   width: 100vw;
   z-index: 1000;
   a {
-    color: $white;
+    color: $smoke;
     padding: 20px 0;
     text-decoration: none;
   }
@@ -306,7 +306,7 @@ a .orange:hover {
 }
 
 .white {
-  color: $white;
+  color: $smoke;
 }
 
 .nav-content {
@@ -329,10 +329,10 @@ a .orange:hover {
 }
 
 .nav-content a {
-  color: $white;
+  color: $smoke;
   text-decoration: none;
   &:hover {
-    color: $white;
+    color: $smoke;
     text-decoration: none;
   }
 }
@@ -364,7 +364,7 @@ a .orange:hover {
 }
 
 .work-list-item {
-  background-color: $white;
+  background-color: $smoke;
   height: 30vw;
 }
 
@@ -384,27 +384,27 @@ a .orange:hover {
 }
 
 .text-content-white {
-  background: rgba(255, 255, 255, 1);
+  background-color: $white;
   color: $black;
 }
 
 .text-content-green {
-  background: rgba(120, 163, 0, 1);
+  background-color: $green-zendesk;
   color: $white;
 }
 
 .text-content-algae {
-  background: rgba(3, 54, 61, 1);
+  background-color: $algae;
   color: $white;
 }
 
 .text-content-black {
-  background: rgba(51, 51, 51, 1);
+  background-color: $black;
   color: $white;
 }
 
 .text-content-ruby {
-  background: rgba(235, 86, 56, 1);
+  background-color: $ruby;
   color: $white;
 }
 
@@ -443,7 +443,7 @@ a .orange:hover {
 }
 
 .img-screenshot-gif {
-  background-color: $white;
+  background-color: $smoke;
 }
 
 .no-top-margin {
@@ -459,7 +459,7 @@ a .orange:hover {
 .social-image {
   background-color: $gray-dark;
   border-radius: 1vh;
-  color: $white;
+  color: $smoke;
   height: 5vh;
   max-height: 50px;
   max-width: 50px;
@@ -480,7 +480,7 @@ a .orange:hover {
 }
 
 .footer-contact {
-  background: $white;
+  background: $smoke;
   bottom: 3vh;
   left: 0;
   position: fixed;
@@ -490,7 +490,7 @@ a .orange:hover {
 code {
   background: $black;
   border: 1px solid $black;
-  color: $white;
+  color: $smoke;
   padding: 0 5px;
 }
 
@@ -577,7 +577,7 @@ code {
   }
 
   .menu-page {
-    background-color: $white;
+    background-color: $smoke;
     border-bottom: 2px $gray solid;
     font-size: 3vw;
     height: inherit;
