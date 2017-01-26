@@ -4,9 +4,9 @@ description: Alex Culligan portfolio
 baseurl: ''
 url: 'https://aculligan.github.io'
 collections:
-  apps:
   svgs:
   tips:
+  works:
 # Site settings
 
 # Author info
