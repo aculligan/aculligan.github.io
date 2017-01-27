@@ -3,6 +3,7 @@ title : Web Developer
 description: Alex Culligan portfolio
 baseurl: ''
 url: 'https://aculligan.github.io'
+ga: UA-88468730-1
 collections:
   svgs:
   tips:
@@ -39,7 +40,7 @@ sass:
   style: compressed
 gems:
   - jekyll-babel
-exclude: ['LICENSE.txt', 'README.md', 'assets/css/full', 'assets/js/full', '_templates',]
+exclude: ['LICENSE.txt', 'README.md']
 # Build settings
 
 # Compress HTML settings

@@ -20,31 +20,31 @@
   };
   const takeHome = function takeMeHome() {
     $('.bottom-right-svg').click(function () {
-      window.location.assign('https://aculligan.github.io/');
+      window.location.assign('{{ site.url }}');
     });
   };
   const takeLicense = function takeMeLicense() {
     $('.bottom-right-svg').click(function () {
-      window.location.assign('https://aculligan.github.io/license');
+      window.location.assign('{{ site.url }}/license');
     });
   };
   const typeIndex = function typeInIndex(){
     $('.title').typed({
-      strings: ['Alex Culligan'],
+      strings: ['{{ site.author.name }}'],
       showCursor: false,
       typeSpeed: 100
     });
   };
   const typeWork = function typeInWork(){
     $('.title').typed({
-      strings: ['<span>{</span><a href="https://aculligan.github.io/work">work</a><span>}<span>'],
+      strings: ['<span>{</span><a href="{{ site.url }}/work">work</a><span>}<span>'],
       showCursor: false,
       typeSpeed: 100
     });
   };
   const typeTips = function typeInTips(){
     $('.title').typed({
-      strings: ['<span>$(</span><a href="https://aculligan.github.io/tips">tips</a><span>)<span>'],
+      strings: ['<span>$(</span><a href="{{ site.url }}/tips">tips</a><span>)<span>'],
       showCursor: false,
       typeSpeed: 100
     });
@@ -72,7 +72,7 @@
   };
   const goHome = function goBackHome() {
     $('.title').typed({
-      strings: [`go on now...^1000<br>go <a href='https://aculligan.github.io/'><span class='green'><</span><span class='red'>home</span><span class='green'>></span></a>`],
+      strings: [`go on now...^1000<br>go <a href="{{ site.url }}"><span class="green"><</span><span class="red">home</span><span class="green">></span></a>`],
       showCursor: false,
       typeSpeed: 100
     });

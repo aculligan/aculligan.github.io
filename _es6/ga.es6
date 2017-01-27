@@ -1,6 +1,6 @@
 (function () {
   let windowURL = window.location.href;
-  let rootURL = 'https://aculligan.github.io/';
+  let rootURL = '{{ site.url }}';
   let urlSplit = windowURL.split('/');
   let thisPage;
 
@@ -10,7 +10,7 @@
     thisPage = _.last(urlSplit);
   }
 
-  ga('create', 'UA-88468730-1', 'auto');
+  ga('create', '{{ site.ga }}', 'auto');
   ga('send', {
     hitType: 'pageview',
     page: location.pathname,
