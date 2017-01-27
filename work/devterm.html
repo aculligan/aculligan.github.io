@@ -2,24 +2,43 @@
 layout: work
 permalink: /work/devterm
 title: DevTerm
-description: RubyGem theme for Jekyll
+description: Jekyll theme for developer portfolio
 published-url: https://rubygems.org/gems/devterm
 cdn: devterm
+version: 0.1.7
 tags: ['ruby-gem', 'jekyll']
-require: ['emoji', 'language', 'modal', 'menu', 'nav-bar', 'arrow-up']
+require: ['emoji', 'modal', 'menu', 'nav-bar', 'arrow-up']
 ---
 
 {% include work-head.html %}
       {% include work-about.html %}
       <ul class="ul-features">
         {% include work-type.html %}
+        <li>Theme developed for this site.</li>
+        <li>It uses Ruby, HTML5, Sass, ECMAScript 6, jQuery, TypedJS, UnderscoreJS, and SVG4everybodyJS.</li>
+        <li>More about Jekyll <a href="https://jekyllrb.com/docs/home/" target='_blank'>here</a>.</li>
+      </ul>
+      <p class="p-title">Installation:</p>
+      <ul class="ul-features">
+        <li>Install Jekyll:<br><code class="code-block">gem install jekyll bundler</code></li>
+        <li>Create a new Jekyll site:<br><code class="code-block">jekyll new my-site</code></li>
+        <li>Add this to the Gemfile:<br><code class="code-block"><span class="blue">gem</span> <span class="green">"devterm"</span></code></li>
+        <li>Add this to _config.yml:<br><code class="code-block"><span class="red">theme:</span> <span class="green">devterm</span></code></li>
+        <li>Execute:<br><code class="code-block">bundle</code></li>
+        <li>Get started with the Example site found <a href="{{ site.url }}/CDN/{{ page.cdn }}/example-{{ page.version }}.zip" target='_blank'>here</a>.</li>
+        <li>Create your site by modifying the example files.</li>
+        <li>Preview your site:<br><code class="code-block">bundle exec jekyll serve</code></li>
       </ul>
       {% include work-screencaps.html %}
       <p class="p-center p-screenshots">
+        <img class="img-screenshot" src="{{ site.url }}/CDN/{{ page.cdn }}/img/screenshot-1.png"/>
+        <img class="img-screenshot" src="{{ site.url }}/CDN/{{ page.cdn }}/img/screenshot-2.png"/>
+        <img class="img-screenshot" src="{{ site.url }}/CDN/{{ page.cdn }}/img/screenshot-3.png"/>
+        <img class="img-screenshot" src="{{ site.url }}/CDN/{{ page.cdn }}/img/screenshot-4.png"/>
       </p>
 {% include work-modal.html %}
       {% include work-version.html %}
-      <h4>Version 0.1.1 - Published <a href="{{ page.published-url }}" target='_blank'>here</a>.</h4>
+      <h4>Version 0.1.7 - Published <a href="{{ page.published-url }}" target='_blank'>here</a>.</h4>
       <ul class="ul-features ul-version">
         <li>Bug fixes.</li>
       </ul>
