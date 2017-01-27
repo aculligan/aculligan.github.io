@@ -38,8 +38,6 @@ permalink: pretty
 sass:
   sass_dir: _sass
   style: compressed
-gems:
-  - jekyll-babel
 exclude: ['LICENSE.txt', 'README.md']
 # Build settings
 
