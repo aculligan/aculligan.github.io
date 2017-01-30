@@ -13,10 +13,10 @@ fieldset {
 }
 
 .contact-field {
-  background-color: $smoke;
-  border: 1px solid $gray;
+  background-color: $white-smoke;
+  border: 1px solid $aluminum;
   border-radius: 3px;
-  color: $purple;
+  color: $wisteria;
   font-family: $font-stack;
   font-size: 16px;
   line-height: 18px;
@@ -34,8 +34,8 @@ fieldset {
 
 .contact-field:focus,
 .open-menu-btn {
-  background-color: $smoke;
-  border-color: $purple;
+  background-color: $white-smoke;
+  border-color: $wisteria;
   outline: 0;
 }
 
@@ -48,7 +48,7 @@ fieldset {
 .focused-menu-btn svg.menu-btn-arrow {
   opacity: 1;
   .menu-btn-arrow-stroke {
-    stroke: $purple;
+    stroke: $wisteria;
   }
 }
 
@@ -61,7 +61,7 @@ fieldset {
 }
 
 .selection {
-  color: $purple;
+  color: $wisteria;
   margin-left: 15px;
 }
 
@@ -84,10 +84,10 @@ fieldset {
 }
 
 .menu {
-  background-color: $smoke;
+  background-color: $white-smoke;
   border-radius: 0 0 3px 3px;
   border-top: 0;
-  border-color: $purple-light;
+  border-color: $amethyst;
   box-shadow: 0 2px 2px 0 rgba(36, 83, 107, 0.15);
   list-style: none;
   margin: 0 auto;
@@ -99,7 +99,7 @@ fieldset {
 }
 
 .menu-item {
-  color: $gray-dark;
+  color: $aluminum-dark;
   cursor: pointer;
   margin-left: -10px;
   margin-top: 5px;
@@ -111,9 +111,9 @@ fieldset {
   &:active,
   &:focus,
   &:hover {
-    background-color: $purple-light;
+    background-color: $amethyst;
     border-radius: 3px;
-    color: $smoke;
+    color: $white-smoke;
     outline: 0;
   }
 }
@@ -147,10 +147,10 @@ fieldset {
   -webkit-touch-callout: none;
   -webkit-transition: border-color .25s ease-in-out,box-shadow .1s ease-in-out,background-color .25s ease-in-out,color .25s ease-in-out;
   -webkit-user-select: none;
-  background-color: $purple;
-  border: 1px solid $purple;
+  background-color: $wisteria;
+  border: 1px solid $wisteria;
   border-radius: 4px;
-  color: $smoke;
+  color: $white-smoke;
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
@@ -165,26 +165,26 @@ fieldset {
   }
   &:active,
   &:hover {
-    background-color: $smoke;
-    border-color: $purple;
-    color: $purple;
+    background-color: $white-smoke;
+    border-color: $wisteria;
+    color: $wisteria;
   }
   &:disabled {
-    background-color: $gray;
+    background-color: $aluminum;
     border-color: transparent;
-    color: $smoke;
+    color: $white-smoke;
     cursor: default;
   }
 }
 
 .contact-submit-disabled {
-  background-color: $gray;
+  background-color: $aluminum;
   border-color: transparent;
-  color: $smoke;
+  color: $white-smoke;
   cursor: default;
 }
 
 .contact-submit:focus {
-  box-shadow: 0 0 3px 0 $smoke inset, 0 0 2px 2px $purple;
+  box-shadow: 0 0 3px 0 $white-smoke inset, 0 0 2px 2px $wisteria;
   outline: none;
 }

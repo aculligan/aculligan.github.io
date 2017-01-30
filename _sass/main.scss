@@ -1,15 +1,15 @@
 @import 'palette';
 
 body {
-  background-color: $smoke;
-  color: $smoke;
+  background-color: $white-smoke;
+  color: $white-smoke;
   font-family: $font-stack;
   margin: 0;
   padding: 0;
 }
 
 .window-div {
-  background-color: $black;
+  background-color: $oil;
   height: 100vh;
   width: 100vw;
 }
@@ -19,7 +19,7 @@ body {
 }
 
 .left-div {
-  background-color: $black;
+  background-color: $oil;
   height: 100vh;
 }
 
@@ -150,19 +150,19 @@ ul {
 
 .h1-page a,
 .h1-top a {
-  color: $smoke;
+  color: $white-smoke;
   text-decoration: none;
 }
 
 .h1-page a:hover,
 .h1-top a:hover {
-  color: $smoke;
+  color: $white-smoke;
   text-decoration: underline;
 }
 
 .typed-cursor {
   animation: blink 1s infinite;
-  color: $green-lime;
+  color: $green;
   margin-left: -7px;
   margin-right: -5px;
 }
@@ -215,14 +215,14 @@ ul {
   width: 100vw;
   z-index: 1000;
   a {
-    color: $smoke;
+    color: $white-smoke;
     padding: 20px 0;
     text-decoration: none;
   }
 }
 
 .menu-page {
-  border-bottom: 2px solid $gray;
+  border-bottom: 2px solid $aluminum;
   height: inherit;
   margin: 0;
   padding: 2vh 0;
@@ -232,7 +232,7 @@ ul {
 }
 
 .slash {
-  color: $gray;
+  color: $aluminum;
 }
 
 .top-menu {
@@ -246,7 +246,7 @@ ul {
 }
 
 .black {
-  color: $black;
+  color: $oil;
 }
 
 a .black:hover {
@@ -254,15 +254,15 @@ a .black:hover {
 }
 
 .green {
-  color: $green;
+  color: $tradewind;
 }
 
 .green-div {
-  background-color: $green;
+  background-color: $tradewind;
 }
 
 .blue {
-  color: $blue;
+  color: $hippie-blue;
 }
 
 a .blue:hover {
@@ -270,11 +270,11 @@ a .blue:hover {
 }
 
 .blue-div {
-  background-color: $blue;
+  background-color: $hippie-blue;
 }
 
 .red {
-  color: $red;
+  color: $burnt-sienna;
 }
 
 a .red:hover {
@@ -282,7 +282,7 @@ a .red:hover {
 }
 
 .purple {
-  color: $purple;
+  color: $wisteria;
 }
 
 a .purple:hover {
@@ -290,11 +290,11 @@ a .purple:hover {
 }
 
 .purple-div {
-  background-color: $purple;
+  background-color: $wisteria;
 }
 
 .orange {
-  color: $orange;
+  color: $atomic-tangerine;
 }
 
 a .orange:hover {
@@ -302,11 +302,11 @@ a .orange:hover {
 }
 
 .orange-div {
-  background-color: $orange;
+  background-color: $atomic-tangerine;
 }
 
 .white {
-  color: $smoke;
+  color: $white-smoke;
 }
 
 .nav-content {
@@ -329,10 +329,10 @@ a .orange:hover {
 }
 
 .nav-content a {
-  color: $smoke;
+  color: $white-smoke;
   text-decoration: none;
   &:hover {
-    color: $smoke;
+    color: $white-smoke;
     text-decoration: none;
   }
 }
@@ -356,7 +356,7 @@ a .orange:hover {
 .work-list-item,
 .img-screenshot {
   border-radius: 3px;
-  border: 2px solid $gray-light;
+  border: 2px solid $gainsboro;
   cursor: pointer;
   margin: 0 0 1vh 0;
   transition: 0.3s;
@@ -364,7 +364,7 @@ a .orange:hover {
 }
 
 .work-list-item {
-  background-color: $smoke;
+  background-color: $white-smoke;
   height: 30vw;
 }
 
@@ -385,11 +385,11 @@ a .orange:hover {
 
 .text-content-white {
   background-color: $white;
-  color: $black;
+  color: $oil;
 }
 
 .text-content-green {
-  background-color: $green-zendesk;
+  background-color: $apple-green;
   color: $white;
 }
 
@@ -399,12 +399,12 @@ a .orange:hover {
 }
 
 .text-content-black {
-  background-color: $black;
-  color: $gray-light;
+  background-color: $oil;
+  color: $gainsboro;
 }
 
 .text-content-ruby {
-  background-color: $ruby;
+  background-color: $valencia;
   color: $white;
 }
 
@@ -443,7 +443,7 @@ a .orange:hover {
 }
 
 .img-screenshot-gif {
-  background-color: $smoke;
+  background-color: $white-smoke;
 }
 
 .no-top-margin {
@@ -457,9 +457,9 @@ a .orange:hover {
 }
 
 .social-image {
-  background-color: $gray-dark;
+  background-color: $aluminum-dark;
   border-radius: 1vh;
-  color: $smoke;
+  color: $white-smoke;
   height: 5vh;
   max-height: 50px;
   max-width: 50px;
@@ -480,7 +480,7 @@ a .orange:hover {
 }
 
 .footer-contact {
-  background: $smoke;
+  background: $white-smoke;
   bottom: 3vh;
   left: 0;
   position: fixed;
@@ -488,9 +488,9 @@ a .orange:hover {
 }
 
 code {
-  background: $black;
-  border: 1px solid $black;
-  color: $smoke;
+  background: $oil;
+  border: 1px solid $oil;
+  color: $white-smoke;
   padding: 0 5px;
 }
 
@@ -581,8 +581,8 @@ code {
   }
 
   .menu-page {
-    background-color: $smoke;
-    border-bottom: 2px $gray solid;
+    background-color: $white-smoke;
+    border-bottom: 2px $aluminum solid;
     font-size: 3vw;
     height: inherit;
     left: 50vw;

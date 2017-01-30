@@ -49,9 +49,9 @@
 .modal-close,
 .modal-minus,
 .modal-zoom {
-  background-color: $smoke;
+  background-color: $white-smoke;
   border-radius: 50px;
-  color: $black;
+  color: $oil;
   cursor: pointer;
   display: block;
   font-size: 5vh;
@@ -88,11 +88,11 @@
   .modal-close:hover,
   .modal-minus:hover,
   .modal-zoom:hover {
-    color: $gray-low;
+    color: $silver-sand;
   }
 
   .screenshot-modal {
-    background-color: $black;
+    background-color: $oil;
     width: 50vw;
   }
 
