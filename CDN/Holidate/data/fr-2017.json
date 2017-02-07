@@ -1,0 +1,79 @@
+{ "holiday": [
+  {
+    "id": 1,
+    "start_date": "2017-01-01",
+    "end_date": "2017-01-01",
+    "name": "new_year",
+    "local_name": "Nouvel an"
+  },
+  {
+    "id": 2,
+    "start_date": "2017-04-17",
+    "end_date": "2017-04-17",
+    "name": "easter_monday",
+    "local_name": "Lundi de Pâques"
+  },
+  {
+    "id": 3,
+    "start_date": "2017-05-01",
+    "end_date": "2017-05-01",
+    "name": "labor_day",
+    "local_name": "Fête des Travailleurs"
+  },
+  {
+    "id": 4,
+    "start_date": "2017-05-08",
+    "end_date": "2017-05-08",
+    "name": "ww2_victory",
+    "local_name": "Fête de la Victoire"
+  },
+  {
+    "id": 5,
+    "start_date": "2017-05-25",
+    "end_date": "2017-05-25",
+    "name": "ascension_day",
+    "local_name": "Ascension"
+  },
+  {
+    "id": 6,
+    "start_date": "2017-06-05",
+    "end_date": "2017-06-05",
+    "name": "whit_monday",
+    "local_name": "Lundi de Pentecôte"
+  },
+  {
+    "id": 7,
+    "start_date": "2017-07-14",
+    "end_date": "2017-07-14",
+    "name": "bastille_day",
+    "local_name": "Fête nationale"
+  },
+  {
+    "id": 8,
+    "start_date": "2017-08-15",
+    "end_date": "2017-08-15",
+    "name": "assumption_mary",
+    "local_name": "Assomption"
+  },
+  {
+    "id": 9,
+    "start_date": "2017-11-01",
+    "end_date": "2017-11-01",
+    "name": "all_saints",
+    "local_name": "Toussaint"
+  },
+  {
+    "id": 10,
+    "start_date": "2017-11-11",
+    "end_date": "2017-11-11",
+    "name": "armistice_day",
+    "local_name": "Armistice de 1918"
+  },
+  {
+    "id": 11,
+    "start_date": "2017-12-25",
+    "end_date": "2017-12-25",
+    "name": "christmas_day",
+    "local_name": "Noël"
+  }
+]}

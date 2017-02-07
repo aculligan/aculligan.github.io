@@ -1,0 +1,65 @@
+{ "holiday": [
+  {
+    "id": 1,
+    "start_date": "2017-01-01",
+    "end_date": "2017-01-01",
+    "name": "new_year",
+    "local_name": "New Year's Day"
+  },
+  {
+    "id": 2,
+    "start_date": "2017-01-02",
+    "end_date": "2017-01-02",
+    "name": "new_year_observed",
+    "local_name": "New Year's Day (Observed)"
+  },
+  {
+    "id": 3,
+    "start_date": "2017-04-14",
+    "end_date": "2017-04-14",
+    "name": "good_friday",
+    "local_name": "Good Friday"
+  },
+  {
+    "id": 4,
+    "start_date": "2017-07-01",
+    "end_date": "2017-07-01",
+    "name": "canada_day",
+    "local_name": "Canada Day"
+  },
+  {
+    "id": 5,
+    "start_date": "2017-07-03",
+    "end_date": "2017-07-03",
+    "name": "canada_day_statutory",
+    "local_name": "Canada Day (Statutory)"
+  },
+  {
+    "id": 6,
+    "start_date": "2017-09-04",
+    "end_date": "2017-09-04",
+    "name": "labour_day",
+    "local_name": "Labour Day"
+  },
+  {
+    "id": 7,
+    "start_date": "2017-10-09",
+    "end_date": "2017-10-09",
+    "name": "thanksgiving_day",
+    "local_name": "Thanksgiving Day"
+  },
+  {
+    "id": 8,
+    "start_date": "2017-11-11",
+    "end_date": "2017-11-11",
+    "name": "remembrance_day",
+    "local_name": "Remembrance Day"
+  },
+  {
+    "id": 9,
+    "start_date": "2017-12-25",
+    "end_date": "2017-12-25",
+    "name": "christmas_day",
+    "local_name": "Christmas Day"
+  }
+]}

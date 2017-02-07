@@ -1,0 +1,51 @@
+{ "holiday": [
+  {
+    "id": 1,
+    "start_date": "2017-01-01",
+    "end_date": "2017-01-01",
+    "name": "new_year",
+    "local_name": "New Year's Day"
+  },
+  {
+    "id": 2,
+    "start_date": "2017-01-02",
+    "end_date": "2017-01-02",
+    "name": "new_year_observed",
+    "local_name": "New Year's Day (Observed)"
+  },
+  {
+    "id": 3,
+    "start_date": "2017-04-14",
+    "end_date": "2017-04-14",
+    "name": "good_friday",
+    "local_name": "Good Friday"
+  },
+  {
+    "id": 4,
+    "start_date": "2017-05-01",
+    "end_date": "2017-05-01",
+    "name": "early_may_bh",
+    "local_name": "Early May Bank Holiday"
+  },
+  {
+    "id": 5,
+    "start_date": "2017-05-29",
+    "end_date": "2017-05-29",
+    "name": "spring_bh",
+    "local_name": "Spring Bank Holiday"
+  },
+  {
+    "id": 6,
+    "start_date": "2017-12-25",
+    "end_date": "2017-12-25",
+    "name": "christmas_day",
+    "local_name": "Christmas Day"
+  },
+  {
+    "id": 7,
+    "start_date": "2017-12-26",
+    "end_date": "2017-12-26",
+    "name": "boxing_day",
+    "local_name": "Boxing Day"
+  }
+]}

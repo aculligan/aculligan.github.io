@@ -8,62 +8,76 @@
   },
   {
     "id": 2,
+    "start_date": "2017-01-02",
+    "end_date": "2017-01-02",
+    "name": "new_year_observed",
+    "local_name": "New Year's Day (Observed)"
+  },
+  {
+    "id": 3,
     "start_date": "2017-01-16",
     "end_date": "2017-01-16",
     "name": "mlk_day",
     "local_name": "Martin Luther King Day"
   },
   {
-    "id": 3,
+    "id": 4,
     "start_date": "2017-02-20",
     "end_date": "2017-02-20",
     "name": "presidents_day",
     "local_name": "Presidents' Day"
   },
   {
-    "id": 4,
+    "id": 5,
     "start_date": "2017-05-29",
     "end_date": "2017-05-29",
     "name": "memorial_day",
     "local_name": "Memorial Day"
   },
   {
-    "id": 5,
+    "id": 6,
     "start_date": "2017-07-04",
     "end_date": "2017-07-04",
     "name": "independence_day",
     "local_name": "Independence Day"
   },
   {
-    "id": 6,
+    "id": 7,
     "start_date": "2017-09-04",
     "end_date": "2017-09-04",
     "name": "labor_day",
     "local_name": "Labor Day"
   },
   {
-    "id": 7,
+    "id": 8,
     "start_date": "2017-10-09",
     "end_date": "2017-10-09",
     "name": "columbus_day",
     "local_name": "Columbus Day"
   },
   {
-    "id": 8,
+    "id": 9,
     "start_date": "2017-11-10",
     "end_date": "2017-11-10",
+    "name": "veterans_day_observed",
+    "local_name": "Veterans Day (Observed)"
+  },
+  {
+    "id": 10,
+    "start_date": "2017-11-11",
+    "end_date": "2017-11-11",
     "name": "veterans_day",
     "local_name": "Veterans Day"
   },
   {
-    "id": 9,
+    "id": 11,
     "start_date": "2017-11-23",
     "end_date": "2017-11-23",
     "name": "thanksgiving_day",
     "local_name": "Thanksgiving Day"
   },
   {
-    "id": 10,
+    "id": 12,
     "start_date": "2017-12-25",
     "end_date": "2017-12-25",
     "name": "christmas_day",
