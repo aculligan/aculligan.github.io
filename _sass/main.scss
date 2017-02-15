@@ -32,9 +32,12 @@ body {
 }
 
 .right-div {
-  margin-left: 10vw;
-  padding: 5vh 0 7vh 0;
-  width: 80vw;
+  box-sizing: border-box;
+  padding: 5vh 5vw;
+  width: 100vw;
+  &:a {
+    color: inherit;
+  }
 }
 
 .nav-up {
@@ -91,18 +94,12 @@ body {
 ul {
   padding-left: 25px;
   line-height: 30px;
-  text-align: justify;
-  text-justify: inter-word;
 }
 
 .p-justify {
   line-height: 30px;
   text-align: justify;
   text-justify: inter-word;
-}
-
-.right-div a {
-  color: inherit;
 }
 
 .svg-div {
@@ -516,15 +513,10 @@ code {
   .right-div {
     float: right;
     font-size: 2vw;
-    padding: 10vh 0 6vh 0;
     position: absolute;
-    right: 5vw;
+    left: 50vw;
     top: 9vh;
-    width: 40vw;
-  }
-
-  .right-div-contact {
-    top: 5vh;
+    width: 50vw;
   }
 
   .page-div {
@@ -583,8 +575,9 @@ code {
   .menu-page {
     background-color: $white-smoke;
     border-bottom: 2px $aluminum solid;
+    box-sizing: border-box;
     font-size: 3vw;
-    height: inherit;
+    height: 9vh;
     left: 50vw;
     padding: 2vh 0;
     position: fixed;
@@ -614,6 +607,8 @@ code {
   .p-justify,
   ul {
     line-height: 4vw;
+    text-align: justify;
+    text-justify: inter-word;
   }
 
   .nav-content {
@@ -676,5 +671,17 @@ code {
   .footer-contact {
     left: 50vw;
     width: 50vw;
+  }
+}
+
+@media screen and (min-width: 568px) {
+  .main-title {
+    font-size: 50px;
+  }
+  .right-div {
+    font-size: 24px;
+  }
+  .p-title {
+    font-size: 36px;
   }
 }
