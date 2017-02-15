@@ -35,7 +35,7 @@ body {
   box-sizing: border-box;
   padding: 5vh 5vw;
   width: 100vw;
-  &:a {
+  a {
     color: inherit;
   }
 }
@@ -94,6 +94,8 @@ body {
 ul {
   padding-left: 25px;
   line-height: 30px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .p-justify {
@@ -607,8 +609,6 @@ code {
   .p-justify,
   ul {
     line-height: 4vw;
-    text-align: justify;
-    text-justify: inter-word;
   }
 
   .nav-content {
