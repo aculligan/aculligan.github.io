@@ -498,6 +498,8 @@ code {
 
 .code-block {
   display: block;
+  text-align: left;
+  word-wrap: break-word;
 }
 
 @media screen and (min-width: 568px) {
