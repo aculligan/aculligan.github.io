@@ -142,7 +142,7 @@ ul {
 }
 
 .h1-top {
-  font-size: 9vw;
+  font-size: 7vw;
   height: 5vh;
   margin: 2vh 0 0 10px;
 }
@@ -403,6 +403,11 @@ a .orange:hover {
 .text-content-ruby {
   background-color: $valencia;
   color: $white;
+}
+
+.text-content-yellow {
+  background-color: $energy-yellow;
+  color: $oil;
 }
 
 .work-list .work-list-item:hover span.text-content {

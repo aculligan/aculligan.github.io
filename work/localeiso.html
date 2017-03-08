@@ -1,0 +1,42 @@
+---
+layout: work
+permalink: /work/localeiso
+title: localeISO.js
+description: Convert Country and Language ISO codes to full text
+published-url: https://github.com/aculligan/localeISO.js
+cdn: localeISO
+version: 0.1.0
+tags: ['javascript']
+require: ['emoji', 'menu', 'nav-bar', 'arrow-up']
+---
+
+{% include work-head.html %}
+      {% include work-about.html %}
+      <ul class="ul-features">
+        {% include work-type.html %}
+        <li></li>
+      </ul>
+      <p class="p-title">Installation:</p>
+      <ul class="ul-features">
+        <li>Install Jekyll:<br><code class="code-block">gem install jekyll bundler</code></li>
+        <li>Create a new Jekyll site:<br><code class="code-block">jekyll new my-site</code></li>
+        <li>Add this to the Gemfile:<br><code class="code-block"><span class="blue">gem</span> <span class="green">"devterm"</span></code></li>
+        <li>Add this to _config.yml:<br><code class="code-block"><span class="red">theme:</span> <span class="green">devterm</span></code></li>
+        <li>Execute:<br><code class="code-block">bundle</code></li>
+        <li>Get started with the Example site found <a href="{{ site.url }}/CDN/{{ page.cdn }}/example-{{ page.version }}.zip" target='_blank'>here</a>.</li>
+        <li>Create your site by modifying the example files.</li>
+        <li>Preview your site:<br><code class="code-block">bundle exec jekyll serve</code></li>
+      </ul>
+      {% include work-version.html %}
+      <h4>Version {{ page.version }} - Published <a href="{{ page.published-url }}" target='_blank'>here</a>.</h4>
+      <ul class="ul-features ul-version">
+        <li>Initial publication.</li>
+      </ul>
+      {% include work-bugs.html %}
+      <ul class="ul-features">
+        <li>No known issues at this time.</li>
+      </ul>
+{% include work-found-bug.html %}
+{% include work-license.html %}
+{% include work-more.html %}
+      {% include copyright.html %}
