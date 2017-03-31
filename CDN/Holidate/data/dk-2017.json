@@ -38,7 +38,7 @@
     "id": 6,
     "start_date": "2017-05-12",
     "end_date": "2017-05-12",
-    "name": "",
+    "name": "general_prayer_day",
     "local_name": "Store bededag"
   },
   {
@@ -80,7 +80,7 @@
     "id": 12,
     "start_date": "2017-12-26",
     "end_date": "2017-12-26",
-    "name": "",
+    "name": "second_christmas_day",
     "local_name": "Anden juledag"
   }
 ]}
