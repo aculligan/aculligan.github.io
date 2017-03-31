@@ -1,0 +1,86 @@
+{ "holiday": [
+  {
+    "id": 1,
+    "start_date": "2017-01-01",
+    "end_date": "2017-01-01",
+    "name": "new_year",
+    "local_name": "Nytårsdag"
+  },
+  {
+    "id": 2,
+    "start_date": "2017-04-13",
+    "end_date": "2017-04-13",
+    "name": "maundy_thursday",
+    "local_name": "Skærtorsdag"
+  },
+  {
+    "id": 3,
+    "start_date": "2017-04-14",
+    "end_date": "2017-04-14",
+    "name": "good_friday",
+    "local_name": "Langfredag"
+  },
+  {
+    "id": 4,
+    "start_date": "2017-04-16",
+    "end_date": "2017-04-16",
+    "name": "easter_sunday",
+    "local_name": "Påskedag"
+  },
+  {
+    "id": 5,
+    "start_date": "2017-04-17",
+    "end_date": "2017-04-17",
+    "name": "easter_monday",
+    "local_name": "Anden påskedag"
+  },
+  {
+    "id": 6,
+    "start_date": "2017-05-12",
+    "end_date": "2017-05-12",
+    "name": "",
+    "local_name": "Store bededag"
+  },
+  {
+    "id": 7,
+    "start_date": "2017-05-25",
+    "end_date": "2017-05-25",
+    "name": "ascension_day",
+    "local_name": "Kristi himmelfartsdag"
+  },
+  {
+    "id": 8,
+    "start_date": "2017-06-04",
+    "end_date": "2017-06-04",
+    "name": "whit_sunday",
+    "local_name": "Pinsedag"
+  },
+  {
+    "id": 9,
+    "start_date": "2017-06-05",
+    "end_date": "2017-06-05",
+    "name": "whit_monday",
+    "local_name": "Anden pinsedag"
+  },
+  {
+    "id": 10,
+    "start_date": "2017-06-05",
+    "end_date": "2017-06-05",
+    "name": "constitution_day",
+    "local_name": "Grundlovsdag"
+  },
+  {
+    "id": 11,
+    "start_date": "2017-12-25",
+    "end_date": "2017-12-25",
+    "name": "christmas_day",
+    "local_name": "Juledag"
+  },
+  {
+    "id": 12,
+    "start_date": "2017-12-26",
+    "end_date": "2017-12-26",
+    "name": "",
+    "local_name": "Anden juledag"
+  }
+]}
