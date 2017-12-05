@@ -1,0 +1,44 @@
+{ "holiday": [
+  {
+    "id": 1,
+    "start_date": "2018-01-01",
+    "end_date": "2018-01-01",
+    "name": "new_year",
+    "local_name": "New Year's Day"
+  },
+  {
+    "id": 2,
+    "start_date": "2018-03-30",
+    "end_date": "2018-03-30",
+    "name": "good_friday",
+    "local_name": "Good Friday"
+  },
+  {
+    "id": 3,
+    "start_date": "2018-05-07",
+    "end_date": "2018-05-07",
+    "name": "early_may_bh",
+    "local_name": "Early May Bank Holiday"
+  },
+  {
+    "id": 4,
+    "start_date": "2018-05-28",
+    "end_date": "2018-05-28",
+    "name": "spring_bh",
+    "local_name": "Spring Bank Holiday"
+  },
+  {
+    "id": 5,
+    "start_date": "2018-12-25",
+    "end_date": "2018-12-25",
+    "name": "christmas_day",
+    "local_name": "Christmas Day"
+  },
+  {
+    "id": 6,
+    "start_date": "2018-12-26",
+    "end_date": "2018-12-26",
+    "name": "boxing_day",
+    "local_name": "Boxing Day"
+  }
+]}

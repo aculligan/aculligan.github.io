@@ -1,0 +1,93 @@
+{ "holiday": [
+  {
+    "id": 1,
+    "start_date": "2018-01-01",
+    "end_date": "2018-01-01",
+    "name": "new_year",
+    "local_name": "Año Nuevo"
+  },
+  {
+    "id": 2,
+    "start_date": "2018-03-29",
+    "end_date": "2018-03-29",
+    "name": "maundy_thursday",
+    "local_name": "Jueves Santo"
+  },
+  {
+    "id": 3,
+    "start_date": "2018-03-30",
+    "end_date": "2018-03-30",
+    "name": "good_friday",
+    "local_name": "Viernes Santo"
+  },
+  {
+    "id": 4,
+    "start_date": "2018-04-01",
+    "end_date": "2018-04-01",
+    "name": "easter_day",
+    "local_name": "Día de Pascua"
+  },
+  {
+    "id": 5,
+    "start_date": "2018-05-01",
+    "end_date": "2018-05-01",
+    "name": "labor_day",
+    "local_name": "Día del Trabajador"
+  },
+  {
+    "id": 6,
+    "start_date": "2018-06-29",
+    "end_date": "2018-06-29",
+    "name": "peter_paul",
+    "local_name": "Día de San Pedro y San Pablo"
+  },
+  {
+    "id": 7,
+    "start_date": "2018-07-28",
+    "end_date": "2018-07-28",
+    "name": "independence_day",
+    "local_name": "Día de la Independencia"
+  },
+  {
+    "id": 8,
+    "start_date": "2018-07-29",
+    "end_date": "2018-07-29",
+    "name": "armed_forces_day",
+    "local_name": "Día de las Fuerzas Armadas"
+  },
+  {
+    "id": 9,
+    "start_date": "2018-08-30",
+    "end_date": "2018-08-30",
+    "name": "rosa",
+    "local_name": "Día de Santa Rosa de Lima"
+  },
+  {
+    "id": 10,
+    "start_date": "2018-10-08",
+    "end_date": "2018-10-08",
+    "name": "angamos",
+    "local_name": "Batalla de Angamos"
+  },
+  {
+    "id": 11,
+    "start_date": "2018-11-01",
+    "end_date": "2018-11-01",
+    "name": "all_saints",
+    "local_name": "Día de Todos los Santos"
+  },
+  {
+    "id": 12,
+    "start_date": "2018-12-08",
+    "end_date": "2018-12-08",
+    "name": "immaculate_conception",
+    "local_name": "Fiesta de la Inmaculada Concepción"
+  },
+  {
+    "id": 13,
+    "start_date": "2018-12-25",
+    "end_date": "2018-12-25",
+    "name": "christmas_day",
+    "local_name": "Navidad"
+  }
+]}
