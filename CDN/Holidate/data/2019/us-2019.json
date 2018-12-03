@@ -1,0 +1,72 @@
+{ "holiday": [
+  {
+    "id": 1,
+    "start_date": "2019-01-01",
+    "end_date": "2019-01-01",
+    "name": "new_year",
+    "local_name": "New Year's Day"
+  },
+  {
+    "id": 2,
+    "start_date": "2019-01-21",
+    "end_date": "2019-01-21",
+    "name": "mlk_day",
+    "local_name": "Martin Luther King Day"
+  },
+  {
+    "id": 3,
+    "start_date": "2019-02-18",
+    "end_date": "2019-02-18",
+    "name": "presidents_day",
+    "local_name": "Presidents' Day"
+  },
+  {
+    "id": 4,
+    "start_date": "2019-05-27",
+    "end_date": "2019-05-27",
+    "name": "memorial_day",
+    "local_name": "Memorial Day"
+  },
+  {
+    "id": 5,
+    "start_date": "2019-07-04",
+    "end_date": "2019-07-04",
+    "name": "independence_day",
+    "local_name": "Independence Day"
+  },
+  {
+    "id": 6,
+    "start_date": "2019-09-02",
+    "end_date": "2019-09-02",
+    "name": "labor_day",
+    "local_name": "Labor Day"
+  },
+  {
+    "id": 7,
+    "start_date": "2019-10-14",
+    "end_date": "2019-10-14",
+    "name": "columbus_day",
+    "local_name": "Columbus Day"
+  },
+  {
+    "id": 8,
+    "start_date": "2019-11-11",
+    "end_date": "2019-11-11",
+    "name": "veterans_day",
+    "local_name": "Veterans Day"
+  },
+  {
+    "id": 9,
+    "start_date": "2019-11-28",
+    "end_date": "2019-11-28",
+    "name": "thanksgiving_day",
+    "local_name": "Thanksgiving Day"
+  },
+  {
+    "id": 10,
+    "start_date": "2019-12-25",
+    "end_date": "2019-12-25",
+    "name": "christmas_day",
+    "local_name": "Christmas Day"
+  }
+]}
