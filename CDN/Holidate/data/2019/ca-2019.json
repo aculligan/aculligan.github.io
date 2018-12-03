@@ -1,0 +1,65 @@
+{ "holiday": [
+  {
+    "id": 1,
+    "start_date": "2019-01-01",
+    "end_date": "2019-01-01",
+    "name": "new_year",
+    "local_name": "New Year's Day"
+  },
+  {
+    "id": 2,
+    "start_date": "2019-04-19",
+    "end_date": "2019-04-19",
+    "name": "good_friday",
+    "local_name": "Good Friday"
+  },
+  {
+    "id": 3,
+    "start_date": "2019-04-22",
+    "end_date": "2019-04-22",
+    "name": "easter_monday",
+    "local_name": "Easter Monday"
+  },
+  {
+    "id": 4,
+    "start_date": "2019-05-20",
+    "end_date": "2019-05-20",
+    "name": "victoria_day",
+    "local_name": "Victoria Day"
+  },
+  {
+    "id": 5,
+    "start_date": "2019-07-01",
+    "end_date": "2019-07-01",
+    "name": "canada_day",
+    "local_name": "Canada Day"
+  },
+  {
+    "id": 6,
+    "start_date": "2019-09-02",
+    "end_date": "2019-09-02",
+    "name": "labour_day",
+    "local_name": "Labour Day"
+  },
+  {
+    "id": 7,
+    "start_date": "2019-10-14",
+    "end_date": "2019-10-14",
+    "name": "thanksgiving_day",
+    "local_name": "Thanksgiving Day"
+  },
+  {
+    "id": 8,
+    "start_date": "2019-11-11",
+    "end_date": "2019-11-11",
+    "name": "remembrance_day",
+    "local_name": "Remembrance Day"
+  },
+  {
+    "id": 9,
+    "start_date": "2019-12-25",
+    "end_date": "2019-12-25",
+    "name": "christmas_day",
+    "local_name": "Christmas Day"
+  }
+]}
