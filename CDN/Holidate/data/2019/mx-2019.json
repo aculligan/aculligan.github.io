@@ -1,0 +1,72 @@
+{ "holiday": [
+  {
+    "id": 1,
+    "start_date": "2019-01-01",
+    "end_date": "2019-01-01",
+    "name": "new_year",
+    "local_name": "Año Nuevo"
+  },
+  {
+    "id": 2,
+    "start_date": "2019-02-04",
+    "end_date": "2019-02-04",
+    "name": "constitution_day_observed",
+    "local_name": "Día de la Constitución (Observación)"
+  },
+  {
+    "id": 3,
+    "start_date": "2019-02-05",
+    "end_date": "2019-02-05",
+    "name": "constitution_day",
+    "local_name": "Día de la Constitución"
+  },
+  {
+    "id": 4,
+    "start_date": "2019-03-18",
+    "end_date": "2019-03-18",
+    "name": "benito_juarez_observed",
+    "local_name": "Natalicio de Benito Juárez (Observación)"
+  },
+  {
+    "id": 5,
+    "start_date": "2019-03-21",
+    "end_date": "2019-03-21",
+    "name": "benito_juarez",
+    "local_name": "Natalicio de Benito Juárez"
+  },
+  {
+    "id": 6,
+    "start_date": "2019-05-01",
+    "end_date": "2019-05-01",
+    "name": "labor_day",
+    "local_name": "Día del Trabajador"
+  },
+  {
+    "id": 7,
+    "start_date": "2019-09-16",
+    "end_date": "2019-09-16",
+    "name": "independence_day",
+    "local_name": "Día de la Independencia"
+  },
+  {
+    "id": 8,
+    "start_date": "2019-11-18",
+    "end_date": "2019-11-18",
+    "name": "revolution_day_observed",
+    "local_name": "Día de la Revolución (Observación)"
+  },
+  {
+    "id": 9,
+    "start_date": "2019-11-20",
+    "end_date": "2019-11-20",
+    "name": "revolution_day",
+    "local_name": "Día de la Revolución"
+  },
+  {
+    "id": 10,
+    "start_date": "2019-12-25",
+    "end_date": "2019-12-25",
+    "name": "christmas_day",
+    "local_name": "Navidad"
+  }
+]}
