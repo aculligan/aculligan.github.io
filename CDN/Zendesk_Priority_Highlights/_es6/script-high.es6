@@ -1,7 +1,5 @@
 const high = function highlightHigh() {
   if (window.location.href.indexOf('agent/filters') > 0) {
-    let $prevHighlight = $('.high-ticket-priority');
-    $prevHighlight.removeClass('high-ticket-priority');
     let $priorityField = $('td.LRm.LRp.LRq.LRr.LRs.LRt.LRu.LRv.LRw.LRx.LRy.LRz.LRaw.LRau.LRav.LRao');
     $priorityField.each(function () {
       let $this = $(this);
@@ -11,16 +9,24 @@ const high = function highlightHigh() {
       }
     });
   }
-}
+};
+
+const remove = function removeOld () {
+  let $prevHighlight = $('.high-ticket-priority');
+  $prevHighlight.removeClass('high-ticket-priority');
+};
 
 $(document).ready(function () {
+  remove();
   setTimeout(high, 1700);
 });
 
 $('*').click(function () {
+  remove();
   setTimeout(high, 1000);
 });
 
 $(window).focus(function () {
+  remove ();
   setTimeout(high, 1500);
 });

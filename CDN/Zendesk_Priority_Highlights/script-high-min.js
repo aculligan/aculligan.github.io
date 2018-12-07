@@ -1,1 +1,32 @@
-'use strict';var high=function(){if(0<window.location.href.indexOf('agent/filters')){var b=$('.high-ticket-priority');b.removeClass('high-ticket-priority');var c=$('td.LRm.LRp.LRq.LRr.LRs.LRt.LRu.LRv.LRw.LRx.LRy.LRz.LRaw.LRau.LRav.LRao');c.each(function(){var d=$(this),e=d.text();'High'==e&&d.parent().addClass('high-ticket-priority')})}};$(document).ready(function(){setTimeout(high,1700)}),$('*').click(function(){setTimeout(high,500)}),$(window).focus(function(){setTimeout(high,500)});
+const high = function highlightHigh() {
+  if (window.location.href.indexOf('agent/filters') > 0) {
+    let $priorityField = $('td.LRm.LRp.LRq.LRr.LRs.LRt.LRu.LRv.LRw.LRx.LRy.LRz.LRaw.LRau.LRav.LRao');
+    $priorityField.each(function () {
+      let $this = $(this);
+      let priority = $this.text();
+      if (priority == 'High') {
+        $this.parent().addClass('high-ticket-priority');
+      }
+    });
+  }
+};
+
+const remove = function removeOld () {
+  let $prevHighlight = $('.high-ticket-priority');
+  $prevHighlight.removeClass('high-ticket-priority');
+};
+
+$(document).ready(function () {
+  remove();
+  setTimeout(high, 1700);
+});
+
+$('*').click(function () {
+  remove();
+  setTimeout(high, 1000);
+});
+
+$(window).focus(function () {
+  remove ();
+  setTimeout(high, 1500);
+});
