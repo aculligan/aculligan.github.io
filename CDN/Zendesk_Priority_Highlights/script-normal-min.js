@@ -1,6 +1,9 @@
-const normal = function highlightNormal() {
+const removeHigh = function removeOldHigh () {
   let $prevHighlight = $('.normal-ticket-priority');
   $prevHighlight.removeClass('normal-ticket-priority');
+};
+
+const normal = function highlightNormal() {
   if (window.location.href.indexOf('agent/filters') > 0) {
     let $headerItem = $('#table0 thead tr').children();
     let priorityItemIndex

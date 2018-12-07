@@ -1,6 +1,10 @@
-const low = function highlightLow() {
+const removeLow = function removeOldLow () {
   let $prevHighlight = $('.low-ticket-priority');
   $prevHighlight.removeClass('low-ticket-priority');
+};
+
+const low = function highlightLow() {
+  remove ();
   if (window.location.href.indexOf('agent/filters') > 0) {
     let $headerItem = $('#table0 thead tr').children();
     let priorityItemIndex

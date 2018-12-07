@@ -1,6 +1,10 @@
-const urgent = function highlightUrgent() {
+const removeUrgent = function removeOldUrgent () {
   let $prevHighlight = $('.urgent-ticket-priority');
   $prevHighlight.removeClass('urgent-ticket-priority');
+};
+
+const urgent = function highlightUrgent() {
+  remove ();
   if (window.location.href.indexOf('agent/filters') > 0) {
     let $headerItem = $('#table0 thead tr').children();
     let priorityItemIndex
