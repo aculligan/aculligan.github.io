@@ -33,11 +33,9 @@ $(document).ready(function () {
 });
 
 $('*').click(function () {
-  removeHigh ();
   setTimeout(high, 700);
 });
 
 $(window).focus(function () {
-  removeHigh ();
   setTimeout(high, 700);
 });
