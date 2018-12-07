@@ -1,18 +1,13 @@
 const urgent = function highlightUrgent() {
   if (window.location.href.indexOf('agent/filters') > 0) {
-    let $priorityRow = $('.filter_tickets tbody tr');
-    $priorityRow.each(function () {
+    let $prevHighlight = $('.urgent-ticket-priority');
+    $prevHighlight.removeClass('urgent-ticket-priority');
+    let $priorityField = $('td.LRm.LRp.LRq.LRr.LRs.LRt.LRu.LRv.LRw.LRx.LRy.LRz.LRaw.LRau.LRav.LRao');
+    $priorityField.each(function () {
       let $this = $(this);
-      let $priorityField = $('td.priority');
-      let $leadingField = $('.leading');
-      let $trailingField = $('.trailing');
-      let priority = $this.find($priorityField).text();
-      let $leading = $this.find($leadingField);
-      let $trailing = $this.find($trailingField);
+      let priority = $this.text();
       if (priority == 'Urgent') {
-        $this.addClass('urgent-ticket-priority');
-        $leading.addClass('urgent-ticket-priority');
-        $trailing.addClass('urgent-ticket-priority');
+        $this.parent().addClass('urgent-ticket-priority');
       }
     });
   }
@@ -23,7 +18,7 @@ $(document).ready(function () {
 });
 
 $('*').click(function () {
-  setTimeout(urgent, 1300);
+  setTimeout(urgent, 1000);
 });
 
 $(window).focus(function () {

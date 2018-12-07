@@ -1,18 +1,13 @@
 const low = function highlightLow() {
   if (window.location.href.indexOf('agent/filters') > 0) {
-    let $priorityRow = $('.filter_tickets tbody tr');
-    $priorityRow.each(function () {
+    let $prevHighlight = $('.low-ticket-priority');
+    $prevHighlight.removeClass('low-ticket-priority');
+    let $priorityField = $('td.LRm.LRp.LRq.LRr.LRs.LRt.LRu.LRv.LRw.LRx.LRy.LRz.LRaw.LRau.LRav.LRao');
+    $priorityField.each(function () {
       let $this = $(this);
-      let $priorityField = $('td.priority');
-      let $leadingField = $('.leading');
-      let $trailingField = $('.trailing');
-      let priority = $this.find($priorityField).text();
-      let $leading = $this.find($leadingField);
-      let $trailing = $this.find($trailingField);
+      let priority = $this.text();
       if (priority == 'Low') {
-        $this.addClass('low-ticket-priority');
-        $leading.addClass('low-ticket-priority');
-        $trailing.addClass('low-ticket-priority');
+        $this.parent().addClass('low-ticket-priority');
       }
     });
   }
@@ -23,7 +18,7 @@ $(document).ready(function () {
 });
 
 $('*').click(function () {
-  setTimeout(low, 1300);
+  setTimeout(low, 1000);
 });
 
 $(window).focus(function () {
