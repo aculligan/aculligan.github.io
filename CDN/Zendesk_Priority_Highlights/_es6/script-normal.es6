@@ -1,3 +1,8 @@
+const removeNormal = function removeOldNormal () {
+  let $prevHighlightNormal = $('.normal-ticket-priority');
+  $prevHighlightNormal.removeClass('normal-ticket-priority');
+};
+
 const normal = function highlightNormal() {
   if (window.location.href.indexOf('agent/filters') > 0) {
     let $headerItem = $('#table0 thead tr').children();
@@ -23,22 +28,17 @@ const normal = function highlightNormal() {
   }
 };
 
-const remove = function removeOld () {
-  let $prevHighlight = $('.normal-ticket-priority');
-  $prevHighlight.removeClass('normal-ticket-priority');
-};
-
 $(document).ready(function () {
-  remove();
+  removeNormal ();
   setTimeout(normal, 1700);
 });
 
 $('*').click(function () {
-  remove();
+  removeNormal ();
   setTimeout(normal, 700);
 });
 
 $(window).focus(function () {
-  remove ();
+  removeNormal ();
   setTimeout(normal, 700);
 });

@@ -1,3 +1,8 @@
+const removeLow = function removeOldLow () {
+  let $prevHighlightLow = $('.low-ticket-priority');
+  $prevHighlightLow.removeClass('low-ticket-priority');
+};
+
 const low = function highlightLow() {
   if (window.location.href.indexOf('agent/filters') > 0) {
     let $headerItem = $('#table0 thead tr').children();
@@ -23,22 +28,17 @@ const low = function highlightLow() {
   }
 };
 
-const remove = function removeOld () {
-  let $prevHighlight = $('.low-ticket-priority');
-  $prevHighlight.removeClass('low-ticket-priority');
-};
-
 $(document).ready(function () {
-  remove();
+  removeLow ();
   setTimeout(low, 1700);
 });
 
 $('*').click(function () {
-  remove();
+  removeLow ();
   setTimeout(low, 700);
 });
 
 $(window).focus(function () {
-  remove ();
+  removeLow ();
   setTimeout(low, 700);
 });
