@@ -1,11 +1,23 @@
 const high = function highlightHigh() {
   if (window.location.href.indexOf('agent/filters') > 0) {
-    let $priorityField = $('td.LRm.LRp.LRq.LRr.LRs.LRt.LRu.LRv.LRw.LRx.LRy.LRz.LRaw.LRau.LRav.LRao');
-    $priorityField.each(function () {
+    let $headerItem = $('#table0 thead tr').children();
+    let priorityItemIndex
+    $headerItem.each(function (index) {
       let $this = $(this);
-      let priority = $this.text();
-      if (priority == 'High') {
-        $this.parent().addClass('high-ticket-priority');
+      let headerName = $this.text();
+      if (headerName == 'Priority') {
+        priorityItemIndex = index-2;
+      }
+    });
+
+    let $ticketRows = $('#table2 tbody tr');
+    $ticketRows.each(function () {
+      let $this = $(this);
+      let $priorityField = $this.find('td.LRm.LRp.LRq.LRr.LRs.LRt.LRu.LRv.LRw.LRx.LRy.LRz.LRaw.LRau.LRav.LRao').contents();
+      let $priorityCell = $priorityField.eq(priorityItemIndex);
+      let $priorityCellText = $priorityCell.text();
+      if ($priorityCellText == 'High') {
+        $this.addClass('high-ticket-priority');
       }
     });
   }
@@ -23,10 +35,10 @@ $(document).ready(function () {
 
 $('*').click(function () {
   remove();
-  setTimeout(high, 1000);
+  setTimeout(high, 700);
 });
 
 $(window).focus(function () {
   remove ();
-  setTimeout(high, 1500);
+  setTimeout(high, 700);
 });
