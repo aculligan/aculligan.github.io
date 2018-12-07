@@ -1,6 +1,6 @@
 const high = function highlightHigh() {
   if (window.location.href.indexOf('agent/filters') > 0) {
-    let $priorityRow = $('.filter_tickets tbody tr');
+    let $priorityRow = $('#table2 tbody tr');
     $priorityRow.each(function () {
       let $this = $(this);
       let $priorityField = $('td.priority');
