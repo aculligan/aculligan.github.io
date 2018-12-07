@@ -3,10 +3,12 @@ const high = function highlightHigh() {
     let $priorityRow = $('#table2 tbody tr');
     $priorityRow.each(function () {
       let $this = $(this);
-      let $priorityField = $('LRm.LRp.LRq.LRr.LRs.LRt.LRu.LRv.LRw.LRx.LRy.LRz.LRaw.LRau.LRav.LRao.LRat');
-      $priorityField.each(function () {
-      	console.log('priorityField');
-      });
+      let $priorityField = $('td.LRm.LRp.LRq.LRr.LRs.LRt.LRu.LRv.LRw.LRx.LRy.LRz.LRaw.LRau.LRav.LRao.LRat');
+      if ($priorityField > 0) {
+      	console.log('found');
+      } else {
+      	console.log('nothing');
+      }
     });
   }
 }
