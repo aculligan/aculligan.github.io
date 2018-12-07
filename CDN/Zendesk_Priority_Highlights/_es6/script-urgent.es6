@@ -1,26 +1,44 @@
 const urgent = function highlightUrgent() {
   if (window.location.href.indexOf('agent/filters') > 0) {
-    let $prevHighlight = $('.urgent-ticket-priority');
-    $prevHighlight.removeClass('urgent-ticket-priority');
-    let $priorityField = $('td.LRm.LRp.LRq.LRr.LRs.LRt.LRu.LRv.LRw.LRx.LRy.LRz.LRaw.LRau.LRav.LRao');
-    $priorityField.each(function () {
+    let $headerItem = $('#table0 thead tr').children();
+    let priorityItemIndex
+    $headerItem.each(function (index) {
       let $this = $(this);
-      let priority = $this.text();
-      if (priority == 'Urgent') {
-        $this.parent().addClass('urgent-ticket-priority');
+      let headerName = $this.text();
+      if (headerName == 'Priority') {
+        priorityItemIndex = index-2;
+      }
+    });
+
+    let $ticketRows = $('#table2 tbody tr');
+    $ticketRows.each(function () {
+      let $this = $(this);
+      let $priorityField = $this.find('td.LRm.LRp.LRq.LRr.LRs.LRt.LRu.LRv.LRw.LRx.LRy.LRz.LRaw.LRau.LRav.LRao').contents();
+      let $priorityCell = $priorityField.eq(priorityItemIndex);
+      let $priorityCellText = $priorityCell.text();
+      if ($priorityCellText == 'Urgent') {
+        $this.addClass('urgent-ticket-priority');
       }
     });
   }
-}
+};
+
+const remove = function removeOld () {
+  let $prevHighlight = $('.urgent-ticket-priority');
+  $prevHighlight.removeClass('urgent-ticket-priority');
+};
 
 $(document).ready(function () {
+  remove();
   setTimeout(urgent, 1700);
 });
 
 $('*').click(function () {
-  setTimeout(urgent, 1000);
+  remove();
+  setTimeout(urgent, 700);
 });
 
 $(window).focus(function () {
-  setTimeout(urgent, 1500);
+  remove ();
+  setTimeout(urgent, 700);
 });
