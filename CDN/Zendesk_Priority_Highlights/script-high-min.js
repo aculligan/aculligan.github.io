@@ -2,7 +2,7 @@ const high = function highlightHigh() {
   if (window.location.href.indexOf('agent/filters') > 0) {
     let $priorityRow = $('#table2 tbody tr');
     $priorityRow.each(function () {
-    console.log('test'++);
+    console.log('test');
       let $this = $(this);
       let $priorityField = $('td.priority');
       let $leadingField = $('.leading');
