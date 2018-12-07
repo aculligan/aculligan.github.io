@@ -1,4 +1,10 @@
+const remove = function removeOld () {
+  let $prevHighlight = $('.urgent-ticket-priority');
+  $prevHighlight.removeClass('urgent-ticket-priority');
+};
+
 const urgent = function highlightUrgent() {
+  remove ();
   if (window.location.href.indexOf('agent/filters') > 0) {
     let $headerItem = $('#table0 thead tr').children();
     let priorityItemIndex
@@ -23,22 +29,14 @@ const urgent = function highlightUrgent() {
   }
 };
 
-const remove = function removeOld () {
-  let $prevHighlight = $('.urgent-ticket-priority');
-  $prevHighlight.removeClass('urgent-ticket-priority');
-};
-
 $(document).ready(function () {
-  remove();
   setTimeout(urgent, 1700);
 });
 
 $('*').click(function () {
-  remove();
   setTimeout(urgent, 700);
 });
 
 $(window).focus(function () {
-  remove ();
   setTimeout(urgent, 700);
 });
