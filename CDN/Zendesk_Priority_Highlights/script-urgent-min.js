@@ -1,6 +1,6 @@
 const removeUrgent = function removeOldUrgent () {
-  let $prevHighlight = $('.urgent-ticket-priority');
-  $prevHighlight.removeClass('urgent-ticket-priority');
+  let $prevHighlightUrgent = $('.urgent-ticket-priority');
+  $prevHighlightUrgent.removeClass('urgent-ticket-priority');
 };
 
 const urgent = function highlightUrgent() {
