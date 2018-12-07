@@ -4,7 +4,6 @@ const removeHigh = function removeOldHigh () {
 };
 
 const high = function highlightHigh() {
-  removeHigh ();
   if (window.location.href.indexOf('agent/filters') > 0) {
     let $headerItem = $('#table0 thead tr').children();
     let priorityItemIndex
@@ -30,13 +29,16 @@ const high = function highlightHigh() {
 };
 
 $(document).ready(function () {
+  removeHigh ();
   setTimeout(high, 1700);
 });
 
 $('*').click(function () {
+  removeHigh ();
   setTimeout(high, 700);
 });
 
 $(window).focus(function () {
+  removeHigh ();
   setTimeout(high, 700);
 });

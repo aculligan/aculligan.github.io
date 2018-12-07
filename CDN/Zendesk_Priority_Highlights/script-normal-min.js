@@ -4,7 +4,6 @@ const removeNormal = function removeOldNormal () {
 };
 
 const normal = function highlightNormal() {
-  removeNormal ();
   if (window.location.href.indexOf('agent/filters') > 0) {
     let $headerItem = $('#table0 thead tr').children();
     let priorityItemIndex
@@ -30,13 +29,16 @@ const normal = function highlightNormal() {
 };
 
 $(document).ready(function () {
+  removeNormal ();
   setTimeout(normal, 1700);
 });
 
 $('*').click(function () {
+  removeNormal ();
   setTimeout(normal, 700);
 });
 
 $(window).focus(function () {
+  removeNormal ();
   setTimeout(normal, 700);
 });

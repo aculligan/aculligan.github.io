@@ -4,7 +4,6 @@ const removeUrgent = function removeOldUrgent () {
 };
 
 const urgent = function highlightUrgent() {
-  removeUrgent ();
   if (window.location.href.indexOf('agent/filters') > 0) {
     let $headerItem = $('#table0 thead tr').children();
     let priorityItemIndex
@@ -30,13 +29,16 @@ const urgent = function highlightUrgent() {
 };
 
 $(document).ready(function () {
+  removeUrgent ();
   setTimeout(urgent, 1700);
 });
 
 $('*').click(function () {
+  removeUrgent ();
   setTimeout(urgent, 700);
 });
 
 $(window).focus(function () {
+  removeUrgent ();
   setTimeout(urgent, 700);
 });
