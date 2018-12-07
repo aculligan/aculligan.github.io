@@ -1,5 +1,7 @@
 const high = function highlightHigh() {
   if (window.location.href.indexOf('agent/filters') > 0) {
+  	let $prevHighlight = $('.high-ticket-priority');
+  	$prevHighlight.removeClass('high-ticket-priority');
     let $priorityField = $('td.LRm.LRp.LRq.LRr.LRs.LRt.LRu.LRv.LRw.LRx.LRy.LRz.LRaw.LRau.LRav.LRao');
     $priorityField.each(function () {
       let $this = $(this);
