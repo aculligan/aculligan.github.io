@@ -4,7 +4,7 @@ const removeLow = function removeOldLow () {
 };
 
 const low = function highlightLow() {
-  remove ();
+  removeLow ();
   if (window.location.href.indexOf('agent/filters') > 0) {
     let $headerItem = $('#table0 thead tr').children();
     let priorityItemIndex

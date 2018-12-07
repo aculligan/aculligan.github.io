@@ -4,6 +4,7 @@ const removeNormal = function removeOldNormal () {
 };
 
 const normal = function highlightNormal() {
+  removeNormal ();
   if (window.location.href.indexOf('agent/filters') > 0) {
     let $headerItem = $('#table0 thead tr').children();
     let priorityItemIndex
