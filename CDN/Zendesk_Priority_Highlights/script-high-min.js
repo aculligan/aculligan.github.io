@@ -2,19 +2,11 @@ const high = function highlightHigh() {
   if (window.location.href.indexOf('agent/filters') > 0) {
     let $priorityRow = $('#table2 tbody tr');
     $priorityRow.each(function () {
-    	console.log('test');
       let $this = $(this);
       let $priorityField = $('LRm.LRp.LRq.LRr.LRs.LRt.LRu.LRv.LRw.LRx.LRy.LRz.LRaw.LRau.LRav.LRao.LRat');
-      let $leadingField = $('.leading');
-      let $trailingField = $('.trailing');
-      let priority = $this.find($priorityField).text();
-      let $leading = $this.find($leadingField);
-      let $trailing = $this.find($trailingField);
-      if (priority == 'High') {
-        $this.addClass('high-ticket-priority');
-        $leading.addClass('high-ticket-priority');
-        $trailing.addClass('high-ticket-priority');
-      }
+      $priorityField.each(function () {
+      	console.log('priorityField');
+      });
     });
   }
 }
