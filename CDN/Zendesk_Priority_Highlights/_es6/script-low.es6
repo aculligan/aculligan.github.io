@@ -5,7 +5,7 @@ const removeLow = function removeOldLow () {
 
 const low = function highlightLow() {
   if (window.location.href.indexOf('agent/filters') > 0) {
-    let $headerItem = $('#table0 thead tr').children();
+    let $headerItem = $('#main_panes > section.ember-view.main_panes.split_pane.flush_top.collapsible.filters > div.pane.right.section > div > div > div > div > div > table > thead > tr').children();
     let priorityItemIndex
     $headerItem.each(function (index) {
       let $this = $(this);
@@ -15,7 +15,7 @@ const low = function highlightLow() {
       }
     });
 
-    let $ticketRows = $('#table2 tbody tr');
+    let $ticketRows = $('#main_panes > section > div.pane.right.section > div > div > div > div > div > div > table > tbody > .LRbh');
     $ticketRows.each(function () {
       let $this = $(this);
       let $priorityField = $this.find('td.LRm.LRp.LRq.LRr.LRs.LRt.LRu.LRv.LRw.LRx.LRy.LRz.LRaw.LRau.LRav.LRao').contents();
