@@ -12,11 +12,10 @@ const high = function highlightHigh() {
       let headerName = $this.text();
       if (headerName == 'Priority') {
         priorityItemIndex = index-2;
-        console.log(priorityItemIndex);
       }
     });
 
-    let $ticketRows = $('#table2 tbody tr');
+    let $ticketRows = $('#main_panes > section > div.pane.right.section > div > div > div > div > div > div > table > tbody > .LRbh');
     $ticketRows.each(function () {
       let $this = $(this);
       let $priorityField = $this.find('td.LRm.LRp.LRq.LRr.LRs.LRt.LRu.LRv.LRw.LRx.LRy.LRz.LRaw.LRau.LRav.LRao').contents();
