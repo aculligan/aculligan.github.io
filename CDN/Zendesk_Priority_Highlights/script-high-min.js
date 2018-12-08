@@ -5,13 +5,14 @@ const removeHigh = function removeOldHigh () {
 
 const high = function highlightHigh() {
   if (window.location.href.indexOf('agent/filters') > 0) {
-    let $headerItem = $('#table0 thead tr').children();
+    let $headerItem = $('#main_panes > section.ember-view.main_panes.split_pane.flush_top.collapsible.filters > div.pane.right.section > div > div > div > div > div > table > thead > tr').children();
     let priorityItemIndex
     $headerItem.each(function (index) {
       let $this = $(this);
       let headerName = $this.text();
       if (headerName == 'Priority') {
         priorityItemIndex = index-2;
+        console.log(priorityItemIndex);
       }
     });
 
@@ -29,13 +30,16 @@ const high = function highlightHigh() {
 };
 
 $(document).ready(function () {
+  removeHigh ();
   setTimeout(high, 1700);
 });
 
 $('*').click(function () {
+  removeHigh ();
   setTimeout(high, 700);
 });
 
 $(window).focus(function () {
+  removeHigh ();
   setTimeout(high, 700);
 });
