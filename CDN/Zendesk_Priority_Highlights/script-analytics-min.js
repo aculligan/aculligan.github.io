@@ -6,6 +6,7 @@ const sendAnalytics = function sendUsageAnalytics() {
     ga('set', 'checkProtocolTask', function (){});
     ga('require', 'displayfeatures');
     ga('set', 'page', '/filters');
+    ga('send', 'pageview', location.pathname);
     ga('send', {
       hitType: 'event',
       eventCategory: 'Usage',
