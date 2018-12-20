@@ -15,3 +15,4 @@ const sendAnalytics = function sendUsageAnalytics() {
 $(document).ready(function () {
   setTimeout(sendAnalytics, 1700);
 });
+ 
