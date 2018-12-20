@@ -3,7 +3,7 @@
 const sendAnalytics = function sendUsageAnalytics() {
   if (window.location.href.indexOf('agent/filters') > 0) {
     let account = window.location.host;
-    let parts = fullURL.split('.');
+    let parts = account.split('.');
     let subdomain = parts[0];
     let domain = parts[1];
     ga('create', 'UA-87536814-1', 'auto');
