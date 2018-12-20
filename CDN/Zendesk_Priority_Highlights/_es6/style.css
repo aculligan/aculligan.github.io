@@ -1,19 +1,19 @@
 .low-ticket-priority {
-	background-color: #e9f3f7 !important;
+	background-color: #e0f8e0 !important;
 }
 
 .normal-ticket-priority {
-	background-color: #e5f9e5 !important;
+	background-color: #ffffd1 !important;
 }
 
 .high-ticket-priority {
-	background-color: #fff7de !important;
+	background-color: #FCDBA9 !important;
 }
 
 .urgent-ticket-priority {
-	background-color: #fceeed !important;
+	background-color: #F5B5BA !important;
 }
 
-.filter_tickets:not(.deleted) .regular:hover td {
-	background-color: #f3f3f3 !important;
+.priority-highlight:not(.deleted) .regular:hover td {
+	background-color: #dbebf2 !important;
 }

@@ -22,7 +22,7 @@ const high = function highlightHigh() {
       let $priorityCell = $priorityField.eq(priorityItemIndex);
       let $priorityCellText = $priorityCell.text();
       if ($priorityCellText == 'High') {
-        $this.addClass('high-ticket-priority');
+        $this.addClass('high-ticket-priority priority-highlight');
       }
     });
   }

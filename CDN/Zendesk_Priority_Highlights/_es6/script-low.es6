@@ -22,7 +22,7 @@ const low = function highlightLow() {
       let $priorityCell = $priorityField.eq(priorityItemIndex);
       let $priorityCellText = $priorityCell.text();
       if ($priorityCellText == 'Low') {
-        $this.addClass('low-ticket-priority');
+        $this.addClass('low-ticket-priority priority-highlight');
       }
     });
   }

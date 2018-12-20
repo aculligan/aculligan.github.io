@@ -22,7 +22,7 @@ const urgent = function highlightUrgent() {
       let $priorityCell = $priorityField.eq(priorityItemIndex);
       let $priorityCellText = $priorityCell.text();
       if ($priorityCellText == 'Urgent') {
-        $this.addClass('urgent-ticket-priority');
+        $this.addClass('urgent-ticket-priority priority-highlight');
       }
     });
   }

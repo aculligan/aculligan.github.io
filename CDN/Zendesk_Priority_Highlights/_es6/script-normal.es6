@@ -22,7 +22,7 @@ const normal = function highlightNormal() {
       let $priorityCell = $priorityField.eq(priorityItemIndex);
       let $priorityCellText = $priorityCell.text();
       if ($priorityCellText == 'Normal') {
-        $this.addClass('normal-ticket-priority');
+        $this.addClass('normal-ticket-priority priority-highlight');
       }
     });
   }
