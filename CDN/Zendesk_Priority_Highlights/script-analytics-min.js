@@ -4,6 +4,7 @@ const sendAnalytics = function sendUsageAnalytics() {
   ga('create', 'UA-87536814-1', 'auto');
   ga('set', 'checkProtocolTask', function (){});
   ga('require', 'displayfeatures');
+  ga('send', 'pageview', 'views');
   ga('send', {
     hitType: 'event',
     eventCategory: 'Usage',
@@ -15,4 +16,3 @@ const sendAnalytics = function sendUsageAnalytics() {
 $(document).ready(function () {
   setTimeout(sendAnalytics, 1700);
 });
- 
