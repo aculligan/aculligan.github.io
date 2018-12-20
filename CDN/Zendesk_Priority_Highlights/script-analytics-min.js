@@ -2,11 +2,14 @@
 
 const sendAnalytics = function sendUsageAnalytics() {
   if (window.location.href.indexOf('agent/filters') > 0) {
+    let account = window.location.host;
+    let parts = fullURL.split('.');
+    let subdomain = parts[0];
+    let domain = parts[1];
     ga('create', 'UA-87536814-1', 'auto');
     ga('set', 'checkProtocolTask', function (){});
     ga('require', 'displayfeatures');
-    ga('set', 'page', '/filters');
-    ga('send', 'pageview', location);
+    ga('set', 'page', account);
     ga('send', {
       hitType: 'event',
       eventCategory: 'Usage',
