@@ -1,6 +1,6 @@
 const removeHigh = function removeOldHigh () {
   let $prevHighlightHigh = $('.high-ticket-priority');
-  $prevHighlightHigh.removeClass('high-ticket-priority');
+  $prevHighlightHigh.removeClass('high-ticket-priority priority-highlight');
 };
 
 const high = function highlightHigh() {

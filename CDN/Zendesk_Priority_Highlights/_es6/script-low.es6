@@ -1,6 +1,6 @@
 const removeLow = function removeOldLow () {
   let $prevHighlightLow = $('.low-ticket-priority');
-  $prevHighlightLow.removeClass('low-ticket-priority');
+  $prevHighlightLow.removeClass('low-ticket-priority priority-highlight');
 };
 
 const low = function highlightLow() {
