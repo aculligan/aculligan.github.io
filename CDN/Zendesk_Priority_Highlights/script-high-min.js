@@ -18,23 +18,18 @@ const high = function highlightHigh() {
     let $ticketRows = $('#main_panes > section > div.pane.right.section > div > div > div > div > div > div > table > tbody > tr');
     $ticketRows.each(function () {
       let $this = $(this);
-      let $priorityField
       let fieldOne = $this.find('td.LRm.LRp.LRq.LRr.LRs.LRt.LRu.LRv.LRw.LRx.LRy.LRz.LRaw.LRau.LRav.LRao').contents();
       let fieldTwo = $this.find('td.LRbi.LRbm.LRbn.LRbo.LRbp.LRbq.LRbr.LRbs.LRbt.LRbu.LRz.LRbv.LRco.LRcm.LRcn.LRy').contents();
       let fieldThree = $this.find('td.LRay.LRbc.LRbd.LRbe.LRbf.LRbg.LRbh.LRbi.LRbj.LRbk.LRz.LRbl.LRce.LRcc.LRcd.LRy').contents();
 
+      let $priorityField
       if (fieldOne.length > 0) {
       	$priorityField = fieldOne;
-      }
-      console.log(priorityField);
-      if (fieldTwo.length > 0) {
+      } else if (fieldTwo.length > 0) {
       	$priorityField = fieldTwo;
-      }
-      console.log(priorityField);
-      if (fieldThree.length > 0) {
+      } else {
       	$priorityField = fieldThree;
       }
-      console.log(priorityField);
 
       let $priorityCell = $priorityField.eq(priorityItemIndex);
       let $priorityCellText = $priorityCell.text();
