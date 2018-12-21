@@ -7,12 +7,14 @@ const high = function highlightHigh() {
   console.log(window.location.href);
   if (window.location.href.indexOf('agent/filters') > 0) {
     let $headerItem = $('#main_panes > section.ember-view.main_panes.split_pane.flush_top.collapsible.filters > div.pane.right.section > div > div > div > div > div > table > thead > tr').children();
+    console.log($headerItem);
     let priorityItemIndex
     $headerItem.each(function (index) {
       let $this = $(this);
       let headerName = $this.text();
       if (headerName == 'Priority') {
         priorityItemIndex = index-2;
+        console.log(priorityItemIndex);
       }
     });
 
@@ -30,7 +32,7 @@ const high = function highlightHigh() {
 };
 
 $(document).ready(function () {
-	console.log('ready');
+	//console.log('ready');
   removeHigh ();
   setTimeout(high, 1700);
 });
@@ -42,7 +44,11 @@ $('body').click(function () {
 });
 
 $(window).focus(function () {
-	console.log('focus');
+	//console.log('focus');
   removeHigh ();
   setTimeout(high, 700);
+});
+
+window.addEventListener('hashchange', function() {
+    console.log("Hash Changed");
 });
