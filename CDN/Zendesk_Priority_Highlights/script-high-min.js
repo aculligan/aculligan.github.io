@@ -47,10 +47,10 @@ $(document).ready(function () {
 
 $('body').click(function () {
   removeHigh ();
-  setTimeout(high, 700);
+  setTimeout(high, 1000);
 });
 
 $(window).focus(function () {
   removeHigh ();
-  setTimeout(high, 700);
+  setTimeout(high, 1000);
 });
