@@ -30,16 +30,19 @@ const high = function highlightHigh() {
 };
 
 $(document).ready(function () {
+	console.log('ready');
   removeHigh ();
   setTimeout(high, 1700);
 });
 
-$('*').click(function () {
+$('body').click(function () {
+	console.log('click');
   removeHigh ();
   setTimeout(high, 700);
 });
 
 $(window).focus(function () {
+	console.log('focus');
   removeHigh ();
   setTimeout(high, 700);
 });
