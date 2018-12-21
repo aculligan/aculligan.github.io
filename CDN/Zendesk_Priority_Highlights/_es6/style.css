@@ -1,5 +1,8 @@
-.LRbd.priority-highlight:hover {
-	background-color: #dbebf2 !important;
+.low-ticket-priority:hover,
+.normal-ticket-priority:hover,
+.high-ticket-priority:hover,
+.urgent-ticket-priority:hover {
+	background-color: #edf7ff !important;
 }
 
 .low-ticket-priority {
