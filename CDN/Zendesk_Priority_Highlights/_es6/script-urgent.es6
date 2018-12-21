@@ -1,6 +1,8 @@
 const removeUrgent = function removeOldUrgent () {
-  let $prevHighlightUrgent = $('.urgent-ticket-priority');
-  $prevHighlightUrgent.removeClass('urgent-ticket-priority priority-highlight');
+  if (window.location.href.indexOf('agent/filters') > 0) {
+    let $prevHighlightUrgent = $('.urgent-ticket-priority');
+    $prevHighlightUrgent.removeClass('urgent-ticket-priority');
+  }
 };
 
 const urgent = function highlightUrgent() {
@@ -18,11 +20,23 @@ const urgent = function highlightUrgent() {
     let $ticketRows = $('#main_panes > section > div.pane.right.section > div > div > div > div > div > div > table > tbody > tr');
     $ticketRows.each(function () {
       let $this = $(this);
-      let $priorityField = $this.find('td.LRm.LRp.LRq.LRr.LRs.LRt.LRu.LRv.LRw.LRx.LRy.LRz.LRaw.LRau.LRav.LRao').contents();
+      let fieldOne = $this.find('td.LRm.LRp.LRq.LRr.LRs.LRt.LRu.LRv.LRw.LRx.LRy.LRz.LRaw.LRau.LRav.LRao').contents();
+      let fieldTwo = $this.find('td.LRbi.LRbm.LRbn.LRbo.LRbp.LRbq.LRbr.LRbs.LRbt.LRbu.LRz.LRbv.LRco.LRcm.LRcn.LRy').contents();
+      let fieldThree = $this.find('td.LRay.LRbc.LRbd.LRbe.LRbf.LRbg.LRbh.LRbi.LRbj.LRbk.LRz.LRbl.LRce.LRcc.LRcd.LRy').contents();
+
+      let $priorityField
+      if (fieldOne.length > 0) {
+        $priorityField = fieldOne;
+      } else if (fieldTwo.length > 0) {
+        $priorityField = fieldTwo;
+      } else {
+        $priorityField = fieldThree;
+      }
+
       let $priorityCell = $priorityField.eq(priorityItemIndex);
       let $priorityCellText = $priorityCell.text();
       if ($priorityCellText == 'Urgent') {
-        $this.addClass('urgent-ticket-priority priority-highlight');
+        $this.addClass('urgent-ticket-priority');
       }
     });
   }
@@ -35,10 +49,10 @@ $(document).ready(function () {
 
 $('*').click(function () {
   removeUrgent ();
-  setTimeout(urgent, 700);
+  setTimeout(urgent, 1300);
 });
 
 $(window).focus(function () {
   removeUrgent ();
-  setTimeout(urgent, 700);
+  setTimeout(urgent, 1300);
 });
