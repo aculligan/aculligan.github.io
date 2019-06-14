@@ -9,16 +9,3 @@ title: Assets
       <img src="https://aculligan.github.io/CDN/assets/Alexander%20Culligan%200001.jpg" alt="Alexander Culligan" title="Alexander Culligan" style="max-width: 50px; padding: 5px;">
     </div>
 
-<script type="text/javascript">
-	var folder = "https://aculligan.github.io/CDN/assets/";
-	$.ajax({
-	    url : folder,
-	    success: function (data) {
-	        $(data).find("a").attr("href", function (i, val) {
-	            if( val.match(/\.(jpe?g|png|gif)$/) ) { 
-	                $("body").append( "<img src='"+ folder + val +"'>" );
-	            } 
-	        });
-	    }
-	});
-</script>
