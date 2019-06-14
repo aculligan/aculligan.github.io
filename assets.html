@@ -6,10 +6,19 @@ title: Assets
 
     <div class="window-div fixed-div">
       <h1 class="h1-div h1-window h1-window-top">{{ page.title }}</h1>
-      <img src="https://aculligan.github.io/CDN/assets/Alexander%20Culligan%200001.jpg" alt="Alexander Culligan" title="Alexander Culligan" style="max-width: 50px; padding: 5px;">
+      <img src="https://aculligan.github.io/assets/images/Alexander%20Culligan%200001.jpg" alt="Alexander Culligan" title="Alexander Culligan" style="max-width: 50px; padding: 5px;">
     </div>
 
-        {% for asset in site.assets %}
-        <p>hi</p>
-        {% endfor %}
-
+<script type="text/javascript">
+	var folder = "images/";
+	$.ajax({
+	    url : folder,
+	    success: function (data) {
+	        $(data).find("a").attr("href", function (i, val) {
+	            if( val.match(/\.(jpe?g|png|gif)$/) ) { 
+	                $("body").append( "<img src='"+ folder + val +"'>" );
+	            } 
+	        });
+	    }
+	});
+</script>
