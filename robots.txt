@@ -1,27 +1,3 @@
 # Rule 1
 User-agent: *
-Allow: /CDN/CC_Quest/img/screenshot-3.png
-
-# Rule 2
-User-agent: Googlebot-Image
 Allow: /CDN/assets/
-
-# Rule 3
-User-agent: Googlebot-Image
-Allow: /
-
-# Rule 4
-User-agent: *
-Allow: /*.jpg$
-
-# Rule 5
-User-agent: *
-Allow: /*.jpeg$
-
-# Rule 6
-User-agent: *
-Allow: /*.png$
-
-# Rule 7
-User-agent: *
-Allow: /*.gif$
