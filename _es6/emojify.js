@@ -6,5 +6,5 @@
 
   emojify.run();
 
-  $('g-emoji img').attr('title', '');
+  $('g-emoji img').attr('title', 'Alexander Culligan');
 })();
