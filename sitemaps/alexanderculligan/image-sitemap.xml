@@ -2,6 +2,279 @@
 
 <urlset  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"> 
 	<url>
+		<loc>http://alexanderculligan.com/work</loc>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/CC_Quest/img/logo-promotion.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/Universal_App_Assets/img/emoji/zendesk.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/Zendesk_Chat_Ticket_Bubbles/img/logo-promotion.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/Universal_App_Assets/img/emoji/chrome.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/devterm/img/logo-promotion.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/Universal_App_Assets/img/emoji/ruby-gem.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+			<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/Universal_App_Assets/img/emoji/jekyll.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/Holidate/img/logo-promotion.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/localeISO/img/logo-promotion.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/Universal_App_Assets/img/emoji/javascript.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/Zendesk_Priority_Highlights/img/logo-promotion.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/Secret_Service/img/logo-promotion.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/SLA_Event_Tracker/img/logo-promotion.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+  </url>
+	<url>
+		<loc>http://alexanderculligan.com/tips</loc>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/Universal_App_Assets/img/emoji/zendesk.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+  </url>
+	<url>
+		<loc>http://alexanderculligan.com/tips/commentbadge</loc>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/Universal_App_Assets/img/emoji/zendesk.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/Tips/Zendesk_Help_Center_comment_ticket_badge/screenshot-1.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/Tips/Zendesk_Help_Center_comment_ticket_badge/screenshot-2.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/Universal_App_Assets/img/emoji/exclamation.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/Universal_App_Assets/img/emoji/warning.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+  </url>
+	<url>
+		<loc>http://alexanderculligan.com/tips/moderatorcontrols</loc>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/Universal_App_Assets/img/emoji/zendesk.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/Tips/Zendesk_Help_Center_Community_Moderator_Controls/screenshot-1.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/Tips/Zendesk_Help_Center_Community_Moderator_Controls/screenshot-2.gif</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/Universal_App_Assets/img/emoji/exclamation.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/Universal_App_Assets/img/emoji/warning.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+  </url>
+  <url>
+		<loc>http://alexanderculligan.com/work/ccquest</loc>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/CC_Quest/img/screenshot-1.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/CC_Quest/img/screenshot-2.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/CC_Quest/img/screenshot-3.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/CC_Quest/img/working.gif</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+  </url>
+  <url>
+		<loc>http://alexanderculligan.com/work/chatbubbles</loc>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/Zendesk_Chat_Ticket_Bubbles/img/screenshot-1.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/Zendesk_Chat_Ticket_Bubbles/img/screenshot-2.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+  </url>
+  <url>
+		<loc>http://alexanderculligan.com/work/devterm</loc>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/devterm/img/screenshot-1.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/devterm/img/screenshot-2.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/devterm/img/screenshot-3.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/devterm/img/screenshot-4.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+  </url>
+  <url>
+		<loc>http://alexanderculligan.com/work/holidate</loc>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/Holidate/img/screenshot-1.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/Holidate/img/screenshot-2.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/Holidate/img/screenshot-3.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+  </url>
+  <url>
+		<loc>http://alexanderculligan.com/work/priorityhighlights</loc>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/Zendesk_Priority_Highlights/img/screenshot-1.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/Zendesk_Priority_Highlights/img/screenshot-2.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/Zendesk_Priority_Highlights/img/screenshot-3.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+  </url>
+  <url>
+		<loc>http://alexanderculligan.com/work/secretservice</loc>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/Secret_Service/img/image1.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/Secret_Service/img/screenshot-1.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/Secret_Service/img/image2.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/Secret_Service/img/screenshot-2.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/Secret_Service/img/screenshot-3.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+  </url>
+  <url>
+		<loc>http://alexanderculligan.com/work/slatracker</loc>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/SLA_Event_Tracker/img/screenshot-1.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/SLA_Event_Tracker/img/screenshot-2.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://alexanderculligan.com/CDN/SLA_Event_Tracker/img/screenshot-3.png</image:loc>
+			<image:title>Alexander Culligan</image:title>
+			<image:caption>Alexander Culligan</image:caption>
+		</image:image>
+  </url>
+	<url>
 		<loc>http://alexanderculligan.com/assets</loc>
 		<image:image>
 		<image:loc>http://alexanderculligan.com/CDN/assets/Alexander%20Culligan%2000001.jpg</image:loc>
