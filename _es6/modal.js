@@ -32,7 +32,9 @@
     $modal.css('display', 'block');
     $modalImg.attr({
       src: imgSrc,
-      value: imgID
+      value: imgID,
+      alt: 'Alexander Culligan',
+      title: 'Alexander Culligan'
     });
     if (imgID !== first && imgID !== last) {
       $prev.css('display', 'inline-block');
