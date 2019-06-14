@@ -1,6 +1,6 @@
 # Site settings
 title : Web Developer
-description: Alex Culligan portfolio
+description: Alexander Culligan portfolio
 baseurl: ''
 url: 'https://aculligan.github.io'
 ga: UA-88468730-1
@@ -12,7 +12,7 @@ collections:
 
 # Author info
 author :
-  name : Alex Culligan
+  name : Alexander Culligan
   title: Front End Web Developer
   email : support@alexculligan.com
   github :
