@@ -1,3 +1,19 @@
 # Rule 1
 User-agent: *
-Allow: /CDN/assets/
+Allow: /
+
+# Rule 2
+User-agent: *
+Allow: /*.gif$
+
+# Rule 3
+User-agent: *
+Allow: /*.jpg$
+
+# Rule 4
+User-agent: *
+Allow: /*.png$
+
+# Rule 5
+User-agent: *
+Allow: /*.jpeg$
