@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for https://aculligan.github.io/</title>
+  <link>https://aculligan.github.io/</link>
+
+<item>
+     <link>https://aculligan.github.io/</link>
+     <title>Alex Culligan - Web Developer</title>
+     <description>Alex Culligan portfolio</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://aculligan.github.io/work</link>
+     <title>Alex Culligan - Work</title>
+     <description>Alex Culligan portfolio</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://aculligan.github.io/tips</link>
+     <title>Alex Culligan - Tips</title>
+     <description>Alex Culligan portfolio</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://aculligan.github.io/contact</link>
+     <title>Alex Culligan - Contact</title>
+     <description>Alex Culligan portfolio</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://aculligan.github.io/assets</link>
+     <title>Alex Culligan - Assets</title>
+     <description>Alex Culligan portfolio</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://aculligan.github.io/work/ccquest</link>
+     <title>Alex Culligan - CC Quest</title>
+     <description>Alex Culligan portfolio</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://aculligan.github.io/work/chatbubbles</link>
+     <title>Alex Culligan - Chat Ticket Bubbles</title>
+     <description>Alex Culligan portfolio</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://aculligan.github.io/work/devterm</link>
+     <title>Alex Culligan - DevTerm</title>
+     <description>Alex Culligan portfolio</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://aculligan.github.io/work/holidate</link>
+     <title>Alex Culligan - Holidate</title>
+     <description>Alex Culligan portfolio</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://aculligan.github.io/work/localeISO</link>
+     <title>Alex Culligan - localeISO.js</title>
+     <description>Alex Culligan portfolio</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://aculligan.github.io/work/priorityhighlights</link>
+     <title>Alex Culligan - Priority Highlights</title>
+     <description>Alex Culligan portfolio</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://aculligan.github.io/work/secretservice</link>
+     <title>Alex Culligan - Secret Service</title>
+     <description>Alex Culligan portfolio</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://aculligan.github.io/work/slatracker</link>
+     <title>Alex Culligan - SLA Event Tracker</title>
+     <description>Alex Culligan portfolio</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://aculligan.github.io/tips/commentbadge</link>
+     <title>Alex Culligan - Comment Ticket Badge</title>
+     <description>Alex Culligan portfolio</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://aculligan.github.io/tips/moderatorcontrols</link>
+     <title>Alex Culligan - Community Moderator Controls</title>
+     <description>Alex Culligan portfolio</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://aculligan.github.io/license</link>
+     <title>Alex Culligan - License</title>
+     <description>Alex Culligan portfolio</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  
