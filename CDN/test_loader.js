@@ -1,5 +1,5 @@
 (function () {
-	var folder = "assets/";
+	var folder = "https://raw.githubusercontent.com/aculligan/aculligan.github.io/master/CDN/assets/";
 	$.ajax({
 	    url : folder,
 	    success: function (data) {
