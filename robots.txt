@@ -17,3 +17,11 @@ Allow: /*.png$
 # Rule 5
 User-agent: *
 Allow: /*.jpeg$
+
+# Rule 6
+User-agent: Googlebot
+Disallow:
+
+# Rule 7
+User-agent: Googlebot-image
+Disallow:
