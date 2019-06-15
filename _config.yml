@@ -1,6 +1,7 @@
 # Site settings
 title : Web Developer
 description: Alexander Culligan portfolio
+keywords: Alexander Culligan,Alexander Michael Culligan,Alex Culligan,HTML,CSS,XML,JavaScript
 baseurl: ''
 url: 'https://aculligan.github.io'
 ga: UA-88468730-1
