@@ -1,25 +1,8 @@
 	<head>
 		<!-- Google Analytics -->
-		<script>
-			window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-			ga('create', '{{ site.ga }}', 'auto');
-			ga('send', 'pageview');
-		</script>
-		<script type="text/javascript">
-			window.addEventListener('load', function()
-			{
-				if(window.ga && ga.create) 
-				{
-					console.log('Google Analytics is loaded. Website should work properly');
-				}
-				else 
-				{
-					console.log('You currently have an ad blocker installed. Ad blockers will cause this website not to work properly. Please whitelist this website and reload the page.'); 
-					alert('You currently have an ad blocker installed. Ad blockers will cause this website not to work properly. Please whitelist this website and reload the page.');  
-				}
-			}, false);
-		</script>
-		<script async src='https://www.google-analytics.com/analytics.js'></script>
+		<script src='/CDN/Universal_App_Assets/Google_Analytics.js'></script>
+		<script src="/assets/js/ga-min.js"></script>
+		<script src='/CDN/Universal_App_Assets/Google_Analytics_Error.js'></script>
 		<!-- End Google Analytics -->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
