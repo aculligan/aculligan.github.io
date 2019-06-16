@@ -10,19 +10,12 @@
 			{
 				if(window.ga && ga.create) 
 				{
-					console.log('Google Analytics is loaded');
-					var img = document.createElement('img');
-					img.setAttribute('style','display:none;');
-					img.src = '/collect.php?tid=UA-88468730-1&ec=Allowing&ea=Google%20Analytics';
-					document.body.appendChild(img);
+					console.log('Google Analytics is loaded. Website should work properly');
 				}
 				else 
 				{
-					console.log('Google Analytics is not loaded');
-					var img = document.createElement('img');
-					img.setAttribute('style','display:none;');
-					img.src = '/collect.php?tid=UA-88468730-1&ec=Blocking&ea=Google%20Analytics';
-					document.body.appendChild(img);    
+					console.log('You currently have an ad blocker installed. Ad blockers will cause this website not to work properly. Please whitelist this website and reload the page.'); 
+					alert('You currently have an ad blocker installed. Ad blockers will cause this website not to work properly. Please whitelist this website and reload the page.');  
 				}
 			}, false);
 		</script>
