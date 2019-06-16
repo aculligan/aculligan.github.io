@@ -5,6 +5,27 @@
 			ga('create', '{{ site.ga }}', 'auto');
 			ga('send', 'pageview');
 		</script>
+		<script type="text/javascript">
+			window.addEventListener('load', function()
+			{
+				if(window.ga && ga.create) 
+				{
+					console.log('Google Analytics is loaded');
+					var img = document.createElement('img');
+					img.setAttribute('style','display:none;');
+					img.src = '/collect.php?tid=UA-88468730-1&ec=Allowing&ea=Google%20Analytics';
+					document.body.appendChild(img);
+				}
+				else 
+				{
+					console.log('Google Analytics is not loaded');
+					var img = document.createElement('img');
+					img.setAttribute('style','display:none;');
+					img.src = '/collect.php?tid=UA-88468730-1&ec=Blocking&ea=Google%20Analytics';
+					document.body.appendChild(img);    
+				}
+			}, false);
+		</script>
 		<script async src='https://www.google-analytics.com/analytics.js'></script>
 		<!-- End Google Analytics -->
 		<meta charset="utf-8">
