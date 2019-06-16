@@ -10,7 +10,7 @@
 			console.log('You are currently using an ad blocker. Ad blockers will cause things not to work properly in some cases. Please whitelist this website and reload the page.');
 			alert('You are currently using an ad blocker. Ad blockers will cause things not to work properly in some cases. Please whitelist this website and reload the page.');
 			throw new Error("Something went badly wrong!");
-			$('script').stop();
+			window.stop();
 		}
 	}, false);
 })();
