@@ -20,6 +20,7 @@ const applyNormalHighlight = function highlightNormal () {
     });
 
     let $ticketRows = $('#main_panes > section > div.pane.right.section > div > div > div > div > div > div > table > tbody > tr');
+    let fieldFound
 
     $ticketRows.each(function () {
       let $thisRow = $(this);
@@ -31,20 +32,19 @@ const applyNormalHighlight = function highlightNormal () {
 
       if (fieldOne.length > 0) {
         $priorityField = fieldOne;
-        console.log('it was fieldOne');
+        console.log('Zendesk Priority Highlights: fieldOne');
       } else if (fieldTwo.length > 0) {
         $priorityField = fieldTwo;
-        console.log('it was fieldTwo');
+        console.log('Zendesk Priority Highlights: fieldTwo');
       } else if (fieldThree.length > 0) {
         $priorityField = fieldThree;
-        console.log('it was fieldThree');
-      } else if (fieldFour.length > 0) {
-        $priorityField = fieldFour;
-        console.log('it was fieldFour');
+        console.log('Zendesk Priority Highlights: fieldThree');
       } else {
-        console.error('Could not find "Priority Field"');
+        $priorityField = fieldFour;
+        console.log('Zendesk Priority Highlights: fieldFour');
       }
 
+      fieldFound = $priorityField
       let $priorityCell = $priorityField.eq(priorityItemIndex);
       let $priorityCellText = $priorityCell.text();
 
@@ -52,6 +52,10 @@ const applyNormalHighlight = function highlightNormal () {
         $(this).addClass('zph-ntp zph-hltd');
       }
     });
+
+    if (fieldFound.length <= 0) {
+      console.log('Zendesk Priority Highlights: Could not find `Priority Field`');
+    }
   }
 };
 
