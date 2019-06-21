@@ -25,9 +25,10 @@ const applyNormalHighlight = function highlightNormal () {
     $ticketRows.each(function () {
       let $thisRow = $(this);
       let fieldOne = $thisRow.find('td.LRm.LRp.LRq.LRr.LRs.LRt.LRu.LRv.LRw.LRy.LRz.LRbl.LRbm.LRbn.LRav.LRaw.LRap').contents();
-      let fieldTwo = $thisRow.find('td.LRbi.LRbm.LRbn.LRbo.LRbp.LRbq.LRbr.LRbs.LRbt.LRbu.LRz.LRbv.LRco.LRcm.LRcn.LRy').contents();
+      let fieldTwo = $thisRow.find('td.LRm.LRp.LRq.LRr.LRs.LRt.LRu.LRv.LRw.LRy.LRz.LRbh.LRbi.LRci.LRav.LRaw.LRap').contents();
       let fieldThree = $thisRow.find('td.LRay.LRbc.LRbd.LRbe.LRbf.LRbg.LRbh.LRbi.LRbj.LRbk.LRz.LRbl.LRce.LRcc.LRcd.LRy').contents();
       let fieldFour = $thisRow.find('td.LRm.LRp.LRq.LRr.LRs.LRt.LRu.LRv.LRw.LRx.LRy.LRz.LRaw.LRau.LRav.LRao').contents();
+      let fieldFive = $thisRow.find('td.LRm.LRp.LRq.LRr.LRs.LRt.LRu.LRv.LRw.LRy.LRz.LRbh.LRbi.LRbj.LRav.LRaw.LRap').contents();
       let $priorityField
 
       if (fieldOne.length > 0) {
@@ -39,14 +40,19 @@ const applyNormalHighlight = function highlightNormal () {
       } else if (fieldThree.length > 0) {
         $priorityField = fieldThree;
         console.log('Zendesk Priority Highlights: fieldThree');
-      } else {
+      } else if (fieldFour.length > 0) {
         $priorityField = fieldFour;
         console.log('Zendesk Priority Highlights: fieldFour');
+      } else {
+        $priorityField = fieldFive;
+        console.log('Zendesk Priority Highlights: fieldFive');
       }
 
       fieldFound = $priorityField
       let $priorityCell = $priorityField.eq(priorityItemIndex);
+      console.log($priorityCell);
       let $priorityCellText = $priorityCell.text();
+      console.log($priorityCellText);
 
       if ($priorityCellText == 'Normal') {
         $(this).addClass('zph-ntp zph-hltd');
