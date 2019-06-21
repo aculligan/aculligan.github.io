@@ -5,10 +5,12 @@ const removeNormalHighlight = function removeOldNormal () {
   }
 };
 
-const applyNormalHighlight = function highlightNormal() {
+const applyNormalHighlight = function highlightNormal () {
   if (window.location.href.indexOf('agent/filters') > 0) {
     let $tableHeadRow = $('#main_panes > section.ember-view.main_panes.split_pane.flush_top.collapsible.filters > div.pane.right.section > div > div > div > div > div > table > thead > tr');
+    console.log('$tableHeadRow found');
     let $tableHeadRowChildren = $tableHeadRow.children();
+    console.log('$tableHeadRowChildren found');
     let priorityItemIndex
 
     $tableHeadRowChildren.each(function (index) {
@@ -16,10 +18,12 @@ const applyNormalHighlight = function highlightNormal() {
       let childHeaderName = $thisRowChild.text();
       if (childHeaderName == 'Priority') {
         priorityItemIndex = index-2;
+        console.log(priorityItemIndex);
       }
-    };
+    });
 
     let $ticketRows = $('#main_panes > section > div.pane.right.section > div > div > div > div > div > div > table > tbody > tr');
+    console.log('$ticketRows found');
     $ticketRows.each(function () {
       let $thisRow = $(this);
       let fieldOne = $thisRow.find('td.LRm.LRp.LRq.LRr.LRs.LRt.LRu.LRv.LRw.LRx.LRy.LRz.LRaw.LRau.LRav.LRao').contents();
@@ -48,7 +52,7 @@ const applyNormalHighlight = function highlightNormal() {
       if ($priorityCellText == 'Normal') {
         $this.addClass('normal-ticket-priority');
       }
-    };
+    );
   }
 };
 
