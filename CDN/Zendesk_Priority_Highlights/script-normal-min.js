@@ -24,6 +24,7 @@ const applyNormalHighlight = function highlightNormal () {
 
     let $ticketRows = $('#main_panes > section > div.pane.right.section > div > div > div > div > div > div > table > tbody > tr');
     console.log('$ticketRows found');
+
     $ticketRows.each(function () {
       let $thisRow = $(this);
       let fieldOne = $thisRow.find('td.LRm.LRp.LRq.LRr.LRs.LRt.LRu.LRv.LRw.LRx.LRy.LRz.LRaw.LRau.LRav.LRao').contents();
@@ -51,8 +52,9 @@ const applyNormalHighlight = function highlightNormal () {
 
       if ($priorityCellText == 'Normal') {
         $this.addClass('normal-ticket-priority');
+        console.log('IT WORKS!');
       }
-    );
+    });
   }
 };
 
