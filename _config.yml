@@ -40,7 +40,7 @@ permalink: pretty
 sass:
   sass_dir: _sass
   style: compressed
-exclude: ['LICENSE.txt', 'README.md']
+exclude: ['LICENSE.txt', 'README.md', '/CDN', '/sitemaps']
 # Build settings
 
 # Compress HTML settings
