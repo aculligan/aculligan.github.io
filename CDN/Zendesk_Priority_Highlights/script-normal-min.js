@@ -1,16 +1,14 @@
 const removeNormalHighlight = function removeOldNormal () {
   if (window.location.href.indexOf('agent/filters') > 0) {
-    let $prevHighlightNormal = $('.normal-ticket-priority');
-    $prevHighlightNormal.removeClass('normal-ticket-priority');
+    let $prevHighlightNormal = $('.zph-ntp');
+    $prevHighlightNormal.removeClass('zph-ntp zph-hltd');
   }
 };
 
 const applyNormalHighlight = function highlightNormal () {
   if (window.location.href.indexOf('agent/filters') > 0) {
     let $tableHeadRow = $('#main_panes > section.ember-view.main_panes.split_pane.flush_top.collapsible.filters > div.pane.right.section > div > div > div > div > div > table > thead > tr');
-    console.log('$tableHeadRow found');
     let $tableHeadRowChildren = $tableHeadRow.children();
-    console.log('$tableHeadRowChildren found');
     let priorityItemIndex
 
     $tableHeadRowChildren.each(function (index) {
@@ -18,19 +16,17 @@ const applyNormalHighlight = function highlightNormal () {
       let childHeaderName = $thisRowChild.text();
       if (childHeaderName == 'Priority') {
         priorityItemIndex = index-2;
-        console.log(priorityItemIndex);
       }
     });
 
     let $ticketRows = $('#main_panes > section > div.pane.right.section > div > div > div > div > div > div > table > tbody > tr');
-    console.log('$ticketRows found');
 
     $ticketRows.each(function () {
       let $thisRow = $(this);
-      let fieldOne = $thisRow.find('td.LRm.LRp.LRq.LRr.LRs.LRt.LRu.LRv.LRw.LRx.LRy.LRz.LRaw.LRau.LRav.LRao').contents();
+      let fieldOne = $thisRow.find('td.LRm.LRp.LRq.LRr.LRs.LRt.LRu.LRv.LRw.LRy.LRz.LRbl.LRbm.LRbn.LRav.LRaw.LRap').contents();
       let fieldTwo = $thisRow.find('td.LRbi.LRbm.LRbn.LRbo.LRbp.LRbq.LRbr.LRbs.LRbt.LRbu.LRz.LRbv.LRco.LRcm.LRcn.LRy').contents();
       let fieldThree = $thisRow.find('td.LRay.LRbc.LRbd.LRbe.LRbf.LRbg.LRbh.LRbi.LRbj.LRbk.LRz.LRbl.LRce.LRcc.LRcd.LRy').contents();
-      let fieldFour = $thisRow.find('td.LRm.LRp.LRq.LRr.LRs.LRt.LRu.LRv.LRw.LRy.LRz.LRbl.LRbm.LRbn.LRav.LRaw.LRap').contents();
+      let fieldFour = $thisRow.find('td.LRm.LRp.LRq.LRr.LRs.LRt.LRu.LRv.LRw.LRx.LRy.LRz.LRaw.LRau.LRav.LRao').contents();
       let $priorityField
 
       if (fieldOne.length > 0) {
@@ -42,17 +38,18 @@ const applyNormalHighlight = function highlightNormal () {
       } else if (fieldThree.length > 0) {
         $priorityField = fieldThree;
         console.log('it was fieldThree');
-      } else {
+      } else if (fieldFour.length > 0) {
         $priorityField = fieldFour;
         console.log('it was fieldFour');
+      } else {
+        console.error('Could not find "Priority Field"');
       }
 
       let $priorityCell = $priorityField.eq(priorityItemIndex);
       let $priorityCellText = $priorityCell.text();
 
       if ($priorityCellText == 'Normal') {
-        $this.addClass('normal-ticket-priority');
-        console.log('IT WORKS!');
+        $(this).addClass('zph-ntp zph-hltd');
       }
     });
   }
