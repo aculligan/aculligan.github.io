@@ -1,4 +1,6 @@
+console.log('applied');
 if (window.location.href.indexOf('agent/filters') > 0) {
+  console.log('loaded');
   const removeNormalHighlight = function removeOldNormal () {
     let $prevHighlightNormal = $('.zph-ntp');
     $prevHighlightNormal.removeClass('zph-ntp zph-hltd');
