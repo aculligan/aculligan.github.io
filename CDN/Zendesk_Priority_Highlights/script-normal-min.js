@@ -1,9 +1,9 @@
-const removeNormalHighlight = function removeOldNormal () {
+const removeNormalHighlight = function () {
   let $prevHighlightNormal = $('.zph-ntp');
   $prevHighlightNormal.removeClass('zph-ntp zph-hltd');
 };
 
-const applyNormalHighlight = function highlightNormal () {
+const applyNormalHighlight = function () {
   let $tableHeadRow = $('#main_panes > section.ember-view.main_panes.split_pane.flush_top.collapsible.filters > div.pane.right.section > div > div > div > div > div > table > thead > tr');
   let $tableHeadRowChildren = $tableHeadRow.children();
   let priorityItemIndex
@@ -43,8 +43,6 @@ $(document).ready(function () {
   if (window.location.href.indexOf('agent/filters') > 0) {
     removeNormalHighlight ();
     setTimeout(applyNormalHighlight, 1700);
-  } else {
-    console.log('Zendesk Priority Highlights will only run on the "Views" page');
   }
 });
 
@@ -52,8 +50,6 @@ $('*').click(function () {
   if (window.location.href.indexOf('agent/filters') > 0) {
     removeNormalHighlight ();
     setTimeout(applyNormalHighlight, 1300);
-  } else {
-    console.log('Zendesk Priority Highlights will only run on the "Views" page');
   }
 });
 
@@ -61,7 +57,5 @@ $(window).focus(function () {
   if (window.location.href.indexOf('agent/filters') > 0) {
     removeNormalHighlight ();
     setTimeout(applyNormalHighlight, 1300);
-  } else {
-    console.log('Zendesk Priority Highlights will only run on the "Views" page');
   }
 });
