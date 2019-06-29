@@ -3,8 +3,10 @@ $anonymous-pro: 'Anonymous Pro', monospace;
 $gotham-rounded: 'Gotham Rounded A', 'Gotham Rounded B', 'Gotham Rounded', Helvetica, Arial, sans-serif;
 $gotham: Gotham, gotham, Verdana, sans-serif;
 $proxima-nova: 'Proxima Nova', sans-serif;
+$roboto: 'Roboto', sans-serif;
 
 /*** Colors ***/
+$abbey: #57595d; /* rgb(87, 89, 93) */
 $affair: #734988; /* rgb(115,73,136) */
 $algae: #03363d; /* rgb(3,54,61) */
 $aluminum: #999999; /* rgb(153,153,153) */
@@ -25,6 +27,7 @@ $chateau-green: #16ba52; /* rgb(22, 186, 82) */
 $columbia-blue: #a8d8ff; /* rgb(168, 216, 255) */
 $cool-blue: #0a91ff; /* rgb(10, 145, 255) */
 $coral-candy: #efcbc9; /* rgb(239, 203, 201) */
+$cream: #ffffd1; /* rgb(255, 255, 209) */
 $creme-brulee: #ffdc99; /* rgb(255, 220, 153) */
 $cupid: #fab4c9; /* rgb(250, 180, 201) */
 $curious-blue: #358fb2; /* rgb(53, 143, 178) */
@@ -38,8 +41,12 @@ $east-side: #b083c8; /* rgb(176, 131, 200) */
 $energy-yellow: #f7da4d; /* rgb(247, 218, 77) */
 $festival: #f2ce4a; /* rgb(242, 206, 74) */
 $flamingo: #eb6651; /* rgb(235, 102, 81) */
+$flush-mahogany: #cc3340 /* rgb() */
+$flush-mahogany: #cc3340 /* rgb(204, 51, 64) */
 $gainsboro: #dddddd; /* rgb(221, 221, 221) */
 $golden-dream: #efc93d; /* rgb(239, 201, 61) */
+$gray-chateau: #9aa0a6; /* rgb(154, 160, 166) */
+$green-romance: #e0f8e0; /* rgb(224, 248, 224) */
 $green: #06e908; /* rgb(6, 233, 8) */
 $hippie-blue: #6495ba; /* rgb(100, 149, 186) */
 $indian-red: #cf645c; /* rgb(207, 100, 92) */
@@ -48,13 +55,16 @@ $jonquil: #ffdd5f; /* rgb(255, 221, 95) */
 $jumbo: #808184; /* rgb(128, 129, 132) */
 $karl: #f3f0ee; /* rgb(243, 240, 238) */
 $lemon-chiffon: #fff3ca; /* rgb(255, 243, 202) */
+$light-apricot: #fcdba9; /* rgb(252, 219, 169) */
 $light-crimson: #f3749a; /* rgb(243, 116, 154) */
+$light-iron: #dddedf; /* rgb(221, 222, 223) */
 $lily-white: #ebebeb; /* rgb(235, 235, 235) */
 $lola: #b9a4c3; /* rgb(185, 164, 195) */
 $mabel: #cce3ec; /* rgb(204, 227, 236) */
 $magic-mint: #aaf3c4; /* rgb(170, 243, 196) */
 $malibu: #5ebbde; /* rgb(94, 187, 222) */
 $mandy: #eb4962; /* rgb(235, 73, 98) */
+$mandys-pink: #f5b5ba; /* rgb(245, 181, 186) */
 $marigold: #ffc800; /* rgb(255, 200, 0) */
 $maya-blue: #61b8ff; /* rgb(97, 184, 255) */
 $monsoon: #777777; /* rgb(119, 119, 119) */
@@ -84,7 +94,9 @@ $remy: #f7cecb; /* rgb(247, 206, 203) */
 $saffron-mango: #fac157; /* rgb(250, 193, 87) */
 $sea-buckthorn: #f79a3e; /* rgb(247, 154, 62) */
 $shamrock: #45d97b; /* rgb(69, 217, 123) */
+$shark: #202124; /* rgb(32, 33, 36) */
 $sherpa-blue: #04444d; /* rgb(4, 68, 77) */
+$shuttle-gray: #5f6368; /* rgb(95, 99, 104) */
 $silver-sand: #bbbbbb; /* rgb(187, 187, 187) */
 $sky-blue: #78cdec; /* rgb(120, 205, 236) */
 $snow: #fbfbfb; /* rgb(251, 251, 251) */
@@ -104,3 +116,106 @@ $wewak: #ef9d97; /* rgb(239, 157, 151) */
 $white-smoke: #f8f8f8; /* rgb(248, 248, 248) */
 $white: #ffffff; /* rgb(255, 255, 255) */
 $wisteria: #9572af; /* rgb(149, 114, 175) */
+$zd-color-black: #000;
+$zd-color-blue-100: #edf7ff;
+$zd-color-blue-200: #cee2f2;
+$zd-color-blue-300: #adcce4;
+$zd-color-blue-400: #5293c7;
+$zd-color-blue-500: #337fbd;
+$zd-color-blue-600: #1f73b7;
+$zd-color-blue-700: #144a75;
+$zd-color-blue-800: #0f3554;
+$zd-color-chat-orange: #f79a3e;
+$zd-color-connect-red: #eb6651;
+$zd-color-explore-blue: #30aabc;
+$zd-color-green-100: #edf8f4;
+$zd-color-green-200: #d1e8df;
+$zd-color-green-300: #aecfc2;
+$zd-color-green-400: #5eae91;
+$zd-color-green-500: #228f67;
+$zd-color-green-600: #038153;
+$zd-color-green-700: #186146;
+$zd-color-green-800: #0b3b29;
+$zd-color-grey-100: #f8f9f9;
+$zd-color-grey-200: #e9ebed;
+$zd-color-grey-300: #d8dcde;
+$zd-color-grey-400: #c2c8cc;
+$zd-color-grey-500: #87929d;
+$zd-color-grey-600: #68737d;
+$zd-color-grey-700: #49545c;
+$zd-color-grey-800: #2f3941;
+$zd-color-guide-pink: #eb4962;
+$zd-color-kale-100: #f5fbfc;
+$zd-color-kale-200: #c1d6d9;
+$zd-color-kale-300: #819a9e;
+$zd-color-kale-400: #56777a;
+$zd-color-kale-500: #335d63;
+$zd-color-kale-600: #04444d;
+$zd-color-kale-700: #03363d;
+$zd-color-kale-800: #012b30;
+$zd-color-message-green: #37b8af;
+$zd-color-red-100: #fff0f1;
+$zd-color-red-200: #f5d5d8;
+$zd-color-red-300: #f5b5ba;
+$zd-color-red-400: #e35b66;
+$zd-color-red-500: #d93f4c;
+$zd-color-red-600: #cc3340;
+$zd-color-red-700: #8c232c;
+$zd-color-red-800: #681219;
+$zd-color-secondary-azure-400: #3091ec;
+$zd-color-secondary-azure-600: #1371d6;
+$zd-color-secondary-azure-M400: #5f8dcf;
+$zd-color-secondary-azure-M600: #3a70b2;
+$zd-color-secondary-crimson-400: #e34f32;
+$zd-color-secondary-crimson-600: #c72a1c;
+$zd-color-secondary-crimson-M400: #cc6c5b;
+$zd-color-secondary-crimson-M600: #b24a3c;
+$zd-color-secondary-fuschia-400: #d653c2;
+$zd-color-secondary-fuschia-600: #a81897;
+$zd-color-secondary-fuschia-M400: #cf62a8;
+$zd-color-secondary-fuschia-M600: #a8458c;
+$zd-color-secondary-lemon-400: #ffd424;
+$zd-color-secondary-lemon-600: #ffbb10;
+$zd-color-secondary-lemon-M400: #e7a500;
+$zd-color-secondary-lemon-M600: #c38f00;
+$zd-color-secondary-lime-400: #43b324;
+$zd-color-secondary-lime-600: #2e8200;
+$zd-color-secondary-lime-M400: #519e2d;
+$zd-color-secondary-lime-M600: #47782c;
+$zd-color-secondary-mint-400: #00a656;
+$zd-color-secondary-mint-600: #058541;
+$zd-color-secondary-mint-M400: #299c66;
+$zd-color-secondary-mint-M600: #2e8057;
+$zd-color-secondary-orange-400: #de701d;
+$zd-color-secondary-orange-600: #bf5000;
+$zd-color-secondary-orange-M400: #d4772c;
+$zd-color-secondary-orange-M600: #b35827;
+$zd-color-secondary-pink-400: #ec4d63;
+$zd-color-secondary-pink-600: #d42054;
+$zd-color-secondary-pink-M400: #d57287;
+$zd-color-secondary-pink-M600: #b23a5d;
+$zd-color-secondary-purple-400: #b552e2;
+$zd-color-secondary-purple-600: #6a27b8;
+$zd-color-secondary-purple-M400: #b072cc;
+$zd-color-secondary-purple-M600: #9358b0;
+$zd-color-secondary-royal-400: #5d7df5;
+$zd-color-secondary-royal-600: #3353e2;
+$zd-color-secondary-royal-M400: #7986d8;
+$zd-color-secondary-royal-M600: #4b61c3;
+$zd-color-secondary-teal-400: #02a191;
+$zd-color-secondary-teal-600: #028079;
+$zd-color-secondary-teal-M400: #2d9e8f;
+$zd-color-secondary-teal-M600: #3c7873;
+$zd-color-sell-gold: #d4ae5e;
+$zd-color-support-green: #78a300;
+$zd-color-talk-yellow: #efc93d;
+$zd-color-white: #fff;
+$zd-color-yellow-100: #fff8ed;
+$zd-color-yellow-200: #fff0db;
+$zd-color-yellow-300: #fcdba9;
+$zd-color-yellow-400: #ffb648;
+$zd-color-yellow-500: #f5a133;
+$zd-color-yellow-600: #ed961c;
+$zd-color-yellow-700: #ad5e18;
+$zd-color-yellow-800: #703b15;
+$zumthor: #edf7ff; /* rgb(237, 247, 255) */
