@@ -10,52 +10,59 @@ require: ['emoji', 'language', 'modal', 'menu', 'nav-bar', 'arrow-up']
 ---
 
 {% include work-head.html %}
-      {% include work-about.html %}
-      <ul class="ul-features">
-        {% include work-type.html %}
-        <li>Works in the Views pages.</li>
-        <li>Identifies tickets that have a Priority.</li>
-        <li>Highlights tickets with Urgent priority as red.</li>
-        <li>Highlights tickets with High priority as orange.</li>
-        <li>Highlights tickets with Normal priority as yellow.</li>
-        <li>Highlights tickets with Low priority as green.</li>
-        <li>User can choose what priorities to highlight in the options page.</li>
-        <li>Available in Bulgarian, Chinese (Simplified), Czech, Danish, Dutch, English, Finnish, French, German, Greek, Hindi, Hungarian, Indonesian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Russian, Spanish, Swedish, Thai, Turkish, Ukrainian, and Vietnamese.</li>
-      </ul>
-      {% include work-screencaps.html %}
-      <p class="p-center p-screenshots">
-        <img class="img-screenshot" alt="Alexander Culligan" title="Alexander Culligan" src="/CDN/{{ page.cdn }}/img/screenshot-1.png"/>
-        <img class="img-screenshot" alt="Alexander Culligan" title="Alexander Culligan" src="/CDN/{{ page.cdn }}/img/screenshot-2.png"/>
-        <img class="img-screenshot" alt="Alexander Culligan" title="Alexander Culligan" src="/CDN/{{ page.cdn }}/img/screenshot-3.png"/>
-      </p>
+{% include work-about.html %}
+<ul class="ul-features">
+  {% include work-type.html %}
+  <li>Works in the Views pages.</li>
+  <li>Identifies tickets that have a Priority.</li>
+  <li>Highlights tickets with Urgent priority as red.</li>
+  <li>Highlights tickets with High priority as orange.</li>
+  <li>Highlights tickets with Normal priority as yellow.</li>
+  <li>Highlights tickets with Low priority as green.</li>
+  <li>User can choose what priorities to highlight in the options page.</li>
+  <li>Available in Bulgarian, Chinese (Simplified), Czech, Danish, Dutch, English, Finnish, French, German, Greek, Hindi, Hungarian, Indonesian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Russian, Spanish, Swedish, Thai, Turkish, Ukrainian, and Vietnamese.</li>
+</ul>
+{% include work-screencaps.html %}
+<p class="p-center p-screenshots">
+  <img class="img-screenshot" alt="Alexander Culligan" title="Alexander Culligan" src="/CDN/{{ page.cdn }}/img/screenshot-1.png"/>
+  <img class="img-screenshot" alt="Alexander Culligan" title="Alexander Culligan" src="/CDN/{{ page.cdn }}/img/screenshot-2.png"/>
+  <img class="img-screenshot" alt="Alexander Culligan" title="Alexander Culligan" src="/CDN/{{ page.cdn }}/img/screenshot-3.png"/>
+</p>
 {% include work-modal.html %}
-      {% include work-version.html %}
-      <h4>Version  1.0.6 - Published <a href="{{ page.published-url }}" target='_blank'>here</a>.</h4>
-      <ul class="ul-features ul-version">
-        <li>Language translations added.</li>
-      </ul>
-      <h4>Version  1.0.3</h4>
-      <ul class="ul-features ul-version">
-        <li>Options page added.</li>
-      </ul>
-      <h4>Version 1.0.2</h4>
-      <ul class="ul-features ul-version">
-        <li>Colors for Normal and Low Priority added.</li>
-      </ul>
-      <h4>Version 1.0.1</h4>
-      <ul class="ul-features ul-version">
-        <li>Color for High Priority added.</li>
-      </ul>
-      <h4>Version 1</h4>
-      <ul class="ul-features ul-version">
-        <li>Initial publication.</li>
-      </ul>
-      {% include work-bugs.html %}
-      <ul class="ul-features">
-        <li>No known issues at this time.</li>
-        <li>Feature Request: Highlight fields other than "Priority".</li>
-      </ul>
+{% include work-version.html %}
+<h4>Version  1.1.0 - Published <a href="{{ page.published-url }}" target='_blank'>here</a>.</h4>
+<ul class="ul-features ul-version">
+  <li>Language translations added.</li>
+  <li>Updated Zendesk elements finder.</li>
+</ul>
+<h4>Version  1.0.6</h4>
+<ul class="ul-features ul-version">
+  <li>Updated Zendesk elements finder.</li>
+</ul>
+<h4>Version  1.0.3</h4>
+<ul class="ul-features ul-version">
+  <li>Options page added.</li>
+</ul>
+<h4>Version 1.0.2</h4>
+<ul class="ul-features ul-version">
+  <li>Colors for Normal and Low Priority added.</li>
+</ul>
+<h4>Version 1.0.1</h4>
+<ul class="ul-features ul-version">
+  <li>Color for High Priority added.</li>
+</ul>
+<h4>Version 1</h4>
+<ul class="ul-features ul-version">
+  <li>Initial publication.</li>
+</ul>
+{% include work-bugs.html %}
+<ul class="ul-features">
+  <li>No known issues at this time.</li>
+  <li>Feature Request: Highlight fields other than "Priority".</li>
+  <li>Security Enhancement: Anonymize IP address. More info <a href="https://github.com/aculligan/Zendesk_Priority_Highlights/issues/7" target='_blank'>here</a>.</li>
+  <li>Security Enhancement: Force SSL to Google Analytics. More info <a href="https://github.com/aculligan/Zendesk_Priority_Highlights/issues/8" target='_blank'>here</a>.</li>
+</ul>
 {% include work-found-bug.html %}
 {% include work-license.html %}
 {% include work-more.html %}
-      {% include copyright.html %}
+{% include copyright.html %}
