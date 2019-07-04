@@ -30,7 +30,18 @@ require: ['emoji', 'language', 'modal', 'menu', 'nav-bar', 'arrow-up']
 </p>
 {% include work-modal.html %}
 {% include work-version.html %}
-<h4>Version  1.1.0 - Published <a href="{{ page.published-url }}" target='_blank'>here</a>.</h4>
+<h4>Version  1.2.0 - Published <a href="{{ page.published-url }}" target='_blank'>here</a>.</h4>
+<ul class="ul-features ul-version">
+  <li>Removed unnecessary icons to decrease package size.</li>
+  <li>Updated CSS elements.</li>
+  <li>Added automatic dark theme that matches browser's theme.</li>
+  <li>Fixed issue causing functions loaded by content_script to run multiple times. More info <a href="https://github.com/aculligan/Zendesk_Priority_Highlights/issues/11" target='_blank'>here</a>.</li>
+  <li>Fixed issue causing extension not to find DOM elements if the page loaded after content_script. More info <a href="https://github.com/aculligan/Zendesk_Priority_Highlights/issues/13" target='_blank'>here</a>.</li>
+  <li>Stopped using Tabs permission which gave extension unnecessary privileges. Using activeTab now, and restricting access to Zendesk domain. More info <a href="https://github.com/aculligan/Zendesk_Priority_Highlights/issues/14" target='_blank'>here</a>.</li>
+  <li>Enabled Anonymize IP address. More info <a href="https://github.com/aculligan/Zendesk_Priority_Highlights/issues/7" target='_blank'>here</a>.</li>
+  <li>Enabled Force SSL to Google Analytics. More info <a href="https://github.com/aculligan/Zendesk_Priority_Highlights/issues/8" target='_blank'>here</a>.</li>
+</ul>
+<h4>Version  1.1.0</h4>
 <ul class="ul-features ul-version">
   <li>Language translations added.</li>
   <li>Updated Zendesk elements finder.</li>
@@ -59,8 +70,7 @@ require: ['emoji', 'language', 'modal', 'menu', 'nav-bar', 'arrow-up']
 <ul class="ul-features">
   <li>No known issues at this time.</li>
   <li>Feature Request: Highlight fields other than "Priority".</li>
-  <li>Security Enhancement: Anonymize IP address. More info <a href="https://github.com/aculligan/Zendesk_Priority_Highlights/issues/7" target='_blank'>here</a>.</li>
-  <li>Security Enhancement: Force SSL to Google Analytics. More info <a href="https://github.com/aculligan/Zendesk_Priority_Highlights/issues/8" target='_blank'>here</a>.</li>
+  <li>Feature Request: Add the option to customize the colors for each priority. More info <a href="https://github.com/aculligan/Zendesk_Priority_Highlights/issues/16" target='_blank'>here</a>.</li>
 </ul>
 {% include work-found-bug.html %}
 {% include work-license.html %}
