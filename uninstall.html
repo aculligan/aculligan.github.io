@@ -11,33 +11,36 @@ require: ['uninstall', 'nav-bar']
         <span class="span-line">***</span>
       </p>
 
-      <div class="contact-form">
+      <form class="" action="https://formspree.io/support@alexculligan.com" method="post">
 
-        <fieldset class="question first-fieldset">
-              <label for="txt-0">What's your name?</label>
-              <input class="contact-field" id="txt-0" type="text">
-        </fieldset>
+        <div class="contact-form">
 
-        <fieldset id="email-question" class="question">
-         <label for="txt-0">What's your email address?</label>
-         <input class="contact-field email-field" id="txt-1" type="email">
-        </fieldset>
+          <fieldset class="question first-fieldset">
+                <label for="txt-0">What's your name?</label>
+                <input class="contact-field" id="txt-0" type="text" name="name">
+          </fieldset>
 
-        <fieldset id="txtarea-field-0" class="question">
-          <label for="txtarea-0">Send a message</label>
-          <textarea class="contact-field contact-text" id="txtarea-0" wrap="hard"></textarea>
-        </fieldset>
-      </div>
+          <fieldset id="email-question" class="question">
+           <label for="txt-0">What's your email address?</label>
+           <input class="contact-field email-field" id="txt-1" type="email" name="email">
+          </fieldset>
 
-      <p class="alert-note red">
-        <span class="alert-text" id="name-error">Name required. </span>
-        <span class="alert-text" id="email-error">Email not valid. </span>
-        <span class="alert-text" id="message-error">Longer message required.</span>
-      </p>
+          <fieldset id="txtarea-field-0" class="question">
+            <label for="txtarea-0">Send a message</label>
+            <textarea class="contact-field contact-text" id="txtarea-0" wrap="hard" name="message"></textarea>
+          </fieldset>
+        </div>
 
-      <div class="submit-div" id="submit-button">
-       <input class="contact-submit" type="submit" id="submit_change" value="Submit" disabled="disabled" tabindex="0">
-      </div>
-      <p class="p-center p-footer footer-uninstall">
+        <p class="alert-note red">
+          <span class="alert-text" id="name-error">Name required. </span>
+          <span class="alert-text" id="email-error">Email not valid. </span>
+          <span class="alert-text" id="message-error">Longer message required.</span>
+        </p>
+
+        <div class="submit-div" id="submit-button">
+         <input class="contact-submit" type="submit" id="submit_change" value="Submit" disabled="disabled" tabindex="0">
+        </div>
+      </form>
+      <!-- <p class="p-center p-footer footer-uninstall">
 {% include social.html %}
-      </p>
+      </p> -->

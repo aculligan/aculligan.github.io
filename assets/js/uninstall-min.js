@@ -459,11 +459,11 @@
       typeSpeed: 100
     });
     $(this).hide();
-    $.ajax({
-      url: "https://formspree.io/support@alexculligan.com",
-      method: "POST",
-      data: messageobject,
-      dataType: "json"
-    });
+    // $.ajax({
+    //   url: "https://formspree.io/support@alexculligan.com",
+    //   method: "POST",
+    //   data: messageobject,
+    //   dataType: "json"
+    // });
   });
 })();
