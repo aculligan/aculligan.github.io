@@ -2,4 +2,4 @@
 .sass-cache/*
 _site/*
 Gemfile.lock
-uninstall.html
+.jekyll-metadata

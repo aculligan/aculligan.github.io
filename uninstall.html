@@ -1,0 +1,156 @@
+---
+layout: uninstall
+permalink: /uninstall
+title: Uninstall
+require: ['uninstall', 'nav-bar']
+---
+
+      <p class="p-center p-contact">
+        <span class="span-line">Have questions? Need help? </span><br>
+        <span class="span-line">Shoot me a message!</span><br>
+        <span class="span-line">***</span>
+      </p>
+      <div class="contact-form">
+        <fieldset class="question first-fieldset">
+              <label for="txt-0">What's your name?</label>
+              <input class="contact-field" id="txt-0" type="text">
+        </fieldset>
+        <fieldset id="email-question" class="question">
+         <label for="txt-0">What's your email address?</label>
+         <input class="contact-field email-field" id="txt-1" type="email">
+        </fieldset>
+        <fieldset id="drop-field-0" class="question">
+          <label>How can I help?</label>
+          <div id="drop-0" class="contact-field menu-btn disabled-item" tabindex="0">
+            <span class="selection"></span>
+{% include svg-chevron.html%}
+          </div>
+        </fieldset>
+        <fieldset id="drop-0-menu" class="menu-field menu-field-five">
+          <label></label>
+          <div>
+            <ul class="contact-field menu">
+              <li class="menu-item" tabindex="0">
+                <span class="menu-li-content" value="question">I have a question</span>
+              </li>
+              <li class="menu-item" tabindex="0">
+                <span class="menu-li-content" value="support">I need support</span>
+              </li>
+              <li class="menu-item" tabindex="0">
+                <span class="menu-li-content" value="request">I have a request or an idea</span>
+              </li>
+              <li class="menu-item" tabindex="0">
+                <span class="menu-li-content" value="project">I have a special project</span>
+              </li>
+              <li class="menu-item" tabindex="0">
+                <span class="menu-li-content" value="other">Something else</span>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+        <fieldset id="drop-field-1" class="question">
+          <label>What is your question about?</label>
+          <div id="drop-1" class="contact-field menu-btn" tabindex="0">
+            <span class="selection"></span>
+{% include svg-chevron.html%}
+          </div>
+        </fieldset>
+        <fieldset id="drop-1-menu" class="menu-field menu-field-three">
+          <label></label>
+          <div>
+            <ul class="contact-field menu">
+              <li class="menu-item" tabindex="0">
+                <span class="menu-li-content" value="app">A Zendesk App</span>
+              </li>
+              <li class="menu-item" tabindex="0">
+                <span class="menu-li-content" value="extension">A Chrome Extension</span>
+              </li>
+              <li class="menu-item" tabindex="0">
+                <span class="menu-li-content" value="tip">A tip</span>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+        <fieldset id="drop-field-2" class="question">
+          <label>What do you need help with?</label>
+          <div id="drop-2" class="contact-field menu-btn" tabindex="0">
+            <span class="selection"></span>
+{% include svg-chevron.html%}
+          </div>
+        </fieldset>
+        <fieldset id="drop-2-menu" class="menu-field menu-field-three">
+          <label></label>
+          <div>
+            <ul class="contact-field menu">
+              <li class="menu-item" tabindex="0">
+                <span class="menu-li-content" value="app">A Zendesk App</span>
+              </li>
+              <li class="menu-item" tabindex="0">
+                <span class="menu-li-content" value="extension">A Chrome Extension</span>
+              </li>
+              <li class="menu-item" tabindex="0">
+                <span class="menu-li-content" value="tip">A tip</span>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+        <fieldset id="drop-field-3" class="question">
+          <label>Which App?</label>
+          <div id="drop-3" class="contact-field menu-btn" tabindex="0">
+            <span class="selection"></span>
+{% include svg-chevron.html%}
+          </div>
+        </fieldset>
+        <fieldset id="drop-3-menu" class="menu-field menu-field-three">
+          <label></label>
+          <div>
+            <ul class="contact-field menu">
+              <li class="menu-item" tabindex="0">
+                <span class="menu-li-content" value="ccq">CC Quest</span>
+              </li>
+              <li class="menu-item" tabindex="0">
+                <span class="menu-li-content" value="ss">Secret Service</span>
+              </li>
+              <li class="menu-item" tabindex="0">
+                <span class="menu-li-content" value="sla">SLA Event Tracker</span>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+        <fieldset id="drop-field-4" class="question">
+          <label>Which Extension?</label>
+          <div id="drop-4" class="contact-field menu-btn" tabindex="0">
+            <span class="selection"></span>
+{% include svg-chevron.html%}
+          </div>
+        </fieldset>
+        <fieldset id="drop-4-menu" class="menu-field menu-field-two">
+          <label></label>
+          <div>
+            <ul class="contact-field menu">
+              <li class="menu-item" tabindex="0">
+                <span class="menu-li-content" value="bubbles">Chat Ticket Bubbles</span>
+              </li>
+              <li class="menu-item" tabindex="0">
+                <span class="menu-li-content" value="highlights">Ticket Priority Highlights</span>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+        <fieldset id="txtarea-field-0" class="question">
+          <label for="txtarea-0">Send a message</label>
+          <textarea class="contact-field contact-text" id="txtarea-0" wrap="hard"></textarea>
+        </fieldset>
+      </div>
+      <p class="alert-note red">
+        <span class="alert-text" id="name-error">Name required. </span>
+        <span class="alert-text" id="email-error">Email not valid. </span>
+        <span class="alert-text" id="menu-error">Selection required. </span>
+        <span class="alert-text" id="message-error">Longer message required.</span>
+      </p>
+      <div class="submit-div" id="submit-button">
+       <input class="contact-submit" type="submit" id="submit_change" value="Submit" disabled="disabled" tabindex="0">
+      </div>
+      <p class="p-center p-footer footer-contact">
+{% include social.html %}
+      </p>

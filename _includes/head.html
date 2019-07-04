@@ -6,7 +6,7 @@
 		<!-- Google Analytics -->
 		<script src="/assets/js/ga-min.js"></script>
 		<script async src="https://www.google-analytics.com/analytics.js"></script>
-		<script src="/CDN/Universal_App_Assets/ga_message.js"></script>
+		<!-- <script src="/CDN/Universal_App_Assets/ga_message.js"></script> -->
 		<!-- End Google Analytics -->
 		<!-- Canonical declaration for SEO -->
 		{% if page.url == "/" %}
@@ -36,6 +36,9 @@
 		{% endif %}
 		{% if page.require contains 'contact' %}
 		<link rel="stylesheet" href="/assets/css/contact-min.css">
+		{% endif %}
+		{% if page.require contains 'uninstall' %}
+		<link rel="stylesheet" href="/assets/css/uninstall-min.css">
 		{% endif %}
 		<!-- JS -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
