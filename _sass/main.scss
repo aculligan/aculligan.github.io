@@ -689,6 +689,12 @@ code {
     left: 50vw;
     width: 50vw;
   }
+
+  .footer-uninstall {
+    left: 0;
+    width: 50vw;
+    background-color: $burnt-sienna;
+  }
 }
 
 @media screen and (min-width: 1000px) {

@@ -436,20 +436,17 @@
   $submitButton.click(function() {
     var messageobject = {};
     var name = $nameField.val();
+    console.log(name);
     var firstName = name.split(" ")[0];
+    console.log(firstName);
     var email = $emailField.val();
+    console.log(email);
     var message = $commentField.val();
+    console.log(message);
     messageobject.Name = name;
     messageobject.Email = email;
-    $menuButton.each(function() {
-      if ($(this).is(visible)) {
-        var prevLabel = $(this)
-          .prev(label)
-          .text();
-        messageobject[prevLabel] = $(this).text();
-      }
-    });
     messageobject.Message = message;
+    console.log(messageobject);
     $contactFormNote.hide();
     $contactForm.typed({
       strings: [
