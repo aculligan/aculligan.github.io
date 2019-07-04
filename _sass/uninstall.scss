@@ -2,7 +2,7 @@
 
 fieldset {
   border: 0;
-  display: none;
+  // display: none;
   margin: 20px 0 0 0;
   padding: 0;
   text-align: center;
@@ -16,7 +16,7 @@ fieldset {
   background-color: $white-smoke;
   border: 1px solid $aluminum;
   border-radius: 3px;
-  color: $wisteria;
+  color: $burnt-sienna;
   font-family: $anonymous-pro;
   font-size: 16px;
   line-height: 18px;
@@ -26,100 +26,100 @@ fieldset {
   text-align: left;
   width: 90%;
 }
-
-.open-menu-btn {
-  border-radius: 3px 3px 0 0;
-  z-index: 100;
-}
-
+//
+// .open-menu-btn {
+//   border-radius: 3px 3px 0 0;
+//   z-index: 100;
+// }
+//
 .contact-field:focus,
 .open-menu-btn {
   background-color: $white-smoke;
-  border-color: $wisteria;
+  border-color: $burnt-sienna;
   outline: 0;
 }
-
-.menu-btn {
-  cursor: pointer;
-  padding: 4px 20px 4px 0;
-  position: relative;
-}
-
-.focused-menu-btn svg.menu-btn-arrow {
-  opacity: 1;
-  .menu-btn-arrow-stroke {
-    stroke: $wisteria;
-  }
-}
-
-.menu-btn-arrow {
-  float: right;
-  margin-right: -15px;
-  margin-top: 2px;
-  opacity: 0.4;
-  position: relative;
-}
-
-.selection {
-  color: $wisteria;
-  margin-left: 15px;
-}
-
-.menu-field-two {
-  display: none;
-  margin-bottom: -84px;
-  margin-top: 0;
-}
-
-.menu-field-three {
-  display: none;
-  margin-bottom: -119px;
-  margin-top: 0;
-}
-
-.menu-field-five {
-  display: none;
-  margin-bottom: -189px;
-  margin-top: 0;
-}
-
-.menu {
-  background-color: $white-smoke;
-  border-radius: 0 0 3px 3px;
-  border-top: 0;
-  border-color: $amethyst;
-  box-shadow: 0 2px 2px 0 rgba(36, 83, 107, 0.15);
-  list-style: none;
-  margin: 0 auto;
-  overflow-x: hidden;
-  -ms-overflow-style: hidden;
-  position: relative;
-  text-align: left;
-  z-index: 100;
-}
-
-.menu-item {
-  color: $jumbo;
-  cursor: pointer;
-  margin-left: -10px;
-  margin-top: 5px;
-  padding: 6px 0;
-  padding-left: 10px;
-  &:last-child {
-    margin-bottom: 5px;
-  }
-  &:active,
-  &:focus,
-  &:hover {
-    background-color: $amethyst;
-    border-radius: 3px;
-    color: $white-smoke;
-    outline: 0;
-  }
-}
-
+//
+// .menu-btn {
+//   cursor: pointer;
+//   padding: 4px 20px 4px 0;
+//   position: relative;
+// }
+//
+// .focused-menu-btn svg.menu-btn-arrow {
+//   opacity: 1;
+//   .menu-btn-arrow-stroke {
+//     stroke: $wisteria;
+//   }
+// }
+//
+// .menu-btn-arrow {
+//   float: right;
+//   margin-right: -15px;
+//   margin-top: 2px;
+//   opacity: 0.4;
+//   position: relative;
+// }
+//
+// .selection {
+//   color: $wisteria;
+//   margin-left: 15px;
+// }
+//
+// .menu-field-two {
+//   display: none;
+//   margin-bottom: -84px;
+//   margin-top: 0;
+// }
+//
+// .menu-field-three {
+//   display: none;
+//   margin-bottom: -119px;
+//   margin-top: 0;
+// }
+//
+// .menu-field-five {
+//   display: none;
+//   margin-bottom: -189px;
+//   margin-top: 0;
+// }
+//
+// .menu {
+//   background-color: $white-smoke;
+//   border-radius: 0 0 3px 3px;
+//   border-top: 0;
+//   border-color: $amethyst;
+//   box-shadow: 0 2px 2px 0 rgba(36, 83, 107, 0.15);
+//   list-style: none;
+//   margin: 0 auto;
+//   overflow-x: hidden;
+//   -ms-overflow-style: hidden;
+//   position: relative;
+//   text-align: left;
+//   z-index: 100;
+// }
+//
+// .menu-item {
+//   color: $jumbo;
+//   cursor: pointer;
+//   margin-left: -10px;
+//   margin-top: 5px;
+//   padding: 6px 0;
+//   padding-left: 10px;
+//   &:last-child {
+//     margin-bottom: 5px;
+//   }
+//   &:active,
+//   &:focus,
+//   &:hover {
+//     background-color: $amethyst;
+//     border-radius: 3px;
+//     color: $white-smoke;
+//     outline: 0;
+//   }
+// }
+//
 .contact-text {
-  min-height: 60px;
+  min-height: 100px;
   padding: 5px 10px;
   resize: vertical;
 }
@@ -136,7 +136,8 @@ fieldset {
 
 .submit-div {
   display: none;
-  margin: 0 0 20px 0;
+  height: 55px;
+  margin: 0;
   text-align: center;
 }
 
@@ -147,15 +148,15 @@ fieldset {
   -webkit-touch-callout: none;
   -webkit-transition: border-color .25s ease-in-out,box-shadow .1s ease-in-out,background-color .25s ease-in-out,color .25s ease-in-out;
   -webkit-user-select: none;
-  background-color: $wisteria;
-  border: 1px solid $wisteria;
+  background-color: $burnt-sienna;
+  border: 1px solid $burnt-sienna;
   border-radius: 4px;
   color: $white-smoke;
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
   line-height: 3.43;
-  margin: 0 0 50px 0;
+  margin: 0;
   padding: 0 1.9286em;
   transition: border-color .25s ease-in-out,box-shadow .1s ease-in-out,background-color .25s ease-in-out,color .25s ease-in-out;
   user-select: none;
@@ -166,8 +167,8 @@ fieldset {
   &:active,
   &:hover {
     background-color: $white-smoke;
-    border-color: $wisteria;
-    color: $wisteria;
+    border-color: $burnt-sienna;
+    color: $burnt-sienna;
   }
   &:disabled {
     background-color: $aluminum;
@@ -185,21 +186,21 @@ fieldset {
 }
 
 .contact-submit:focus {
-  box-shadow: 0 0 3px 0 $white-smoke inset, 0 0 2px 2px $wisteria;
+  box-shadow: 0 0 3px 0 $white-smoke inset, 0 0 2px 2px $burnt-sienna;
   outline: none;
 }
 
-// New stuff from here
-
-.svg-div {
-  height: 40vh;
-  margin: 9vh 30vw 0 30vw;
-  width: 40vw;
-}
-
-@media screen and (min-width: 568px) {
-  .svg-div {
-    margin: 9vh 10vw 5vh 10vw;
-    width: 30vw;
-  }
-}
+// // New stuff from here
+//
+// .svg-div {
+//   height: 40vh;
+//   margin: 9vh 30vw 0 30vw;
+//   width: 40vw;
+// }
+//
+// @media screen and (min-width: 568px) {
+//   .svg-div {
+//     margin: 9vh 10vw 5vh 10vw;
+//     width: 30vw;
+//   }
+// }

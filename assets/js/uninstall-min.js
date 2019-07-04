@@ -1,177 +1,205 @@
-(function () {
-  const commentField = '#txtarea-0';
-  const $commentField = $(commentField);
-  const commentFieldset = '#txtarea-field-0';
-  const $commentFieldset = $(commentFieldset);
-  const contactField = 'contact-field'; 
-  const contactFieldClass = '.contact-field';
-  const contactFieldVisible = '.contact-field:visible';
-  const $contactField = $(contactFieldClass);
-  const $contactForm = $('.contact-form');
-  const $contactFormNote = $('.p-contact');
-  const disabled = 'disabled';
-  const disabledItem = 'disabled-item';
-  const $dropFieldZero = $('#drop-field-0');
-  const $dropFieldOne = $('#drop-field-1');
-  const $dropFieldOneButton = $('#drop-1');
-  const $dropFieldTwo = $('#drop-field-2');
-  const $dropFieldTwoButton = $('#drop-3');
-  const $dropFieldThree = $('#drop-field-3');
-  const $dropFieldThreeButton = $('#drop-3');
-  const $dropFieldFour = $('#drop-field-4');
-  const $dropFieldFourButton = $('#drop-4');
-  const $emailError = $('#email-error');
-  const $emailField = $('#txt-1');
-  const $emailFieldset = $('#email-question');
-  const fieldset = 'fieldset';
-  const $fieldset = $(fieldset);
-  const focused = ':focus';
-  const label = 'label';
-  const list = 'ul';
-  const listItem = 'li';
-  const menu = 'menu';
-  const menuClass = '.menu';
-  const $menu = $(menuClass);
-  const menuButton = 'menu-btn';
-  const menuButtonClass = '.menu-btn';
-  const menuVisible = '.menu:visible';
-  const $menuButton = $(menuButtonClass);
-  const menuButtonFocusedClass = 'focused-menu-btn';
-  const menuButtonFocused = '.menu-btn:focus';
-  const menuButtonOpen = 'open-menu-btn';
-  const menuButtonOpenClass = '.open-menu-btn';
-  const menuButtonArrowClass = '.menu-btn-arrow';
-  const menuButtonText = $menuButton.find('span');
-  const $menuError = $('#menu-error');
-  const menuFieldClass = '.menu-field';
-  const $menuField = $(menuFieldClass);
-  const menuItemClass = '.menu-item';
-  const menuItemFocused = '.menu-item:focus';
-  const $menuItem = $(menuItemClass);
-  const $messageError = $('#message-error');
-  const $nameError = $('#name-error');
-  const $nameField = $('#txt-0');
-  const questionVisible = '.question:visible';
-  const questionClass = '.question';
-  const span = 'span';
-  const $submitButton = $('.contact-submit');
-  const submitButtonDisabled = 'contact-submit-disabled';
-  const $submitField = $('.submit-div');
-  const visible = ':visible';
-  const downKey = 40;
-  const endKey = 35;
-  const enterKey = 13;
-  const homeKey = 36;
-  const pagedownKey = 34;
-  const pageupKey = 33;
-  const spacebarKey = 32;
-  const tabKey = 9;
-  const upKey = 38;
-  let $disabledItem;
-  let $disabledItemVisible;
-  let $menuButtonFocused;
-  let $menuButtonOpen;
-  let $menuButtonOpenTextSpan;
-  let $menuButtonOpenText;
-  let $menuButtonOpenParent;
-  let $nextAllQuestions;
-  let $nextAllQuestionFields;
-  let $clickTarget;
-  let $menuButtonClicked;
-  const clearMenuButtonOpen = function clearThisMenuButton() {
-    $menuButtonOpenTextSpan.attr('value', '');
-    $menuButtonOpenTextSpan.text('');
+"use strict";
+
+(function() {
+  var commentField = "#txtarea-0";
+  var $commentField = $(commentField);
+  var commentFieldset = "#txtarea-field-0";
+  var $commentFieldset = $(commentFieldset);
+  var contactField = "contact-field";
+  var contactFieldClass = ".contact-field";
+  var contactFieldVisible = ".contact-field:visible";
+  var $contactField = $(contactFieldClass);
+  var $contactForm = $(".contact-form");
+  var $contactFormNote = $(".p-contact");
+  var disabled = "disabled";
+  var disabledItem = "disabled-item";
+  var $dropFieldZero = $("#drop-field-0");
+  var $dropFieldOne = $("#drop-field-1");
+  var $dropFieldOneButton = $("#drop-1");
+  var $dropFieldTwo = $("#drop-field-2");
+  var $dropFieldTwoButton = $("#drop-3");
+  var $dropFieldThree = $("#drop-field-3");
+  var $dropFieldThreeButton = $("#drop-3");
+  var $dropFieldFour = $("#drop-field-4");
+  var $dropFieldFourButton = $("#drop-4");
+  var $emailError = $("#email-error");
+  var $emailField = $("#txt-1");
+  var $emailFieldset = $("#email-question");
+  var fieldset = "fieldset";
+  var $fieldset = $(fieldset);
+  var focused = ":focus";
+  var label = "label";
+  var list = "ul";
+  var listItem = "li";
+  var menu = "menu";
+  var menuClass = ".menu";
+  var $menu = $(menuClass);
+  var menuButton = "menu-btn";
+  var menuButtonClass = ".menu-btn";
+  var menuVisible = ".menu:visible";
+  var $menuButton = $(menuButtonClass);
+  var menuButtonFocusedClass = "focused-menu-btn";
+  var menuButtonFocused = ".menu-btn:focus";
+  var menuButtonOpen = "open-menu-btn";
+  var menuButtonOpenClass = ".open-menu-btn";
+  var menuButtonArrowClass = ".menu-btn-arrow";
+  var menuButtonText = $menuButton.find("span");
+  var $menuError = $("#menu-error");
+  var menuFieldClass = ".menu-field";
+  var $menuField = $(menuFieldClass);
+  var menuItemClass = ".menu-item";
+  var menuItemFocused = ".menu-item:focus";
+  var $menuItem = $(menuItemClass);
+  var $messageError = $("#message-error");
+  var $nameError = $("#name-error");
+  var $nameField = $("#txt-0");
+  var questionVisible = ".question:visible";
+  var questionClass = ".question";
+  var span = "span";
+  var $submitButton = $(".contact-submit");
+  var submitButtonDisabled = "contact-submit-disabled";
+  var $submitField = $(".submit-div");
+  var visible = ":visible";
+  var downKey = 40;
+  var endKey = 35;
+  var enterKey = 13;
+  var homeKey = 36;
+  var pagedownKey = 34;
+  var pageupKey = 33;
+  var spacebarKey = 32;
+  var tabKey = 9;
+  var upKey = 38;
+  var $disabledItem;
+  var $disabledItemVisible;
+  var $menuButtonFocused;
+  var $menuButtonOpen;
+  var $menuButtonOpenTextSpan;
+  var $menuButtonOpenText;
+  var $menuButtonOpenParent;
+  var $nextAllQuestions;
+  var $nextAllQuestionFields;
+  var $clickTarget;
+  var $menuButtonClicked;
+
+  var clearMenuButtonOpen = function clearThisMenuButton() {
+    $menuButtonOpenTextSpan.attr("value", "");
+    $menuButtonOpenTextSpan.text("");
   };
-  const clearAllNext = function clearAllNextFields() {
+
+  var clearAllNext = function clearAllNextFields() {
     $menuField.hide();
     $menuButtonOpen.focus();
     $nextAllQuestions.not(commentFieldset).hide();
-    $nextAllQuestionFields.each(function () {
+    $nextAllQuestionFields.each(function() {
       if ($(this).hasClass(menuButton)) {
-        let $thisText = $(this).find(span);
-        $thisText.text('');
+        var $thisText = $(this).find(span);
+        $thisText.text("");
       }
+
       if (!$(this).hasClass(menuButton)) {
-        $(this).not($commentField).val('');
+        $(this)
+          .not($commentField)
+          .val("");
       }
     });
     $menuButtonOpen.removeClass(menuButtonOpen);
     emptyMenu();
     validate();
   };
-  const validate = function validateFields() {
-    $disabledItem = $('.disabled-item');
-    $disabledItemVisible = $('.disabled-item:visible');
-    if ($nameError.is(visible) || $emailError.is(visible) || $messageError.is(visible) || $disabledItemVisible.length > 0) {
+
+  var validate = function validateFields() {
+    $disabledItem = $(".disabled-item");
+    $disabledItemVisible = $(".disabled-item:visible");
+
+    if (
+      $nameError.is(visible) ||
+      $emailError.is(visible) ||
+      $messageError.is(visible) ||
+      $disabledItemVisible.length > 0
+    ) {
       $submitButton.prop(disabled, true).addClass(submitButtonDisabled);
     }
-    if (!$nameError.is(visible) && !$emailError.is(visible) && !$messageError.is(visible) && $disabledItemVisible.length < 1) {
+
+    if (
+      !$nameError.is(visible) &&
+      !$emailError.is(visible) &&
+      !$messageError.is(visible) &&
+      $disabledItemVisible.length < 1
+    ) {
       $submitButton.prop(disabled, false).removeClass(submitButtonDisabled);
     }
   };
-  const emptyMenu = function validateMenu() {
-    $disabledItem = $('.disabled-item');
-    $disabledItemVisible = $('.disabled-item:visible');
+
+  var emptyMenu = function validateMenu() {
+    $disabledItem = $(".disabled-item");
+    $disabledItemVisible = $(".disabled-item:visible");
+
     if ($disabledItemVisible.length > 0) {
       $menuError.show();
     }
+
     if ($disabledItemVisible.length < 1) {
       $menuError.hide();
     }
   };
 
-  $(document).ready(function () {
+  $(document).ready(function() {
     $nameField.focus();
   });
+  $nameField.keyup(function(e) {
+    var nameValue = $nameField.val().length;
 
-  $nameField.keyup(function (e) {
-    let nameValue = $nameField.val().length;
     if (nameValue === 0) {
       $nameError.show();
     }
+
     if (nameValue > 0) {
       $nameError.hide();
       $emailFieldset.show();
     }
+
     validate();
   });
+  $emailField.keyup(function(e) {
+    var emailValue = $emailField.val();
+    var validEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(
+      emailValue
+    );
 
-  $emailField.keyup(function (e) {
-    let emailValue = $emailField.val();
-    let validEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailValue);
     if (validEmail === false) {
       $emailError.show();
     }
+
     if (validEmail === true) {
       $emailError.hide();
       $dropFieldZero.show();
     }
+
     validate();
   });
-
-  $menuButton.focus(function () {
+  $menuButton.focus(function() {
     $(this).addClass(menuButtonFocusedClass);
   });
-
-  $menuButton.blur(function () {
+  $menuButton.blur(function() {
     $(this).removeClass(menuButtonFocusedClass);
   });
-
-  $menuButton.click(function () {
-    let thisID = $(this).attr('id');
-    let $thisMenu = $(`#${thisID}-menu`);
+  $menuButton.click(function() {
+    var thisID = $(this).attr("id");
+    var $thisMenu = $("#".concat(thisID, "-menu"));
     $(this).focus();
     $thisMenu.toggle();
     $menuField.not($thisMenu).hide();
+
     if ($thisMenu.is(visible)) {
-      $(this).addClass(menuButtonOpen)
+      $(this)
+        .addClass(menuButtonOpen)
         .addClass(disabledItem);
     } else {
-      $menuButton.removeClass(menuButtonOpen)
-        .removeClass(disabledItem);
+      $menuButton.removeClass(menuButtonOpen).removeClass(disabledItem);
     }
+
     $menuButtonOpen = $(menuButtonOpenClass);
-    $menuButtonOpenTextSpan = $menuButtonOpen.find('span');
+    $menuButtonOpenTextSpan = $menuButtonOpen.find("span");
     $menuButtonOpenText = $menuButtonOpenTextSpan.text();
     $menuButtonOpenParent = $menuButtonOpen.parent();
     $nextAllQuestions = $menuButtonOpenParent.nextAll(fieldset);
@@ -179,52 +207,68 @@
     emptyMenu();
     validate();
   });
-
-  $menuItem.click(function () {
-    let $itemSpan = $(this).find(span);
-    let itemText = $itemSpan.text();
-    let itemValue = $itemSpan.attr('value');
+  $menuItem.click(function() {
+    var $itemSpan = $(this).find(span);
+    var itemText = $itemSpan.text();
+    var itemValue = $itemSpan.attr("value");
     $menuButtonOpenTextSpan.text(itemText);
-    $menuButtonOpenTextSpan.attr('value', itemValue);
+    $menuButtonOpenTextSpan.attr("value", itemValue);
     $menuButtonOpen.removeClass(disabledItem);
+
     if (itemText === $menuButtonOpenText) {
       $menuField.hide();
-      $menuButtonOpen.focus()
-        .removeClass(menuButtonOpen);
+      $menuButtonOpen.focus().removeClass(menuButtonOpen);
     } else {
       clearAllNext();
     }
-    if (itemText === 'I have a question') {
+
+    if (itemText === "I have a question") {
       $dropFieldOne.show();
       $dropFieldOneButton.addClass(disabledItem);
     }
-    if (itemText === 'I need support') {
+
+    if (itemText === "I need support") {
       $dropFieldTwo.show();
       $dropFieldTwoButton.addClass(disabledItem);
     }
-    if (itemText === 'A Zendesk App') {
+
+    if (itemText === "A Zendesk App") {
       $dropFieldThree.show();
       $dropFieldThreeButton.addClass(disabledItem);
     }
-    if (itemText === 'A Chrome Extension') {
+
+    if (itemText === "A Chrome Extension") {
       $dropFieldFour.show();
       $dropFieldFourButton.addClass(disabledItem);
     }
-    if (itemText === 'I have a request or an idea' || itemText === 'I have a special project' || itemText === 'Something else' || itemText === 'A tip' || $dropFieldThreeButton.text().length > 0 || $dropFieldFourButton.text().length > 0) {
+
+    if (
+      itemText === "I have a request or an idea" ||
+      itemText === "I have a special project" ||
+      itemText === "Something else" ||
+      itemText === "A tip" ||
+      $dropFieldThreeButton.text().length > 0 ||
+      $dropFieldFourButton.text().length > 0
+    ) {
       $commentFieldset.show();
     }
+
     emptyMenu();
     validate();
   });
-
-  $(document).mouseup(function (e) {
-    if (!$menuButton.is(e.target) && !$(list).is(e.target) && !$(listItem).is(e.target) && !$(span).is(e.target) && $menuField.is(visible)) {
+  $(document).mouseup(function(e) {
+    if (
+      !$menuButton.is(e.target) &&
+      !$(list).is(e.target) &&
+      !$(listItem).is(e.target) &&
+      !$(span).is(e.target) &&
+      $menuField.is(visible)
+    ) {
       e.preventDefault();
       clearMenuButtonOpen();
       clearAllNext();
     }
   });
-
   $(document).keyup(function(e) {
     if (e.keyCode === 27 && $menuField.is(visible)) {
       e.preventDefault();
@@ -232,118 +276,197 @@
       clearAllNext();
     }
   });
+  $(document).keydown(function(e) {
+    var $lastContactFieldVisible = $(contactFieldVisible).last();
+    var $menuButtonFocused = $(menuButtonFocused);
+    var $menuButtonFocusedParent = $menuButtonFocused.parent();
+    var $prevQuestionFieldsets = $menuButtonFocusedParent.prevAll(
+      questionVisible
+    );
+    var $prevQuestionField = $prevQuestionFieldsets
+      .eq(0)
+      .find(contactFieldClass);
+    var $menuVisible = $(menuVisible);
+    var $menuItemsVisible = $menuVisible.find(menuItemClass);
+    var $firstChild = $menuItemsVisible.first();
+    var $currentChild = $(menuItemFocused);
+    var $nextChild = $currentChild.next();
+    var $previousChild = $currentChild.prev();
+    var $lastChild = $menuItemsVisible.last();
 
-  $(document).keydown(function (e) {
-    let $lastContactFieldVisible = $(contactFieldVisible).last();
-    let $menuButtonFocused = $(menuButtonFocused);
-    let $menuButtonFocusedParent = $menuButtonFocused.parent();
-    let $prevQuestionFieldsets = $menuButtonFocusedParent.prevAll(questionVisible);
-    let $prevQuestionField = $prevQuestionFieldsets.eq(0).find(contactFieldClass);
-    let $menuVisible = $(menuVisible);
-    let $menuItemsVisible = $menuVisible.find(menuItemClass);
-    let $firstChild = $menuItemsVisible.first();
-    let $currentChild = $(menuItemFocused);
-    let $nextChild = $currentChild.next();
-    let $previousChild = $currentChild.prev();
-    let $lastChild = $menuItemsVisible.last();
-    if ((e.shiftKey && e.which === tabKey) && !$menu.is(visible) && $menuButton.is(focused) && $prevQuestionFieldsets.eq(0).is($emailFieldset)) {
+    if (
+      e.shiftKey &&
+      e.which === tabKey &&
+      !$menu.is(visible) &&
+      $menuButton.is(focused) &&
+      $prevQuestionFieldsets.eq(0).is($emailFieldset)
+    ) {
       e.preventDefault();
       $emailField.focus();
     }
-    if ((e.shiftKey && e.which === tabKey) && !$menu.is(visible) && $menuButton.is(focused) && !$prevQuestionFieldsets.eq(0).is($emailFieldset)) {
+
+    if (
+      e.shiftKey &&
+      e.which === tabKey &&
+      !$menu.is(visible) &&
+      $menuButton.is(focused) &&
+      !$prevQuestionFieldsets.eq(0).is($emailFieldset)
+    ) {
       e.preventDefault();
       $prevQuestionField.focus();
     }
-    if (e.which === tabKey && !$menu.is(visible) && $lastContactFieldVisible.is(focused) && !$submitButton.is(visible) && !$commentField.is(visible)) {
+
+    if (
+      e.which === tabKey &&
+      !$menu.is(visible) &&
+      $lastContactFieldVisible.is(focused) &&
+      !$submitButton.is(visible) &&
+      !$commentField.is(visible)
+    ) {
       e.preventDefault();
       $nameField.focus();
     }
-    if ((e.which === spacebarKey || e.which === enterKey) && $menuButton.is(focused)) {
+
+    if (
+      (e.which === spacebarKey || e.which === enterKey) &&
+      $menuButton.is(focused)
+    ) {
       e.preventDefault();
       $menuButtonFocused.click();
     }
-    if ((e.shiftKey && e.which === tabKey) && $menuButton.is(focused) && $menu.is(visible)) {
+
+    if (
+      e.shiftKey &&
+      e.which === tabKey &&
+      $menuButton.is(focused) &&
+      $menu.is(visible)
+    ) {
       $menuButtonFocused.click();
     }
+
     if (e.which === downKey && !$menu.is(visible) && $menuButton.is(focused)) {
       e.preventDefault();
       $menuButtonFocused.click();
     }
+
     if ((e.which === tabKey || e.which === downKey) && $lastChild.is(focused)) {
       e.preventDefault();
       $menuButtonOpen.focus();
     }
+
     if (e.which === upKey && $firstChild.is(focused)) {
       e.preventDefault();
       $menuButtonOpen.focus();
     }
-    if (e.which === downKey && $menu.is(visible) && $menuButton.is(focused) && !$firstChild.is(focused)) {
+
+    if (
+      e.which === downKey &&
+      $menu.is(visible) &&
+      $menuButton.is(focused) &&
+      !$firstChild.is(focused)
+    ) {
       e.preventDefault();
       $firstChild.focus();
-    } else if (e.which === downKey && $menu.is(visible) && $menuItem.is(focused)) {
+    } else if (
+      e.which === downKey &&
+      $menu.is(visible) &&
+      $menuItem.is(focused)
+    ) {
       e.preventDefault();
       $nextChild.focus();
     }
-    if (e.which === upKey && $menu.is(visible) && $menuButton.is(focused) && !$lastChild.is(focused)) {
+
+    if (
+      e.which === upKey &&
+      $menu.is(visible) &&
+      $menuButton.is(focused) &&
+      !$lastChild.is(focused)
+    ) {
       e.preventDefault();
       $lastChild.focus();
-    } else if (e.which === upKey && $menu.is(visible) && $menuItem.is(focused)) {
+    } else if (
+      e.which === upKey &&
+      $menu.is(visible) &&
+      $menuItem.is(focused)
+    ) {
       e.preventDefault();
       $previousChild.focus();
     }
-    if ((e.which === pageupKey || e.which === homeKey) && $menu.is(visible) && $menuItem.is(focused)) {
+
+    if (
+      (e.which === pageupKey || e.which === homeKey) &&
+      $menu.is(visible) &&
+      $menuItem.is(focused)
+    ) {
       e.preventDefault();
       $firstChild.focus();
     }
-    if ((e.which === endKey || e.which === pagedownKey) && $menu.is(visible) && $menuItem.is(focused)) {
+
+    if (
+      (e.which === endKey || e.which === pagedownKey) &&
+      $menu.is(visible) &&
+      $menuItem.is(focused)
+    ) {
       e.preventDefault();
       $lastChild.focus();
     }
-    if ((e.which === enterKey || e.which === spacebarKey) && $menuItem.is(focused)) {
+
+    if (
+      (e.which === enterKey || e.which === spacebarKey) &&
+      $menuItem.is(focused)
+    ) {
       e.preventDefault();
       $currentChild.click();
     }
   });
-
-  $commentField.keyup(function (e) {
-    let commentValue = $commentField.val().length;
+  $commentField.keyup(function(e) {
+    var commentValue = $commentField.val().length;
     $submitField.show();
+
     if (commentValue > 9) {
       $messageError.hide();
     }
+
     if (commentValue < 10) {
       $messageError.show();
     }
+
     validate();
   });
-
-  $submitButton.click(function () {
-    let messageobject = {};
-    let name = $nameField.val();
-    let firstName = name.split(' ')[0];
-    let email = $emailField.val();
-    let message = $commentField.val();
+  $submitButton.click(function() {
+    var messageobject = {};
+    var name = $nameField.val();
+    var firstName = name.split(" ")[0];
+    var email = $emailField.val();
+    var message = $commentField.val();
     messageobject.Name = name;
     messageobject.Email = email;
-    $menuButton.each(function () {
+    $menuButton.each(function() {
       if ($(this).is(visible)) {
-        let prevLabel = $(this).prev(label).text();
+        var prevLabel = $(this)
+          .prev(label)
+          .text();
         messageobject[prevLabel] = $(this).text();
       }
     });
     messageobject.Message = message;
     $contactFormNote.hide();
     $contactForm.typed({
-      strings: [`<p class="p-center" style="margin-top: 35vh; font-size: 2.9vw;">Thanks, ${firstName}!</p><p class="p-center" style="font-size: 2.9vw;">I'll get back to you soon</p>`],
+      strings: [
+        '<p class="p-center" style="margin-top: 35vh; font-size: 2.9vw;">Thanks, '.concat(
+          firstName,
+          '!</p><p class="p-center" style="font-size: 2.9vw;">I\'ll get back to you soon</p>'
+        )
+      ],
       showCursor: false,
       typeSpeed: 100
     });
     $(this).hide();
     $.ajax({
-      url: 'https://formspree.io/support@alexculligan.com',
-      method: 'POST',
+      url: "https://formspree.io/support@alexculligan.com",
+      method: "POST",
       data: messageobject,
-      dataType: 'json'
+      dataType: "json"
     });
   });
 })();

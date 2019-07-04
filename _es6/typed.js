@@ -63,6 +63,13 @@
       typeSpeed: 100
     });
   };
+  const typeUninstall = function typeIn404(){
+    $('.title').typed({
+      strings: [`Uninstall`],
+      showCursor: false,
+      typeSpeed: 100
+    });
+  };
   const type404 = function typeIn404(){
     $('.title').typed({
       strings: [`woah there!^2000<br><span>are you lost?</span>`],
@@ -101,7 +108,12 @@
       typeLicense();
       takeHome();
       takeTop();
-    } 
+    }
+    if (windowURL.indexOf('uninstall') > 0) {
+      typeUninstall();
+      takeLicense();
+      takeTop();
+    }
     if (pageTitle.text().indexOf('404') > 0) {
       type404();
       $(document).ready(function cursor() {
