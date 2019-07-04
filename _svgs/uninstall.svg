@@ -6,8 +6,10 @@
   alt="Alexander Culligan"
   title="Alexander Culligan"
   viewBox="0 0 12 12">
-  <path
-    fill="#f8f8f8"
-    d="M4.5 2.5V1c0-.3.2-.5.5-.5h2c.3 0 .5.2.5.5v1.5M2 2.5h8m-5.5 7V5m3 4.5V5m-5-.5V11c0 .3.2.5.5.5h6c.3 0 .5-.2.5-.5V4.5">
-  </path>
+  <path xmlns="http://www.w3.org/2000/svg" fill="none" stroke="f8f8f8" stroke-linecap="round" d="M2 2.5h8"/>
+  <path xmlns="http://www.w3.org/2000/svg" fill="f8f8f8" d="M2 4v7c0 .55.45 1 1 1h6c.55 0 1-.45 1-1V4H2zm3 5.5c0 .28-.22.5-.5.5S4 9.78 4 9.5V6c0-.28.22-.5.5-.5s.5.22.5.5v3.5zm3 0c0 .28-.22.5-.5.5S7 9.78 7 9.5V6c0-.28.22-.5.5-.5s.5.22.5.5v3.5zM8 3H4V1c0-.55.45-1 1-1h2c.55 0 1 .45 1 1v2z"/>
 </symbol>
+
+
+
+<!-- <path xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" d="M4.5 2.5V1c0-.3.2-.5.5-.5h2c.3 0 .5.2.5.5v1.5M2 2.5h8m-5.5 7V5m3 4.5V5m-5-.5V11c0 .3.2.5.5.5h6c.3 0 .5-.2.5-.5V4.5"/> -->
