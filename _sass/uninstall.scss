@@ -27,98 +27,14 @@ fieldset {
   text-indent: 5px;
   width: 90%;
 }
-//
-// .open-menu-btn {
-//   border-radius: 3px 3px 0 0;
-//   z-index: 100;
-// }
-//
+
 .contact-field:focus,
 .open-menu-btn {
   background-color: $white-smoke;
   border-color: $burnt-sienna;
   outline: 0;
 }
-//
-// .menu-btn {
-//   cursor: pointer;
-//   padding: 4px 20px 4px 0;
-//   position: relative;
-// }
-//
-// .focused-menu-btn svg.menu-btn-arrow {
-//   opacity: 1;
-//   .menu-btn-arrow-stroke {
-//     stroke: $wisteria;
-//   }
-// }
-//
-// .menu-btn-arrow {
-//   float: right;
-//   margin-right: -15px;
-//   margin-top: 2px;
-//   opacity: 0.4;
-//   position: relative;
-// }
-//
-// .selection {
-//   color: $wisteria;
-//   margin-left: 15px;
-// }
-//
-// .menu-field-two {
-//   display: none;
-//   margin-bottom: -84px;
-//   margin-top: 0;
-// }
-//
-// .menu-field-three {
-//   display: none;
-//   margin-bottom: -119px;
-//   margin-top: 0;
-// }
-//
-// .menu-field-five {
-//   display: none;
-//   margin-bottom: -189px;
-//   margin-top: 0;
-// }
-//
-// .menu {
-//   background-color: $white-smoke;
-//   border-radius: 0 0 3px 3px;
-//   border-top: 0;
-//   border-color: $amethyst;
-//   box-shadow: 0 2px 2px 0 rgba(36, 83, 107, 0.15);
-//   list-style: none;
-//   margin: 0 auto;
-//   overflow-x: hidden;
-//   -ms-overflow-style: hidden;
-//   position: relative;
-//   text-align: left;
-//   z-index: 100;
-// }
-//
-// .menu-item {
-//   color: $jumbo;
-//   cursor: pointer;
-//   margin-left: -10px;
-//   margin-top: 5px;
-//   padding: 6px 0;
-//   padding-left: 10px;
-//   &:last-child {
-//     margin-bottom: 5px;
-//   }
-//   &:active,
-//   &:focus,
-//   &:hover {
-//     background-color: $amethyst;
-//     border-radius: 3px;
-//     color: $white-smoke;
-//     outline: 0;
-//   }
-// }
-//
+
 .contact-text {
   min-height: 100px;
   padding: 5px 10px;
@@ -191,17 +107,6 @@ fieldset {
   outline: none;
 }
 
-// // New stuff from here
-//
-// .svg-div {
-//   height: 40vh;
-//   margin: 9vh 30vw 0 30vw;
-//   width: 40vw;
-// }
-//
-// @media screen and (min-width: 568px) {
-//   .svg-div {
-//     margin: 9vh 10vw 5vh 10vw;
-//     width: 30vw;
-//   }
-// }
+.right-div {
+  padding: 3vh 5vw;
+}

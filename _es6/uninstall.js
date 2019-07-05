@@ -253,7 +253,7 @@
     if ((e.shiftKey && e.which === tabKey) && !$menu.is(visible) && $menuButton.is(focused) && !$prevQuestionFieldsets.eq(0).is($emailFieldset)) {
       e.preventDefault();
       $prevQuestionField.focus();
-    } 
+    }
     if (e.which === tabKey && !$menu.is(visible) && $lastContactFieldVisible.is(focused) && !$submitButton.is(visible) && !$commentField.is(visible)) {
       e.preventDefault();
       $nameField.focus();
@@ -318,20 +318,8 @@
   });
 
   $submitButton.click(function () {
-    let messageobject = {};
     let name = $nameField.val();
     let firstName = name.split(' ')[0];
-    let email = $emailField.val();
-    let message = $commentField.val();
-    messageobject.Name = name;
-    messageobject.Email = email;
-    $menuButton.each(function () {
-      if ($(this).is(visible)) {
-        let prevLabel = $(this).prev(label).text();
-        messageobject[prevLabel] = $(this).text();
-      }
-    });
-    messageobject.Message = message;
     $contactFormNote.hide();
     $contactForm.typed({
       strings: [`<p class="p-center" style="margin-top: 35vh; font-size: 2.9vw;">Thanks, ${firstName}!</p><p class="p-center" style="font-size: 2.9vw;">I'll get back to you soon</p>`],
@@ -339,11 +327,5 @@
       typeSpeed: 100
     });
     $(this).hide();
-    $.ajax({
-      url: 'https://formspree.io/support@alexculligan.com',
-      method: 'POST',
-      data: messageobject,
-      dataType: 'json'
-    });
   });
 })();
