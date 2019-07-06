@@ -1,14 +1,19 @@
 {% if page.tags contains 'extension' and page.tags contains 'zendesk' and page.tags contains 'chrome' and page.tags contains 'firefox' %}
         <li><g-emoji>:chrome:</g-emoji> <g-emoji>:firefox:</g-emoji> <g-emoji>:zendesk:</g-emoji> This is a Chrome and Firefox Extension for Zendesk.</li>
-{% else if page.tags contains 'extension' and page.tags contains 'zendesk' and page.tags contains 'chrome' %}
+{% endif %}
+
+{% if page.tags contains 'extension' and page.tags contains 'zendesk' and page.tags contains 'chrome' and page.tags contains !'firefox' %}
         <li><g-emoji>:chrome:</g-emoji> <g-emoji>:zendesk:</g-emoji> This is a Chrome Extension for Zendesk.</li>
 {% endif %}
+
 {% if page.tags contains 'app' and page.tags contains 'zendesk' %}
         <li><g-emoji>:zendesk:</g-emoji> This is a Zendesk App.</li>
 {% endif %}
+
 {% if page.tags contains 'ruby-gem' and page.tags contains 'jekyll' %}
         <li><g-emoji>:ruby-gem:</g-emoji> <g-emoji>:jekyll:</g-emoji> This is a RubyGem for Jekyll.</li>
 {% endif %}
+
 {% if page.tags contains 'javascript' %}
         <li><g-emoji>:javascript:</g-emoji> This is a JavaScript module.</li>
 {% endif %}
