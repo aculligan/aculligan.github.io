@@ -1,4 +1,6 @@
-{% if page.tags contains 'extension' and page.tags contains 'zendesk' and page.tags contains 'chrome' %}
+{% if page.tags contains 'extension' and page.tags contains 'zendesk' and page.tags contains 'chrome' and page.tags contains 'firefox' %}
+        <li><g-emoji>:chrome:</g-emoji> <g-emoji>:firefox:</g-emoji> <g-emoji>:zendesk:</g-emoji> This is a Chrome and Firefox Extension for Zendesk.</li>
+{% else if page.tags contains 'extension' and page.tags contains 'zendesk' and page.tags contains 'chrome' %}
         <li><g-emoji>:chrome:</g-emoji> <g-emoji>:zendesk:</g-emoji> This is a Chrome Extension for Zendesk.</li>
 {% endif %}
 {% if page.tags contains 'app' and page.tags contains 'zendesk' %}
