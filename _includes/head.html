@@ -4,14 +4,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 		<!-- Google Analytics -->
+		{% if page.require contains 'uninstall' %}
+		<script src="/assets/js/ga-u-min.js"></script>
+		{% else %}
 		<script src="/assets/js/ga-min.js"></script>
+		{% endif %}
 		<script async src="https://www.google-analytics.com/analytics.js"></script>
 		<!-- <script src="/CDN/Universal_App_Assets/ga_message.js"></script> -->
 		<!-- End Google Analytics -->
 		<!-- Canonical declaration for SEO -->
 		{% if page.url == "/" %}
 		<link rel="canonical" href="{{ site.url }}" />
-		{% else %} 
+		{% else %}
 		<link rel="canonical" href="{{ site.url }}{{ page.url }}" />
 		{% endif %}
 		<!-- End of Canonical declaration for SEO -->
