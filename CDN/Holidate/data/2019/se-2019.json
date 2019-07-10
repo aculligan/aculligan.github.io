@@ -1,102 +1,102 @@
 {
   "holiday": [
     {
-      "id": 20,
+      "id": 1,
       "start_date": "2019-09-23",
       "end_date": "2019-09-23",
-      "local_name": "",
-      "name": "September Equinox"
+      "local_name": "September Equinox",
+      "name": "september_equinox"
     },
     {
-      "id": 21,
+      "id": 2,
       "start_date": "2019-10-27",
       "end_date": "2019-10-27",
-      "local_name": "",
-      "name": "Daylight Saving Time ends"
+      "local_name": "Daylight Saving Time ends",
+      "name": "daylight_saving_time_ends"
     },
     {
-      "id": 22,
+      "id": 3,
       "start_date": "2019-11-01",
       "end_date": "2019-11-01",
-      "local_name": "",
-      "name": "All Saints' Eve"
+      "local_name": "All Saints' Eve",
+      "name": "all_saints_eve"
     },
     {
-      "id": 23,
+      "id": 4,
       "start_date": "2019-11-02",
       "end_date": "2019-11-02",
-      "local_name": "",
-      "name": "All Saints' Day"
+      "local_name": "All Saints' Day",
+      "name": "all_saints"
     },
     {
-      "id": 24,
+      "id": 5,
       "start_date": "2019-11-10",
       "end_date": "2019-11-10",
-      "local_name": "",
-      "name": "Father's Day"
+      "local_name": "Father's Day",
+      "name": "fathers_day"
     },
     {
-      "id": 25,
+      "id": 6,
       "start_date": "2019-12-01",
       "end_date": "2019-12-01",
-      "local_name": "",
-      "name": "First Advent Sunday"
+      "local_name": "First Advent Sunday",
+      "name": "first_advent_sunday"
     },
     {
-      "id": 26,
+      "id": 7,
       "start_date": "2019-12-08",
       "end_date": "2019-12-08",
-      "local_name": "",
-      "name": "Second Advent Sunday"
+      "local_name": "Second Advent Sunday",
+      "name": "second_advent_sunday"
     },
     {
-      "id": 27,
+      "id": 8,
       "start_date": "2019-12-15",
       "end_date": "2019-12-15",
-      "local_name": "",
-      "name": "Third Advent Sunday"
+      "local_name": "Third Advent Sunday",
+      "name": "third_advent_sunday"
     },
     {
-      "id": 28,
+      "id": 9,
       "start_date": "2019-12-22",
       "end_date": "2019-12-22",
-      "local_name": "",
-      "name": "Fourth Advent Sunday"
+      "local_name": "Fourth Advent Sunday",
+      "name": "fourth_advent_sunday"
     },
     {
-      "id": 29,
+      "id": 10,
       "start_date": "2019-12-22",
       "end_date": "2019-12-22",
-      "local_name": "",
-      "name": "December Solstice"
+      "local_name": "December Solstice",
+      "name": "december_solstice"
     },
     {
-      "id": 30,
+      "id": 11,
       "start_date": "2019-12-24",
       "end_date": "2019-12-24",
-      "local_name": "",
-      "name": "Christmas Eve"
+      "local_name": "Christmas Eve",
+      "name": "christmas_eve"
     },
     {
-      "id": 31,
+      "id": 12,
       "start_date": "2019-12-25",
       "end_date": "2019-12-25",
-      "local_name": "",
-      "name": "Christmas Day"
+      "local_name": "Christmas Day",
+      "name": "christmas_day"
     },
     {
-      "id": 32,
+      "id": 13,
       "start_date": "2019-12-26",
       "end_date": "2019-12-26",
-      "local_name": "",
-      "name": "Boxing Day"
+      "local_name": "Boxing Day",
+      "name": "boxing_day"
     },
     {
-      "id": 33,
+      "id": 14,
       "start_date": "2019-12-31",
       "end_date": "2019-12-31",
-      "local_name": "",
-      "name": "New Year's Eve"
+      "local_name": "New Year's Eve",
+      "name": "new_years_eve"
     }
   ]
 }
