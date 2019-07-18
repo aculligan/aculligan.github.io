@@ -178,16 +178,19 @@
     const gaEventRequest = new XMLHttpRequest();
     gaEventRequest.open("POST", "https://www.google-analytics.com/collect", true);
     gaEventRequest.send(gaEventMessage);
+    console.log(gaEventMessage);
   };
 
   $(document).ready(function () {
     const thisURL = window.location.search;
     $nameField.focus();
     window.history.replaceState('uninstall', 'Alexander Culligan - Uninstall', '/uninstall');
+    console.log(thisURL);
     if (thisURL.indexOf('utm') > 1) {
+      console.log(thisURL);
       getGeo().then(function (promise) {
         let utmID;
-        const utmAV = location.search.match(/((\d).(\d).(\d))/g)[0];
+        const utmAV = thisURL.match(/((\d).(\d).(\d))/g)[0];
         console.log(utmAV);
         console.log(utmID);
         ga(function (tracker) {
