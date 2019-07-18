@@ -146,7 +146,6 @@
         const uiLangSplit = `${responseJson.country}`.split('-');
         const browserLanguage = uiLangSplit[0];
         resolve([geoCode, browserLanguage]);
-        console.log(syncDate);
         console.log(responseJson);
       };
     });
@@ -181,12 +180,14 @@
     console.log(gaEventMessage);
   };
 
+  // https://aculligan.github.io/uninstall?utm_source=Uninstall&utm_medium=0.0.1&utm_campaign=App%20Uninstalled
+
   $(document).ready(function () {
     const thisURL = window.location.search;
     $nameField.focus();
     window.history.replaceState('uninstall', 'Alexander Culligan - Uninstall', '/uninstall');
     console.log(thisURL);
-    if (thisURL.indexOf('utm') > 1) {
+    if (thisURL.indexOf('utm') > 0) {
       console.log(thisURL);
       getGeo().then(function (promise) {
         let utmID;
@@ -204,7 +205,7 @@
       });
     }
 
-    if (thisURL.indexOf('6749') > 1) {
+    if (thisURL.indexOf('6749') > 0) {
       const gaCID = hexDecoder(
         thisURL
         .match(/(6749=([a-z0-9]+)&)/g)[0]
