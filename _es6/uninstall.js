@@ -133,6 +133,25 @@
     return crypto.getRandomValues(new Uint32Array(1))[0];
   };
 
+  // gets geolocation and anonymizes it to only be county code
+  const getGeo = function () {
+    return new Promise(function (resolve) {
+      const xhr = new XMLHttpRequest();
+      xhr.open('GET', 'https://ipapi.co/json/');
+      xhr.send();
+      xhr.onload = function() {
+        const responseText = xhr.response;
+        const responseJson = JSON.parse(responseText);
+        const geoCode = `${responseJson.country}`;
+        const uiLangSplit = `${responseJson.country}`.split('-');
+        const browserLanguage = uiLangSplit[0];
+        resolve([geoCode, browserLanguage]);
+        console.log(syncDate);
+        console.log(responseJson);
+      };
+    });
+  };
+
   // Google Analytics event action
   const gaEvent = function (gaCID, gaC, gaL, gaAV) {
     const payload = {
@@ -144,7 +163,7 @@
       anonymousLocation: `geoid=${gaC}`,
       userLanguage: `ul=${gaL}`,
       hitType: 't=event',
-      eventCategory: 'ec=Uninstallation',
+      eventCategory: 'ec=Uninstall',
       eventAction: `ea=${gaAV}`,
       eventLabel: 'el=App Uninstalled',
       cacheBuster: `z=${getRandomNumber()}`,
@@ -155,7 +174,6 @@
       gaEventStr += `${value}&`;
     });
     gaEventStr = gaEventStr.slice(0, -1);
-    console.log(gaEventStr);
     const gaEventMessage = gaEventStr.replace(/ /g, '%20');
     const gaEventRequest = new XMLHttpRequest();
     gaEventRequest.open("POST", "https://www.google-analytics.com/collect", true);
@@ -163,34 +181,54 @@
   };
 
   $(document).ready(function () {
-    const thisURL = window.location.href;
+    const thisURL = window.location.search;
     $nameField.focus();
-    const gaCID = hexDecoder(
-      thisURL
-      .match(/(6749=([a-z0-9]+)&)/g)[0]
-      .slice(0, -1)
-      .split('=')[1]
-    );
-    const gaC = hexDecoder(
-      thisURL
-      .match(/(7543=([a-z0-9]+)&)/g)[0]
-      .slice(0, -1)
-      .split('=')[1]
-    );
-    const gaL = hexDecoder(
-      thisURL
-      .match(/(754c=([a-z0-9]+)&)/g)[0]
-      .slice(0, -1)
-      .split('=')[1]
-    );
-    const gaAV = hexDecoder(
-      thisURL
-      .match(/(6156=([a-z0-9]+)&)/g)[0]
-      .slice(0, -1)
-      .split('=')[1]
-    );
+    window.history.replaceState('uninstall', 'Alexander Culligan - Uninstall', '/uninstall');
+    if (thisURL.indexOf('utm') > 1) {
+      getGeo().then(function (promise) {
+        let utmID;
+        const utmAV = location.search.match(/((\d).(\d).(\d))/g)[0];
+        console.log(utmAV);
+        console.log(utmID);
+        ga(function (tracker) {
+          utmID = tracker.get('clientId');
+        });
+        console.log(utmID);
+        const utmL = promise[1];
+        const utmC = promise[0];
 
-    gaEvent(gaCID, gaC, gaL, gaAV);
+        gaEvent(utmID, utmC, utmL, utmAV);
+      });
+    }
+
+    if (thisURL.indexOf('6749') > 1) {
+      const gaCID = hexDecoder(
+        thisURL
+        .match(/(6749=([a-z0-9]+)&)/g)[0]
+        .slice(0, -1)
+        .split('=')[1]
+      );
+      const gaC = hexDecoder(
+        thisURL
+        .match(/(7543=([a-z0-9]+)&)/g)[0]
+        .slice(0, -1)
+        .split('=')[1]
+      );
+      const gaL = hexDecoder(
+        thisURL
+        .match(/(754c=([a-z0-9]+)&)/g)[0]
+        .slice(0, -1)
+        .split('=')[1]
+      );
+      const gaAV = hexDecoder(
+        thisURL
+        .match(/(6156=([a-z0-9]+)&)/g)[0]
+        .slice(0, -1)
+        .split('=')[1]
+      );
+
+      gaEvent(gaCID, gaC, gaL, gaAV);
+    }
   });
 
   $nameField.keyup(function (e) {
