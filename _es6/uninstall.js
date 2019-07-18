@@ -120,8 +120,77 @@
     }
   };
 
+  const hexDecoder = function (input) {
+    const hex = input.toString();
+    let str = '';
+    for (let i = 0; (i < hex.length && hex.substr(i, 2) !== '00'); i += 2)
+    str += String.fromCharCode(parseInt(hex.substr(i, 2), 16));
+    return str;
+  }
+
+  // generates a random number that's ten digits long
+  const getRandomNumber = function () {
+    return crypto.getRandomValues(new Uint32Array(1))[0];
+  };
+
+  // Google Analytics event action
+  const gaEvent = function (gaCID, gaC, gaL, gaAV) {
+    const payload = {
+      protocolVersion: 'v=1',
+      trackingId: 'tid=UA-87536814-1',
+      anonymizeIp: 'aip=1',
+      dataSource: 'ds=web',
+      anonymousClientId: `cid=${gaCID}`,
+      anonymousLocation: `geoid=${gaC}`,
+      userLanguage: `ul=${gaL}`,
+      hitType: 't=event',
+      eventCategory: 'ec=Uninstallation',
+      eventAction: `ea=${gaAV}`,
+      eventLabel: 'el=App Uninstalled',
+      cacheBuster: `z=${getRandomNumber()}`,
+    };
+    let gaEventStr = '';
+    const payloadValues = Object.values(payload);
+    payloadValues.forEach(function (value) {
+      gaEventStr += `${value}&`;
+    });
+    gaEventStr = gaEventStr.slice(0, -1);
+    console.log(gaEventStr);
+    const gaEventMessage = gaEventStr.replace(/ /g, '%20');
+    const gaEventRequest = new XMLHttpRequest();
+    gaEventRequest.open("POST", "https://www.google-analytics.com/collect", true);
+    gaEventRequest.send(gaEventMessage);
+  };
+
   $(document).ready(function () {
+    const thisURL = window.location.href;
     $nameField.focus();
+    const gaCID = hexDecoder(
+      thisURL
+      .match(/(6749=([a-z0-9]+)&)/g)[0]
+      .slice(0, -1)
+      .split('=')[1]
+    );
+    const gaC = hexDecoder(
+      thisURL
+      .match(/(7543=([a-z0-9]+)&)/g)[0]
+      .slice(0, -1)
+      .split('=')[1]
+    );
+    const gaL = hexDecoder(
+      thisURL
+      .match(/(754c=([a-z0-9]+)&)/g)[0]
+      .slice(0, -1)
+      .split('=')[1]
+    );
+    const gaAV = hexDecoder(
+      thisURL
+      .match(/(6156=([a-z0-9]+)&)/g)[0]
+      .slice(0, -1)
+      .split('=')[1]
+    );
+
+    gaEvent(gaCID, gaC, gaL, gaAV);
   });
 
   $nameField.keyup(function (e) {
