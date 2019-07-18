@@ -11,9 +11,8 @@ require: ['uninstall', 'nav-bar']
         <span class="span-line">***</span>
       </p>
 
-      <form target='_blank' action="https://formspree.io/support@alexculligan.com" method="post">
-
-        <div class="contact-form">
+      <div class="contact-form">
+      <form class="ajaxForm" action="https://formcarry.com/s/Z6uPWrBs8lp" method="POST" accept-charset="UTF-8" >
 
           <fieldset class="question first-fieldset">
                 <label for="txt-0">What's your name?</label>
@@ -29,7 +28,6 @@ require: ['uninstall', 'nav-bar']
             <label for="txtarea-0">Send a message</label>
             <textarea class="contact-field contact-text" id="txtarea-0" wrap="hard" name="message"></textarea>
           </fieldset>
-        </div>
 
         <p class="alert-note red">
           <span class="alert-text" id="name-error">Name required. </span>
@@ -38,9 +36,11 @@ require: ['uninstall', 'nav-bar']
         </p>
 
         <div class="submit-div" id="submit-button">
+          <input type="hidden" name="_gotcha">
          <input class="contact-submit" type="submit" id="submit_change" value="Submit" disabled="disabled" tabindex="0">
         </div>
       </form>
+      </div>
       <!-- <p class="p-center p-footer footer-uninstall">
 {% include social.html %}
       </p> -->

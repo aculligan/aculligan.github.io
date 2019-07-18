@@ -423,15 +423,33 @@
     validate();
   });
 
-  $submitButton.click(function () {
+  $('.ajaxForm').submit(function (e) {
+    e.preventDefault();
+    const href = $(this).attr("action");
     let name = $nameField.val();
     let firstName = name.split(' ')[0];
     $contactFormNote.hide();
-    $contactForm.typed({
-      strings: [`<p class="p-center" style="margin-top: 35vh; font-size: 2.9vw;">Thanks, ${firstName}!</p><p class="p-center" style="font-size: 2.9vw;">I'll get back to you soon</p>`],
-      showCursor: false,
-      typeSpeed: 100
-    });
     $(this).hide();
+    $.ajax({
+      url: href,
+      type: 'POST',
+      data: $(this).serialize(),
+      dataType: 'json',
+      success: function(response) {
+        if(response.status == "success"){
+          $contactForm.typed({
+            strings: [`<p class="p-center" style="margin-top: 35vh; font-size: 2.9vw;">Thanks, ${firstName}!</p><p class="p-center" style="font-size: 2.9vw;">I'll get back to you soon</p>`],
+            showCursor: false,
+            typeSpeed: 100
+          });
+        } else {
+          $contactForm.typed({
+            strings: [`<p class="p-center" style="margin-top: 35vh; font-size: 2.9vw;">Sorry, ${firstName}!</p><p class="p-center" style="font-size: 2.9vw;">Something went wrong. Please try again.</p>`],
+            showCursor: false,
+            typeSpeed: 100
+          });
+        }
+      }
+    });
   });
 })();
