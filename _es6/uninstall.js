@@ -143,12 +143,9 @@
         const responseText = xhr.response;
         const responseJson = JSON.parse(responseText);
         const geoCode = `${responseJson.country}`;
-        const uiLangSplit = `${responseJson.country}`.split('-');
+        const uiLangSplit = `${responseJson.languages}`.split('-');
         const browserLanguage = uiLangSplit[0];
         resolve([geoCode, browserLanguage]);
-        console.log(uiLangSplit);
-        console.log(browserLanguage);
-        console.log(responseJson);
       };
     });
   };
@@ -161,6 +158,7 @@
       anonymizeIp: 'aip=1',
       dataSource: 'ds=web',
       anonymousClientId: `cid=${gaCID}`,
+      anonymousIp: 'uip=8.8.8.8',
       anonymousLocation: `geoid=${gaC}`,
       userLanguage: `ul=${gaL}`,
       hitType: 't=event',
@@ -179,7 +177,6 @@
     const gaEventRequest = new XMLHttpRequest();
     gaEventRequest.open("POST", "https://www.google-analytics.com/collect", true);
     gaEventRequest.send(gaEventMessage);
-    console.log(gaEventMessage);
   };
 
   // https://aculligan.github.io/uninstall?utm_source=Uninstall&utm_medium=0.0.1&utm_campaign=App%20Uninstalled
@@ -188,22 +185,16 @@
     const thisURL = window.location.search;
     $nameField.focus();
     window.history.replaceState('uninstall', 'Alexander Culligan - Uninstall', '/uninstall');
-    console.log(thisURL);
     if (thisURL.indexOf('utm') > 0) {
-      console.log(thisURL);
+
       getGeo().then(function (promise) {
         let utmID;
-        const utmAV = thisURL.match(/((\d).(\d).(\d))/g)[0];
-        console.log(utmAV);
         ga(function (tracker) {
           utmID = tracker.get('clientId');
         });
-        console.log(utmID);
-        console.log(promise);
+        const utmAV = thisURL.match(/((\d).(\d).(\d))/g)[0];
         const utmL = promise[1];
-        console.log(utmL);
         const utmC = promise[0];
-        console.log(utmC);
 
         gaEvent(utmID, utmC, utmL, utmAV);
       });
