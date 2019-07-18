@@ -146,6 +146,8 @@
         const uiLangSplit = `${responseJson.country}`.split('-');
         const browserLanguage = uiLangSplit[0];
         resolve([geoCode, browserLanguage]);
+        console.log(uiLangSplit);
+        console.log(browserLanguage);
         console.log(responseJson);
       };
     });
@@ -193,13 +195,15 @@
         let utmID;
         const utmAV = thisURL.match(/((\d).(\d).(\d))/g)[0];
         console.log(utmAV);
-        console.log(utmID);
         ga(function (tracker) {
           utmID = tracker.get('clientId');
         });
         console.log(utmID);
+        console.log(promise);
         const utmL = promise[1];
+        console.log(utmL);
         const utmC = promise[0];
+        console.log(utmC);
 
         gaEvent(utmID, utmC, utmL, utmAV);
       });
