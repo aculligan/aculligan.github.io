@@ -1,0 +1,1918 @@
+.playIntroSound {
+	position: absolute;
+	text-align: center;
+	line-height: 70px;
+	background: white;
+	bottom: 55px;
+	left: 500px;
+	width: 286px;
+	height: 72px;
+	border-radius: 40px;
+	font-size: 37px;
+	font-family: CFAsty Book;
+	border: 4px solid #db1c23;
+	color: #db1c23
+}
+
+.playIntroSound:hover {
+	background: #db1c23;
+	color: white
+}
+
+.slideshow {
+	width: 100%;
+	height: 100%;
+	border: 1px solid black;
+	white-space: nowrap;
+	overflow: hidden;
+	font-size: 0;
+}
+
+.intro {
+	width: 1280px;
+	height: 960px;
+	display: none;
+}
+
+/*hELP DIV*/
+
+.helpBtn {
+	position: absolute;
+	right: 25px;
+	top: 25px;
+	z-index: 10000;
+	top: -840px;
+}
+
+.helpExit {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	bottom: 25px;
+	left: 48px;
+}
+
+.helpBtn.firstLevel.pressed svg path:nth-child(2) {
+	fill: red!important
+}
+
+.helpBtn.firstLevel.pressed svg path:nth-child(4) {
+	fill: #ffffff!important
+}
+
+.helpExit.pressed circle {
+	fill: #737373!important
+}
+
+.helpExit.pressed path {
+	fill: #ffffff!important
+}
+
+.instr-Btn.pressed svg path:nth-child(2) {
+	fill: #ff007d!important
+}
+
+.instr-Btn.pressed svg path:nth-child(3) {
+	fill: #ff007d!important
+}
+
+.help {
+	display: none;
+	z-index: 10000;
+	width: 1280px;
+	height: 960px;
+	overflow: hidden;
+	position: absolute;
+	background: #0a73b4;
+}
+
+.helpCont {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 1237px;
+	height: 779px;
+	/*margin-top:82px;*/
+}
+
+.helpImg {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 1237px;
+	height: 779px;
+	margin-top: 82px;
+}
+
+.helpTxt {
+	position: absolute;
+	left: 55px;
+	color: #ffffff;
+	font-size: 61px;
+	font-family: 'CFAsty Pro Book';
+	margin-top: 15px;
+}
+
+.helpRightCont {
+	position: absolute;
+	right: 0;
+	bottom: 25px;
+}
+
+.svg-cont {
+	width: 37px;
+	height: 30px;
+	float: right;
+	bottom: 50px;
+	margin-right: 75px;
+	margin-top: 3px;
+}
+
+.instr-Btn {
+	bottom: 25px;
+	margin-right: 25px;
+	float: right;
+}
+
+.Instr-txt {
+	font-family: 'CFAsty Primary Semibold';
+	font-size: 21px;
+	float: right;
+	color: #ffffff;
+	margin-right: 25px;
+	margin-top: 20px;
+	margin-left: 15px;
+}
+
+.pressed .Instr-txt {
+	color: #ff007d;
+}
+
+/*eND OF hELP DIV*/
+
+.IntroActive .intro {
+	display: block !important;
+	-webkit-box-shadow: 4px 4px 3px 0px rgba(0, 0, 0, 0.34);
+	-moz-box-shadow: 4px 4px 3px 0px rgba(0, 0, 0, 0.34);
+	box-shadow: 4px 4px 3px 0px rgba(0, 0, 0, 0.34);
+}
+
+.IntroActive .main, .IntroActive .mainOptions {
+	display: none !important;
+}
+
+#main {
+	width: 100%;
+	height: 860px;
+	background-color: white;
+	left: 0px;
+	top: 0px;
+	border-radius: 0px;
+	z-index: 9000;
+	-webkit-box-shadow: 4px 4px 3px 0px rgba(0, 0, 0, 0.34);
+	-moz-box-shadow: 4px 4px 3px 0px rgba(0, 0, 0, 0.34);
+	box-shadow: 4px 4px 3px 0px rgba(0, 0, 0, 0.34);
+}
+
+.modulesTrigger svg {}
+
+/* ------- reformed svg icons in secondLvlHeaders separately each _start - marina 1-6-18 -------*/
+
+.secondLevelHeader svg {
+	width: 70px;
+	height: 70px;
+	margin-right: 15px;
+	vertical-align: middle;
+	margin-top: -12px;
+}
+
+/* [data-second="GA"] svg {
+	width:70px;
+	height:70px;
+	margin-right: 15px;
+	vertical-align: middle;
+	margin-top: -12px;
+}
+
+[data-second="SB"] svg {
+	width: 60px;
+	height: 50px;
+	vertical-align: middle;
+	margin-right: 15px;
+}
+
+[data-second="WB"] svg {
+	width: 60px;
+	height: 50px;
+	vertical-align: middle;
+	margin-right: 15px;
+}
+
+[data-second="VW"] svg {
+	width: 100px;
+  height: 85px;
+  vertical-align: middle;
+} */
+
+/* ------- reformed svg icons in secondLvlHeaders separately each _end - marina 1-6-18 -------*/
+
+.secondLevelHeader svg path {
+	fill: #ffffff
+}
+
+.secondBack {
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	bottom: 40px;
+	left: 40px;
+}
+
+.secondBack svg {
+	width: 70px;
+	height: 70px;
+}
+
+.secondLevelHeader span {
+	vertical-align: middle;
+	letter-spacing: 1px;
+}
+
+.mainCol {
+	float: left;
+	width: 50%;
+}
+
+.mainOptions {
+	height: 100px !important;
+}
+
+.slideshow img {
+	display: inline-block;
+	transition: margin-left 0.6s ease-in-out;
+	-webkit-transition: margin-left 0.6s ease-in-out;
+}
+
+.mainBgEx {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.slideshow div {
+	display: inline-block;
+}
+
+.trigger {
+	cursor: pointer;
+	display: inline-block;
+}
+
+.trigger:hover .dim {
+	-webkit-transform: rotateX(90deg) translateZ(0);
+	transform: rotateX(90deg) translateZ(0);
+	bottom: 10px;
+}
+
+.dim {
+	width: 200px;
+	height: 100px;
+	position: relative;
+	-webkit-transition: -webkit-transform .4s ease-in-out, opacity 1.5s ease-in-out;
+	-webkit-transition: opacity 1.5s ease-in-out, -webkit-transform .4s ease-in-out;
+	transition: opacity 1.5s ease-in-out, -webkit-transform .4s ease-in-out;
+	transition: transform .4s ease-in-out, opacity 1.5s ease-in-out;
+	transition: transform .4s ease-in-out, opacity 1.5s ease-in-out, -webkit-transform .4s ease-in-out;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	margin-top: 40px;
+	-webkit-transform: rotateX(0deg) translateZ(0);
+	transform: rotateX(0deg) translateZ(0);
+}
+
+.yellow, .rgba(0, 165, 255, 1) {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.yellow {
+	background: yellow;
+	-webkit-transform: rotateX(0deg) translateZ(50px);
+	transform: rotateX(0deg) translateZ(50px);
+}
+
+.rgba(0, 165, 255, 1) {
+	background: url('https://www.google.gr/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png') no-repeat;
+	-webkit-transform: rotateX(-90deg) translateZ(50px);
+	transform: rotateX(-90deg) translateZ(50px);
+}
+
+.mainLessons {
+	display: none;
+}
+
+.levelWrapper {
+	width: 1280px;
+	height: 910px;
+	position: relative;
+	background: #892890;
+}
+
+.logoImg {
+	position: absolute;
+	top: 40px;
+	left: 30px;
+}
+
+.slideshowButtonWrapper {
+	height: 20px;
+	border-radius: 10px;
+	background: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	bottom: 204px;
+	left: 600px;
+	text-align: justify;
+	padding: 0px 9px;
+	z-index: 100;
+}
+
+.slideshowButtonWrapper span {
+	display: inline-block;
+	width: 9px;
+	height: 9px;
+	background: rgba(255, 255, 255, 0.4);
+	border-radius: 100%;
+	margin: 0px 5px;
+	cursor: pointer;
+	margin-top: 5px
+}
+
+.slideshowButtonActive {
+	background: rgba(255, 255, 255, 1) !important;
+}
+
+.bookLevel {
+	position: absolute;
+	right: 40px;
+	bottom: 170px;
+	border: 4px solid white;
+	font-family: 'Stag Sans Web';
+	font-size: 96px;
+	border-radius: 100%;
+	width: 120px;
+	height: 120px;
+	line-height: 120px;
+	text-align: center;
+	color: white;
+	;
+}
+
+.secondary .mainBtn {
+	width: 550px;
+	height: 100px;
+	position: relative;
+	cursor: pointer;
+	margin-bottom: 25px;
+	margin-right: 25px;
+	border-radius: 58px;
+	line-height: 97px;
+	margin: 35px auto 0px auto;
+	box-sizing: border-box;
+}
+
+.secondary .mainNormal, .secondary .mainInv {
+	position: relative;
+}
+
+.primary .mainNormal, .primary .mainInv {
+	position: relative;
+	border-radius: 100%;
+	float: left;
+	text-align: center;
+	height: 172px;
+	margin: 0px 10px;
+	width: 140px;
+}
+
+.secondary .mainNormal {
+	color: white;
+	background: rgb(49,73,94);
+	background: -moz-linear-gradient(90deg, rgba(49,73,94,1) 0%, rgba(181,203,222,1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(49,73,94,1) 0%, rgba(181,203,222,1) 100%);
+	background: linear-gradient(90deg, rgba(49,73,94,1) 0%, rgba(181,203,222,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#31495e",endColorstr="#b5cbde",GradientType=1);
+	border: 8px solid white;
+	line-height: 84px;
+}
+
+.mainInv {
+	background: #FFFFFF;
+	color: #31495E;
+}
+
+.secondary .mainTitle {
+	font-size: 45px;
+	width: 100%;
+	font-family: 'CFAsty';
+	text-align: center;
+	font-weight: 300;
+}
+
+.primary .mainTitle {
+	font-size: 23px;
+	margin-top: 20px;
+}
+
+.scrollMore{position:absolute;
+bottom:0px;
+width:5px;
+height:135px;
+right:0px;
+z-index:500;
+background: rgb(200,200,200);
+display:none;
+border-radius:3px;}
+
+.scrollHandleMore{position:absolute;
+width:6px;
+height:20px;
+background:#ff0037;
+left:0px;
+top:0px;
+}
+
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.modulesMore {
+	position: relative;
+	display: inline-block;
+	width: 260px;
+	margin-right: 16px;
+	position: absolute !important;
+	top: 27px;
+	right: 150px;
+}
+
+.modulesExtra {
+	position: absolute;
+	left: 0px;
+	bottom: 50px;
+	display: none;
+	width: 316px;
+	font-family: 'Stag Sans Web';
+	font-weight: 400;
+	overflow: auto;
+	height: 850px;
+	scrollbar-width: thin;
+	scrollbar-color: #888 #f1f1f1;
+}
+
+.modulesExtra>div {
+	line-height: 50px;
+	min-height: 50px;
+	-webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.4);
+	background: transparent;
+}
+
+.modulesExtra>div:not(.scrollMore){line-height: 50px;min-height: 50px;-webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.4);-moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.4);box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.4);background:transparent;}
+.modulesExtraExp {
+	-webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0) !important;
+	-moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0) !important;
+	box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0) !important;
+}
+
+.modulesExtra>div>span.pressed, .modulesExtraSub>span.pressed {
+	background: #505050;
+	color: #ffffff;
+	/*font-weight:600;*/
+}
+
+.modulesExtra>div>span {
+	padding-left: 20px;
+	font-size: 30px;
+	color: black;
+	display: block;
+	cursor: pointer;
+	background: white;
+	font-family: 'CFAsty';
+}
+
+.modulesExtraSub {
+	display: none;
+	overflow: hidden;
+	transition: max-height 0.3s ease-in-out;
+	-webkit-transition: max-height 0.3s ease-in-out;
+}
+
+.modulesExtraSub>span {
+	display: block;
+	height: 45px;
+	line-height: 43px;
+	margin-left: 18px;
+	padding-left: 20px;
+	background: #dcdcdc;
+	color: black;
+	font-size: 30px;
+	cursor: pointer;
+	-webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.4);
+}
+
+.modulesExtraExp>span {
+	background: #505050 !important;
+	color: #ffffff !important;
+	/*font-weight:600 !important;*/
+	font-family: 'CFAsty'!important;
+}
+
+.secondary .pressed.mainNormal {
+	background: white;
+	color: #31495E;
+}
+
+.pressed.mainInv {
+	background: #31495E;
+	color: #ffffff;
+}
+
+.logoSmall {
+	vertical-align: middle;
+	margin-top: -5px;
+}
+
+.modulesTrigger {
+	font-family: 'CFAsty';
+	font-size: 30px;
+	letter-spacing: 1px;
+	color: #737373;
+	cursor: pointer;
+	/* font-weight: 300; */
+}
+
+.exitBtn {
+	vertical-align: middle;
+	margin-right: 35px;
+	margin-top: -3px;
+}
+
+.homeBtn {
+	vertical-align: middle;
+	margin-top: -3px;
+}
+
+.mainInactive path {
+	fill: #DCDCDC
+}
+
+.mainActive path {
+	fill: #000000
+}
+
+.exitBtn.pressed rect, .homeBtn.pressed rect {
+	fill: rgba(0, 0, 0, 0.4)
+}
+
+.exitBtn.pressed path, .homeBtn.pressed path {
+	fill: rgba(255, 255, 255, 1)
+}
+
+.scondary .mainBtn svg {
+	position: absolute;
+	left: 12px;
+	top: 73px;
+}
+
+.mainInv svg path, .mainInv svg polygon {
+	fill: #31495E;
+}
+
+.secondary .mainNormal svg path, .secondary .mainNormal svg polygon, .secondary .mainInv ellipse {
+	fill: white;
+}
+
+.secondary .mainInv.pressed svg path, .secondary .mainInv.pressed svg polygon, .secondary .mainInv.pressed ellipse, .secondary .mainInv.pressed svg rect, .secondary .mainInv.pressed svg circle {
+	fill: #ffffff;
+}
+
+.secondary .mainNormal.pressed svg path, .secondary .mainNormal.pressed svg polygon {
+	fill: #31495E;
+}
+
+.primary .mainTitle {
+	font-family: 'SoupofJustice';
+	text-align: center;
+}
+
+.primaryFirst .primaryBg {
+	fill: #ffffff;
+	stroke: #FF003C;
+}
+
+.primaryFirst .primaryBg circle {
+	stroke: #FF003C;
+}
+
+.primaryFirst .primaryInner {
+	fill: #FF003C;
+}
+
+.primaryFirst .mainTitle {
+	color: white;
+}
+
+.primaryFirst.pressed .primaryBg {
+	fill: #FF003C;
+}
+
+.primaryFirst.pressed .primaryInner {
+	fill: #ffffff;
+}
+
+.primaryFirst.pressed .mainTitle {
+	color: #FF003C;
+}
+
+.primarySecond .primaryBg {
+	fill: #ffffff;
+	stroke: #fe4bc6;
+}
+
+.primarySecond .primaryBg circle {
+	stroke: #fe4bc6;
+}
+
+.primarySecond .primaryInner {
+	fill: #fe4bc6;
+}
+
+.primarySecond .mainTitle {
+	color: white;
+}
+
+.primarySecond.pressed .primaryBg {
+	fill: #fe4bc6;
+}
+
+.primarySecond.pressed .primaryInner {
+	fill: #ffffff;
+}
+
+.primarySecond.pressed .mainTitle {
+	color: #fe4bc6;
+}
+
+.primaryThird .primaryBg {
+	fill: #ffffff;
+	stroke: #ffa000;
+}
+
+.primaryThird .primaryBg circle {
+	stroke: #ffa000;
+}
+
+.primaryThird .primaryInner {
+	fill: #ffa000;
+}
+
+.primaryThird .mainTitle {
+	color: white;
+}
+
+.primaryThird.pressed .primaryBg {
+	fill: #ffa000;
+}
+
+.primaryThird.pressed .primaryInner {
+	fill: #ffffff;
+}
+
+.primaryThird.pressed .mainTitle {
+	text-align: center;
+	color: #ffa000;
+}
+
+.primaryFourth .primaryBg {
+	fill: #ffffff;
+	stroke: #2ee100;
+}
+
+.primaryFourth .primaryBg circle {
+	stroke: #2ee100;
+}
+
+.primaryFourth .primaryInner {
+	fill: #2ee100;
+}
+
+.primaryFourth .mainTitle {
+	color: white;
+}
+
+.primaryFourth.pressed .primaryBg {
+	fill: #2ee100;
+}
+
+.primaryFourth.pressed .primaryInner {
+	fill: #ffffff;
+}
+
+.primaryFifth .primaryBg {
+	fill: #ffffff;
+	stroke: #00d2ff;
+}
+
+.primaryFifth .primaryBg circle {
+	stroke: #00d2ff;
+}
+
+.primaryFifth .primaryInner {
+	fill: #00d2ff;
+}
+
+.primaryFifth .mainTitle {
+	color: white;
+}
+
+.primaryFifth.pressed .primaryBg {
+	fill: #00d2ff;
+}
+
+.primaryFifth.pressed .primaryInner {
+	fill: #ffffff;
+}
+
+.primaryGroup svg {
+	overflow: visible;
+}
+
+.firstLevel {
+	display: block;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ */
+
+.secondary .mainSecondLevel {
+	display: none;
+	overflow: hidden;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+.primary .mainSecondLevel {
+	display: none;
+	overflow: hidden;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	background: rgba(47, 44, 133, 0.93);
+	width: 100%;
+	min-height: 200px;
+}
+
+.primary .color-1 .secondModuleButton {
+	background: #ff5824;
+	color: #ffffff;
+	border: 4px solid transparent;
+}
+
+.primary [data-secondtargetmodule="1"] .secondModuleButton, .color-1.pressed .secondModuleButton {
+	background: #ffffff !important;
+	color: #ff5824 !important;
+	border: 4px solid #ff5824 !important;
+}
+
+.primary .color-2 .secondModuleButton {
+	background: #2ee100;
+	color: white;
+	border: 4px solid transparent;
+}
+
+.primary [data-secondtargetmodule="2"] .secondModuleButton, .primary .color-2.pressed .secondModuleButton {
+	background: white;
+	color: #2ee100;
+	border: 4px solid #2ee100;
+}
+
+.primary .color-3 .secondModuleButton {
+	background: #901252;
+	color: #ffffff;
+	border: 4px solid transparent;
+}
+
+.primary [data-secondtargetmodule="3"] .secondModuleButton, .primary .color-3.pressed .secondModuleButton {
+	background: #ffffff !important;
+	color: #901252 !important;
+	border: 4px solid #901252 !important;
+}
+
+.primary .color-4 .secondModuleButton {
+	background: #ffa000;
+	color: white;
+	border: 4px solid transparent;
+}
+
+.primary [data-secondtargetmodule="4"] .secondModuleButton, .primary .color-4.pressed .secondModuleButton {
+	background: white;
+	color: #ffa000;
+	border: 4px solid #ffa000;
+}
+
+.primary .color-5 .secondModuleButton {
+	background: #008c96;
+	color: #ffffff;
+	border: 4px solid transparent;
+}
+
+.primary [data-secondtargetmodule="5"] .secondModuleButton, .primary .color-5.pressed .secondModuleButton {
+	background: #ffffff !important;
+	color: #008c96 !important;
+	border: 4px solid #008c96 !important;
+}
+
+.primary .color-6 .secondModuleButton {
+	background: #da0000;
+	color: #ffffff;
+	border: 4px solid transparent;
+}
+
+.primary [data-secondtargetmodule="6"] .secondModuleButton, .primary .color-6.pressed .secondModuleButton {
+	background: #ffffff !important;
+	color: #da0000 !important;
+	border: 4px solid #da0000 !important;
+}
+
+.primary .color-7 .secondModuleButton {
+	background: #fe4bc6;
+	color: #ffffff;
+	border: 4px solid transparent;
+}
+
+.primary [data-secondtargetmodule="7"] .secondModuleButton, .primary .color-7.pressed .secondModuleButton {
+	background: #ffffff !important;
+	color: #fe4bc6 !important;
+	border: 4px solid #fe4bc6 !important;
+}
+
+.primary .color-8 .secondModuleButton {
+	background: #f7e500;
+	color: white;
+	border: 4px solid transparent;
+}
+
+.primary [data-secondtargetmodule="8"] .secondModuleButton, .primary .color-8.pressed .secondModuleButton {
+	background: white !important;
+	color: #f7e500 !important;
+	border: 4px solid #f7e500 !important;
+}
+
+.primary .color-9 .secondModuleButton {
+	background: #00A5FF;
+	color: white;
+	border: 4px solid transparent;
+}
+
+.primary [data-secondtargetmodule="9"] .secondModuleButton, .primary .color-9.pressed .secondModuleButton {
+	background: white !important;
+	color: #00A5FF !important;
+	border: 4px solid #00A5FF !important;
+}
+
+.primary .color-10 .secondModuleButton {
+	background: #bee530;
+	color: white;
+	border: 4px solid transparent;
+}
+
+.primary [data-secondtargetmodule="10"] .secondModuleButton, .primary .color-10.pressed .secondModuleButton {
+	background: white !important;
+	color: #bee530 !important;
+	border: 4px solid #bee530 !important;
+}
+
+.primaryStudents.pressed .primaryBg {
+	fill: #FFFFFF;
+}
+
+.primaryStudents.pressed .primaryInner {
+	fill: #FF5824;
+}
+
+.primaryWorkbook.pressed .primaryBg {
+	fill: #FFFFFF;
+}
+
+.primaryWorkbook.pressed .primaryInner {
+	fill: #00D2FF;
+}
+
+.primaryGrammar.pressed .primaryBg {
+	fill: #FFFFFF;
+}
+
+.primaryGrammar.pressed .primaryInner {
+	fill: #2EE100;
+}
+
+.primaryAlphabet.pressed .primaryBg {
+	fill: #ffffff;
+}
+
+.primaryAlphabet.pressed .primaryInner {
+	fill: #901252;
+}
+
+.primaryReader.pressed .primaryBg {
+	fill: #ffffff;
+}
+
+.primaryReader.pressed .primaryInner {
+	fill: #008C96;
+}
+
+.primary .slideshowButtonWrapper {
+	display: none !important;
+}
+
+.secondBackbtn {}
+
+.secondBackbtn.pressed circle {
+	fill: gray;
+}
+
+.secondBackbtn.pressed path {
+	fill: white;
+}
+
+.secondary .mainButtons {
+	text-align: center;
+	overflow: hidden;
+	position: absolute;
+	bottom: 115px;
+	left: 0px;
+	padding-bottom: 70px;
+	padding-top: 100px;
+	width: 100%;
+	z-index: 2;
+}
+
+.tCenter {
+	display: inline-block;
+}
+
+.secondary .mainSecondLevel {
+	overflow: hidden;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	padding-bottom: 10px;
+	/*padding-bottom:0;*/
+	/*marina 31-5-18*/
+	padding-top: 100px;
+	width: 100%;
+}
+
+.primary .mainButtons {
+	overflow: hidden;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	padding-left: 489px;
+	padding-bottom: 10px;
+	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(30, 30, 40, 0.9) 35%);
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(30, 30, 40, 0.9) 35%);
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(30, 30, 40, 0.9) 35%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc1e1e28', GradientType=0);
+	padding-top: 100px;
+	width: 100%;
+}
+
+.secondary .secondButton {
+	float: left;
+	margin-left: 7px;
+	margin-right: 17px;
+	margin-bottom: 22px;
+}
+
+.primary .secondButton {
+	float: left;
+	margin-left: 17px;
+	position: relative;
+	margin-right: 3px;
+	margin-bottom: 40px;
+}
+
+.secondButtonWrapper {
+	overflow: hidden;
+	min-height: 200px;
+	display: inline-block;
+	padding-top: 55px;
+	padding-bottom: 0px;
+}
+
+.secondary .secondLevelHeader {
+	margin: 0px auto;
+	height: 120px;
+	width: 680px;
+	font-family: 'CFAsty';
+	line-height: 110px;
+	color: white;
+	font-weight: 300;
+	font-size: 55px;
+	font-weight: 300;
+	border: 6px solid white;
+	border-radius: 60px;
+	box-sizing: border-box;
+	background: rgb(49,73,94);
+	background: -moz-linear-gradient(90deg, rgba(49,73,94,1) 0%, rgba(181,203,222,1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(49,73,94,1) 0%, rgba(181,203,222,1) 100%);
+	background: linear-gradient(90deg, rgba(49,73,94,1) 0%, rgba(181,203,222,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#31495e",endColorstr="#b5cbde",GradientType=1);
+	text-align: center;
+	margin-bottom: -23px;
+	/*margin-bottom: 5px;*/
+}
+
+[data-second="PG"] .secondLevelHeader {
+	width: 734px;
+}
+
+[data-second="PV"] .secondLevelHeader, [data-second="PM"] .secondLevelHeader, [data-second="PG"] .secondLevelHeader {
+	border: 6px solid #ffec00;
+}
+
+[data-second="PG"] .secondLevelHeader, [data-second="PM"] .secondLevelHeader, [data-second="PR"] .secondLevelHeader, [data-second="PC"] .secondLevelHeader, [data-second="PV"] .secondLevelHeader {
+	background: -moz-linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.98) 1%, rgba(0, 0, 0, 0.5) 51%, rgba(0, 0, 0, 0) 100%);
+	background: -webkit-linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.98) 1%, rgba(0, 0, 0, 0.5) 51%, rgba(0, 0, 0, 0) 100%);
+	background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.98) 1%, rgba(0, 0, 0, 0.5) 51%, rgba(0, 0, 0, 0) 100%);
+	color: #ffec00;
+	font-family: 'CFAsty';
+	padding: 9px;
+	height: 130px;
+	line-height: 66px;
+}
+
+[data-second="PG"] .secondLevelHeader span, [data-second="PM"] .secondLevelHeader span, [data-second="PR"] .secondLevelHeader span, [data-second="PC"] .secondLevelHeader span, [data-second="PV"] .secondLevelHeader span {
+	font-size: 33px;
+	margin-left: 4px;
+	display: block;
+	margin-top: -17px;
+}
+
+.secondLevelHeader img {
+	margin-right: 15px;
+	margin-top: -11px;
+	vertical-align: middle;
+	margin-left: -5px;
+}
+
+.primary .secondLevelHeader {
+	margin: 15px 0px 20px 0px;
+	padding-left: 44px;
+	height: 60px;
+	line-height: 60px;
+	color: white;
+	font-weight: 300;
+	font-size: 37px;
+	color: white;
+	font-family: SoupofJustice;
+	width: 700px;
+}
+
+.secondModuleButton, .secondExtraButton {
+	box-sizing: border-box;
+	transition: height 0.3s ease-in-out;
+	-webkit-transition: height 0.3s ease-in-out;
+	font-family: 'Stag Sans Medium';
+	position: relative;
+}
+
+.primaryBtns {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	display: block;
+	z-index: 500;
+}
+
+.secondButtonsMinified .secondModuleButton, .secondButtonsMinified .secondExtraButton {
+	height: 64px
+}
+
+.secondButtonsMinified .secondModuleButton .secondTitle {
+	top: 0px;
+}
+
+.secondButtonsMinified .secondExtraButton .secondTitle {
+	left: 46px;
+	font-size: 14px;
+	height: 38px;
+	overflow: hidden;
+}
+
+.secondButtonsMinified .secondModuleButton .secondSub {
+	top: 15px;
+}
+
+[data-secondmodule].pressed .secondModuleButton, .secondMore .secondModuleButton, .secondImagesCM .secondModuleButton.pressed, .secondImagesCM .secondButton.pressed .secondModuleButton {
+	background: #31495E;
+	color: #ffffff;
+}
+
+/* .secondButton.pressed .secondExtraButton, */
+
+.secondMore .secondExtraButton {
+	background: white;
+	;
+	color: #e60d7e;
+}
+
+/* .secondButton.pressed .secondSub svg g,.secondMore .secondSub svg g{fill:#00A5FF;}
+ */
+
+.secondButtonsMinified .secondExtraButton .secondSub {
+	left: 10px;
+}
+
+.secondary .secondModuleButton {
+	background: #FFFFFF;
+	color: #31495E;
+	position: relative;
+	width: 115px;
+	height: 115px;
+	border-radius: 100%;
+	border: 4px solid #31495E;
+}
+
+.primary .secondModuleButton {
+	background: #00A5FF;
+	border: 4px solid #00A5FF;
+	color: #ffff64;
+	position: relative;
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	font-family: SoupofJustice;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.primary .secondExtraButton {
+	background: rgba(0, 0, 0, 0.3);
+	color: white;
+	font-weight: 300;
+	position: relative;
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	font-family: SoupofJustice;
+	text-align: center;
+	border: 2px solid white;
+	box-sizing: border-box;
+}
+
+.secondary .secondExtraButton {
+	background: rgba(0, 0, 0, 0.1);
+	color: white;
+	font-weight: 300;
+	position: relative;
+	width: 115px;
+	height: 115px;
+	text-align: center;
+	border: 2px solid white;
+	box-sizing: border-box;
+	border-radius: 100%;
+}
+
+.secondary .secondModuleButton .secondTitle {
+	text-align: center;
+	font-size: 18px;
+	font-family: 'CFAsty';
+	transition: top 0.3s ease-in-out;
+	-webkit-transition: top 0.3s ease-in-out;
+	padding-top: 24px;
+	padding-bottom: 2px;
+	font-weight: 300;
+	line-height: 18px;
+	font-weight: 300;
+}
+
+.secondImagesCM .secondTitle {
+	padding-top: 68px!important;
+}
+
+.primary .secondModuleButton .secondTitle {
+	position: absolute;
+	left: 11px;
+	top: 19px;
+	font-size: 19px;
+	width: 70px;
+	line-height: 20px;
+	transition: top 0.3s ease-in-out;
+	-webkit-transition: top 0.3s ease-in-out;
+}
+
+.secondary .secondExtraButton .secondTitle {
+	text-align: center;
+	font-size: 18px;
+	font-family: 'CFAsty';
+	transition: top 0.3s ease-in-out;
+	-webkit-transition: top 0.3s ease-in-out;
+	padding-top: 8px;
+	font-weight: 300;
+}
+
+.mainBtn {
+	cursor: pointer
+}
+
+.primary .secondExtraButton .secondTitle {
+	font-weight: 300;
+	font-family: 'SoupofJustice';
+	position: absolute;
+	top: 17px;
+	font-size: 18px;
+	width: 100%;
+	line-height: 20px;
+	transition: left 0.3s ease-in-out, font-size 0.3s ease-in-out;
+	-webkit-transition: left 0.3s ease-in-out, font-size 0.3s ease-in-out;
+	font-size: 16px;
+	text-align: center;
+}
+
+.secondary .secondModuleButton .secondSub {
+	text-align: center;
+	font-family: 'CFAsty Primary Book';
+	margin-top: -10px;
+	font-size: 62px;
+	transition: top 0.3s ease-in-out;
+	-webkit-transition: top 0.3s ease-in-out;
+}
+
+.primary .secondModuleButton .secondSub {
+	font-size: 35px;
+	text-align: center;
+	position: absolute;
+	left: 25px;
+	top: 41px;
+	width: 40px;
+	transition: top 0.3s ease-in-out;
+	-webkit-transition: top 0.3s ease-in-out;
+}
+
+.primary .secondExtraButton .secondSub {
+	font-size: 35px;
+	text-align: center;
+	position: absolute;
+	top: 52px;
+	width: 100%;
+	text-align: center;
+}
+
+.secondExtraButton .secondSub {
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	bottom: 12px;
+	transition: top 0.3s ease-in-out, left 0.3s ease-in-out;
+	-webkit-transition: top 0.3s ease-in-out, left 0.3s ease-in-out;
+	line-height: 40px;
+}
+
+.secondButtonHidden {
+	visibility: hidden;
+}
+
+.secondMore {
+	height: 477px;
+	margin-left: 24px;
+	/*margin-bottom:23px;overflow:hidden;*/
+	display: none;
+	margin-bottom: -19px;
+}
+
+/*Scroll bars changes*/
+
+.subs {
+	color: black;
+	text-align: center;
+	font-size: 53px;
+	height: 70px;
+	line-height: 66px;
+	width: 100%;
+	font-family: 'mmAsap';
+	background: rgb(150, 150, 150);
+	background: -moz-linear-gradient(top, rgba(150, 150, 150, 1) 0%, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 1) 85%, rgba(150, 150, 150, 1) 100%);
+	background: -webkit-linear-gradient(top, rgba(150, 150, 150, 1) 0%, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 1) 85%, rgba(150, 150, 150, 1) 100%);
+	background: linear-gradient(to bottom, rgba(150, 150, 150, 1) 0%, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 1) 85%, rgba(150, 150, 150, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#969696', endColorstr='#969696', GradientType=0);
+	margin-top: 30px;
+}
+
+/* .demoGrammar svg:not([data-video]):not([data-gotoframe]) {opacity:0.3}
+
+.demoGrammar svg.pressed rect{fill:#008100}
+
+.demoButton svg.pressed circle{fill:#ffffff }
+
+.demo [data-secondmodule],.demo [data-gamemodule]>div,.demo [data-goto]{position:relative;}
+
+.demo [data-goto] .secondExtraButton,.demo [data-secondmodule] .secondModuleButton,.demo [data-game],.demo [data-gamemodule] [data-gotoframe ],.demoButton .secondModuleButton{position:relative;border:4px solid white !important;box-sizing:border-box;}
+
+.demoButton .secondModuleButton {background: #00A5FF !important;
+
+    color: #ffffff !important;}
+
+.demo [data-secondmodule] .secondModuleButton .secondTitle{top:10px;left:13px;}
+
+.demo .secondButton,.secondCustomTiles svg{position:relative;margin: 0px 1px;} */
+
+.secondCustomTiles div {
+	position: relative;
+	background: black;
+	border-radius: 15px;
+	/* margin: 0px 3px; */
+}
+
+.secondCustomTiles>div {
+	padding-bottom: 24px;
+}
+
+/* .demo [data-game]{padding-left:8px;padding-top:6px;position:relative;}
+.demo [data-game]:after,.demo [data-gamemodule] [data-gotoframe]:after,.demoButton:after{content:url('Images/demo-triangle-2.png');position:absolute;right:0px;bottom:0px;height:40px;width:40px;z-index:100;}
+
+.demo .secondButton:not([data-goto]):not([data-secondmodule]):not([data-secondtarget]):not(.demoButton):after,.demo [data-gamemodule]>div:not([data-game]):not([data-gotoframe]):after,.secondCustomTiles svg:after{content:'';position:relative;position:absolute;right:0px;bottom:0px;height:100%;width:100%;z-index:100;background:rgba(0,0,0,0.5)}
+
+.demo [data-secondmodule]:after,.demo [data-goto]:after{content:url('Images/demo-triangle.png');position:absolute;right:0px;bottom:0px;height:83px;width:83px;z-index:100;
+ } */
+
+.secondButtonWrapper .secondImages {
+	display: none;
+}
+
+.secondCustomHeader {
+	font-family: 'CFAsty';
+	font-size: 22px;
+	overflow: hidden;
+	color: black;
+	line-height: 40px;
+	margin-bottom: 10px;
+	padding: 0px 11px;
+	background: none;
+	font-weight: 300;
+}
+
+.secondCustomTiles {
+	padding: 0px 11px;
+	overflow: hidden;
+}
+
+.secondCustomHeader>div {
+	box-sizing: border-box;
+	background: none !important;
+	font-size: 60px;
+}
+
+[data-second="GA"] .secondCustomHeader>div, [data-second="GA"] .secondCustomTiles>div>div {
+	margin-right: 10px;
+}
+
+.secondCustomHeader span {
+	font-size: 22px;
+}
+
+.secondCustomHeader>div, .secondCustomTiles>div {
+	float: left;
+	background: black;
+	border-radius: 15px;
+	margin: 0px 5px;
+	width: 147px;
+}
+
+.secondCustomTiles>div>div {
+	color: white;
+	box-sizing: border-box;
+	background: -moz-linear-gradient(left, rgba(0, 165, 255, 1) 70%, rgba(0, 0, 255, 0) 100%);
+	background: -webkit-linear-gradient(left, rgba(0, 165, 255, 1) 70%, rgba(0, 0, 255, 0) 100%);
+	background: linear-gradient(to right, rgba(0, 165, 255, 1) 70%, rgba(0, 0, 255, 0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=1);
+	color: white;
+	margin-bottom: -15px;
+	padding-top: 10px;
+	font-family: CFAsty;
+	line-height: 20px;
+}
+
+.secondCustomTiles>div>div>div {
+	width: 100%;
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 6px;
+}
+
+[data-second="PG"] .secondCustomTiles>div>div {
+	padding: 6px 7px 0px 7px;
+	background: transparent;
+	margin-top: 13px;
+}
+
+.secondCustomTiles>div>div.pressed {
+	color: rgba(0, 165, 255, 1);
+	background: -moz-linear-gradient(left, rgba(255, 255, 255, 1) 70%, rgba(0, 0, 255, 0) 100%);
+	background: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 70%, rgba(0, 0, 255, 0) 100%);
+	background: linear-gradient(to right, rgba(255, 255, 255, 1) 70%, rgba(0, 0, 255, 0) 100%);
+}
+
+.secondMore .secondModuleButton,.secondMore .secondExtraButton {
+	float: left;
+}
+
+.secondMore .secondImages {
+	float: left;
+}
+
+.secondImages {
+	margin-left: 22px;
+	width: 1073px;
+}
+
+/*Scroll bars changes*/
+
+.secondImages:not(.secondImagesGA) {
+	/* height:477px; */
+	height: 482px;
+	overflow: auto;
+}
+
+/* Disable scrollbars */
+
+.secondImages::-webkit-scrollbar {
+	width: 0 !important
+}
+
+.secondImages {
+	-ms-overflow-style: none;
+}
+
+.secondImages {
+	overflow: -moz-scrollbars-none;
+}
+
+.secondImages:not(.secondImagesGA):not(.secondImagesCM) div {
+	float: left;
+	margin-right: 9px;
+	background: black;
+	padding: 13px 10px 7px 10px;
+	border-radius: 9px;
+	font-size: 30px;
+	/*font-size: 23px; gia na xwrane ta thumbs*/
+	font-family: 'CFAsty Book';
+	margin-bottom: 5px;
+	font-weight: 300;
+}
+
+.secondImages img {
+	height: 174px;
+	width: auto;
+	display: block;
+	margin-bottom: 6px;
+}
+
+/*Scroll bars changes end*/
+
+.secondImages>div>span {
+	color: rgba(255, 255, 255, 0.8);
+	display: inline-block;
+	float: left;
+}
+
+.secondImages>div>span:nth-child(3) {
+	float: right
+}
+
+.secondary .secondImages>div.pressed img {
+	outline: 4px solid #00A5FF;
+	outline-offset: -4px;
+}
+
+.primary .secondImages>div.pressed img {
+	outline: 4px solid #d90001;
+	outline-offset: -4px;
+}
+
+.secondary .secondImages>div.pressed span {
+	color: #00A5FF;
+}
+
+.primary .secondImages>div.pressed span {
+	color: #d90001;
+}
+
+.secondOpacity {
+	opacity: 0.5;
+	outline: 2px solid #ffffff;
+	outline-offset: -2px;
+}
+
+[data-second] {
+	display: none;
+	text-align: center;
+}
+
+.loader {
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+	margin: 0px auto;
+	margin-top: 260px;
+	color: white;
+	position: relative;
+}
+
+[data-second="PM"] .secondModuleButton, [data-second="VW"] .secondModuleButton, [data-second="PR"] .secondModuleButton, [data-second="PC"] .secondModuleButton, [data-second="PV"] .secondModuleButton, [data-second="PG"] .secondModuleButton {
+	width: 150px;
+	height: 150px;
+	background: black;
+	color: white;
+	border: 0;
+}
+
+[data-second="PM"] .secondModuleButton .secondSub, [data-second="VW"] .secondModuleButton .secondSub, [data-second="PR"] .secondModuleButton .secondSub, [data-second="PC"] .secondModuleButton .secondSub, [data-second="PV"] .secondModuleButton .secondSub, [data-second="PG"] .secondModuleButton .secondSub {
+	margin-top: 20px;
+}
+
+[data-second="VW"] .secondButton.pressed .secondModuleButton, [data-second="PV"] .secondButton.pressed .secondModuleButton {
+	color: black;
+	background: white;
+}
+
+[data-second="PV"] .secondModuleButton circle, [data-second="PM"] .secondModuleButton circle, [data-second="PR"] .secondModuleButton circle, [data-second="PC"] .secondModuleButton circle, [data-second="PG"] .secondModuleButton circle {
+	fill: #afcbe0;
+	opacity: 1;
+}
+
+[data-second="PV"] .secondModuleButton g, [data-second="PM"] .secondModuleButton g, [data-second="PR"] .secondModuleButton g, [data-second="PC"] .secondModuleButton g, [data-second="PG"] .secondModuleButton g {
+	fill: black;
+}
+
+.loadingText {
+	position: absolute;
+	bottom: -100px;
+	width: 100%;
+	text-align: center;
+	font-size: 42px;
+}
+
+#loader-1:before, #loader-1:after {
+	content: "";
+	position: absolute;
+	top: -10px;
+	left: -10px;
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+	border: 10px solid transparent;
+	border-top-color: #ff3333;
+}
+
+#loader-1:before {
+	z-index: 100;
+	animation: spin 1s infinite;
+}
+
+#loader-1:after {
+	border: 10px solid #fff;
+}
+
+@keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+.secondCustomTiles svg path, .secondCustomTiles svg ellipse {
+	fill: black
+}
+
+.secondCustomTiles svg.pressed path, .secondCustomTiles svg.pressed ellipse {
+	fill: #d7df23;
+}
+
+[data-video].pressed circle, [data-secondmodule][data-gotoframe].pressed circle {
+	fill: #ffffff;
+}
+
+[data-video].pressed g, [data-secondmodule][data-gotoframe].pressed g {
+	fill: #afcbe0;
+}
+
+.secondCustomTiles svg circle {
+	opacity: 1
+}
+
+.secondCustomTiles svg.pressed path, .secondCustomTiles svg.pressed ellipse {
+	fill: #FF9A9A
+}
+
+.gamesTiles>div {
+	float: left;
+	font-family: 'CFAsty';
+	font-weight: 300;
+	/* margin-bottom: 42px; */
+	margin-bottom: 18px;
+	height: 285px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+[data-game].pressed {
+	background: #800000;
+	color: #f3c8c8;
+}
+
+.gamesHeader {
+	font-size: 60px;
+	height: 50px;
+	line-height: 41px;
+	margin-top: 18px;
+	/*margin-top:10px;*/
+}
+
+.mainOptions a {
+	top: 30px !important;
+}
+
+.gamesHeader span {
+	font-size: 22px;
+	margin-right: 5px;
+}
+
+.gamesBody {
+	background: black;
+	padding: 14px 6px 1px 6px;
+	border-radius: 20px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.gamesBody>div {
+	background: #f3c8c8;
+	height: 60px;
+	font-size: 20px;
+	border-radius: 30px;
+	box-sizing: border-box;
+	padding: 6px 25px;
+	margin-bottom: 15px;
+	display: inline-block;
+	white-space: pre;
+}
+
+.gamesTiles {
+	/*overflow: hidden;*/
+	min-height: 200px;
+	display: inline-block;
+}
+
+[data-secondtarget=GA].mainInv svg ellipse {
+	fill: #800000;
+}
+
+.secondLevelHeader svg ellipse {
+	fill: #ffffff;
+}
+
+.secondButton.pressed .secondExtraButton:not(.demoExBtn) {
+	color: #31495E;
+	background: white;
+}
+
+/* Scroll bars */
+
+.topBar {
+	display: none;
+	opacity: 0;
+	width: 1050px;
+	height: 40px;
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 20px;
+	margin-left: 182px;
+	margin-bottom: 6px;
+}
+
+.topBar svg, .bottomBar svg {
+	margin-top: 8px;
+	fill: #ffffff;
+}
+
+.bottomBar {
+	display: none;
+	opacity: 0;
+	width: 1050px;
+	height: 40px;
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 20px;
+	margin: 6px 0px 10px 182px;
+}
+
+.topBar.pressed, .bottomBar.pressed {
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.topBar.pressed svg, .bottomBar.pressed svg {
+	fill: #000000;
+}
+
+/* Scroll bars end */
+
+.spira_main {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: url('../Images/Main/spira_sprite.png') left center;
+	width: 690px;
+	height: 860px;
+	z-index: 1;
+}
+
+.spira_play {
+	animation: spira_play 1s steps(17) forwards, spira_play_inf 1s steps(6) 1s infinite;
+}
+
+@keyframes spira_play {
+	0% {
+		background-position: 0px;
+	}
+	100% {
+		background-position: -11730px;
+	}
+}
+
+@keyframes spira_play_inf {
+	0% {
+		background-position: -11730px;
+	}
+	100% {
+		background-position: -15870px;
+	}
+}
+
+.hidden {
+	opacity: 0 !important;
+}
+
+/* [data-secondmodule],[data-gamemodule] .gamesHeader,.demoW,.demoWr{position:relative;}
+
+[data-secondmodule] .secondModuleButton,.demoW{position:relative;border:5px solid #ffcd2e;}
+
+[data-secondmodule]:before,.demoW:before{width:100%;text-align:center;position:absolute;top:-30px;content:url("../css/Images/demo.png");left:0px;z-index:2;} */
+
+.gamesTiles>div {
+	float: left
+}
+
+/* .demoWr:before{width:100%;text-align:center;position:absolute;top:-17px;content:url("../css/Images/demo-portal-to-grammar.png");left:-22px;z-index:2;} */
+
+/* [data-gamemodule] .gamesHeader:before {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: -22px;
+    content: url(../css/Images/demo-portal-to-grammar.png);
+    left: -30px;
+    z-index: 2;
+} */
+
+.secondCustomHeader {
+	overflow: visible
+}
+
+/* .demoWr{margin-top:10px;} */
+
+.IWBVersion {
+	position: absolute;
+	right: 25px;
+	bottom: 10px;
+	font-family: 'CFAsty';
+	color: white;
+	font-size: 14px;
+	line-height: 1;
+}
+
+.loading .f11Txt {
+	display: none;
+}
+
+.f11Txt {
+	opacity: 0.7;
+	text-align: left;
+	border-width: 0 7px;
+	padding: 10px 15px;
+	position: absolute;
+	right: 115px;
+	top: 5px;
+	color: white;
+	font-family: 'CFAsty Std Bold';
+	font-size: 27px;
+	width: 291px;
+	background: none;
+	border: none;
+	box-sizing: content-box;
+	border: 7px solid transparent;
+	border-left: 7px solid white;
+	border-right: 7px solid white;
+}
+
+.f11Txt::before, .f11Txt::after, .f11Txt span::before, .f11Txt span::after {
+	display: block;
+	content: "";
+	width: 40px;
+	height: 20px;
+	position: absolute;
+}
+
+.f11Txt::before {
+	top: -7px;
+	left: -7px;
+	border-top: 7px solid white;
+	border-left: 7px solid rgba(255, 255, 255, 0.7);
+}
+
+.f11Txt::after {
+	top: -7px;
+	right: -7px;
+	border-top: 7px solid white;
+	border-right: 7px solid white;
+}
+
+.f11Txt span::before {
+	bottom: -7px;
+	left: -7px;
+	border-bottom: 7px solid white;
+	border-left: 7px solid white;
+}
+
+.f11Txt span::after {
+	bottom: -7px;
+	right: -7px;
+	border-bottom: 7px solid white;
+	border-right: 7px solid white;
+}
+
+.secondTitle.extraBtn {
+	font-size: 22px!important;
+	padding-top: 21px!important;
+}
+
+.secondSub.extraBtn {
+	font-family: CFAsty Medium Oblique!important;
+	font-size: 17px!important;
+	padding-top: 25px;
+	line-height: 18px;
+}
+
+[data-second=WB] .secondButtonWrapper,
+[data-second=VW],
+[data-second=PG],
+[data-second=PM],
+[data-second=PV]{
+	margin-bottom: 100px;
+}
+
+[data-second=SB] .secondButtonWrapper{
+	margin-bottom: 90px;
+}

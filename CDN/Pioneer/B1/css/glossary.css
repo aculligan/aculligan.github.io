@@ -1,0 +1,710 @@
+* {
+	-webkit-font-variant-ligatures: no-common-ligatures;
+	font-variant-ligatures: no-common-ligatures;
+}
+
+.glossarySearch input::-webkit-input-placeholder {
+	font-family: 'Stag Sans Web';
+}
+
+.vlMain {
+	position: absolute;
+	bottom: 30px;
+	left: 460px;
+	width: 750px;
+	z-index: 10;
+	background: #ffffff;
+}
+
+.glossarySearch input:-ms-input-placeholder {
+	font-family: 'Stag Sans Web';
+}
+
+.mainWrapper {
+	padding-top: 0px !important;
+	height: 960px;
+}
+
+.main {
+	background: #0a73b4;
+	width: 100%;
+	position: relative;
+	height: 100%;
+	border-radius: 0px;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	overflow: hidden;
+	left: auto;
+	top: auto;
+	height: 960px;
+}
+
+.glossarySearch input:-moz-placeholder {
+	font-family: 'Stag Sans Web';
+}
+
+.glossarySearch input::-moz-placeholder {
+	font-family: 'Stag Sans Web';
+}
+
+.vocExit {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	z-index: 20;
+}
+
+.vocExit.pressed polygon {
+	fill: #ff0000;
+}
+
+.glossaryWrapper {
+	width: 1230px;
+	text-align: left;
+	height: 875px;
+	top: 60px;
+	left: 25px;
+	position: absolute;
+	background: white;
+	border-radius: 15px;
+}
+
+.blockPanel{
+	position: absolute;
+	top: 60px;
+	right: 0;
+	left: unset;
+	height: 740px;
+	width: 790px;
+	background: rgba(255,255,255,0.8);
+	display: none;
+	z-index: 5;
+}
+
+.glossaryWords {
+	overflow: hidden;
+	position: relative;
+	/* display: none; */
+	-webkit-transition: max-height 0.4s ease-out;
+	-o-transition: max-height 0.4s ease-out;
+	transition: max-height 0.4s ease-out;
+	max-height: 0;
+}
+
+.glossaryWordInfos{
+	font-size: 30px;
+	color: #FF0037;
+	/* margin: 10px 0 10px 0;
+	padding-left: 20px; */
+	width: 630px;
+	/* border-bottom: 1px solid #969696; */
+	-webkit-transition: max-height 0.4s ease-out;
+	-o-transition: max-height 0.4s ease-out;
+	transition: max-height 0.4s ease-out;
+	max-height: 0;
+	overflow: hidden;
+	position: relative;
+}
+
+.glossaryWordInfosTxt{
+	padding: 10px 0 6px 20px;
+}
+
+.glossaryArrows{
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-top: 10px;
+	z-index: 20;
+}
+
+.glossaryArrow{
+	width: 0; 
+	height: 0; 
+	border-left: 23px solid transparent;
+	border-right: 23px solid transparent;
+	display: inline-block;
+}
+
+.glossaryArrowUp{
+	border-bottom: 23px solid #C8C8C8;
+}
+
+.glossaryArrowDown{
+	border-top: 23px solid #C8C8C8;
+	margin-right: 10px;
+}
+
+.glossaryArrowUpRed{
+	border-bottom: 23px solid #FF0037;
+}
+
+.glossaryArrowDownRed{
+	border-top: 23px solid #FF0037;
+}
+
+.glossaryBorderInfos {
+	width: 630px;
+	height: 1px;
+	background: #969696;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	z-index: 0;
+}
+
+.glexExample,.Deriv,.Opposite {
+	background: rgb(229,230,231);
+	background: -o-linear-gradient(top,  rgba(229,230,231,1) 0%,rgba(255,255,255,1) 40px);
+	background: linear-gradient(to bottom,  rgba(229,230,231,1) 0%,rgba(255,255,255,1) 40px);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e6e7', endColorstr='#ffffff',GradientType=0 );
+	border-radius: 10px;
+}
+
+.vlheader {
+	padding-top: 10px;
+	margin-left: 450px;
+	font-family: 'Stag Sans Web';
+	font-weight: 300;
+	font-size: 41px;
+	color: #231f20;
+	letter-spacing: 2px;
+	padding-bottom: 15px;
+}
+
+.vlSelect>span {
+	font-size: 30px;
+	letter-spacing: 1px;
+	display: inline-block;
+	margin-right: 10px;
+	padding: 7px 20px;
+	color: white;
+	background: #969696;
+	cursor: pointer;
+	border-radius: 15px;
+}
+
+.glSvg .soundPlay {
+	padding-right: 27px;
+	margin-top: 22px;
+}
+
+.wordSelected {
+	background: #ff0037 !important;
+}
+
+.vlSelect {
+	margin-top: 10px;
+}
+
+.wordsoundPlay.pressed circle,.soundPlay.pressed circle,.glPlaying circle {
+	fill: #231F20;
+}
+
+.wordsoundPlay.pressed g,.soundPlay.pressed g,.glPlaying g {
+	fill: #efff6f;
+}
+
+.soundPlay.pressed g,.soundPlay.glPlaying g {
+	fill: white;
+}
+
+.glossaryModsWrapper {
+	margin-top: -8px;
+	width: 510px;
+}
+
+.glexName {
+	min-height: 220px;
+}
+
+.wlScroll {
+	position: absolute;
+	bottom: 94px;
+	width: 6px;
+	height: 135px;
+	right: 15px;
+	/* display:none; */
+	z-index: 500;
+	background: rgb(200,200,200);
+	background: -webkit-gradient(linear,  left top, right top,  from(rgba(200,200,200,1)),color-stop(50%, rgba(240,240,240,1)),to(rgba(200,200,200,1)));
+	background: -o-linear-gradient(left,  rgba(200,200,200,1) 0%,rgba(240,240,240,1) 50%,rgba(200,200,200,1) 100%);
+	background: linear-gradient(to right,  rgba(200,200,200,1) 0%,rgba(240,240,240,1) 50%,rgba(200,200,200,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c8c8c8', endColorstr='#c8c8c8',GradientType=1 );
+	border-radius: 3px;
+}
+
+.wlScrollHandle {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	background: #ff0037;
+	left: -7px;
+	top: 0px;
+}
+
+.wlScrollCont {
+	position: absolute;
+	bottom: 155px;
+	width: 6px;
+	height: 135px;
+	right: 21px;
+	/* display:none; */
+	z-index: 500;
+	background: rgb(200,200,200);
+	background: -webkit-gradient(linear,  left top, right top,  from(rgba(200,200,200,1)),color-stop(50%, rgba(240,240,240,1)),to(rgba(200,200,200,1)));
+	background: -o-linear-gradient(left,  rgba(200,200,200,1) 0%,rgba(240,240,240,1) 50%,rgba(200,200,200,1) 100%);
+	background: linear-gradient(to right,  rgba(200,200,200,1) 0%,rgba(240,240,240,1) 50%,rgba(200,200,200,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c8c8c8', endColorstr='#c8c8c8',GradientType=1 );
+	border-radius: 3px;
+}
+
+.wlScrollHandleCont {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	background: #ff0037;
+	left: -7px;
+	top: 0px;
+}
+
+.glossary .vocListWrapper {
+	display: none !important;
+}
+
+.wordlistBtn {
+	font-size: 24px;
+	font-weight: 300;
+	display: inline-block;
+	float: right;
+	padding: 0px 15px;
+	color: rgb(62,112,136);
+	border-radius: 20px;
+	margin-top: 7px;
+	cursor: pointer;
+	line-height: 28px;
+	height: 30px;
+}
+
+.glossaryBorder {
+	width: 630px;
+	height: 1px;
+	background: #969696;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	z-index: 0;
+}
+
+.glossaryBorderAlpha {
+	width: 740px;
+	height: 1px;
+	background: #969696;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	z-index: 0;
+}
+
+.glBtn {
+	border: 1px solid rgb(62,112,136);
+	-o-transition: color 0.3s ease-in-out,background 0.3s ease-in-out;
+	transition: color 0.3s ease-in-out,background 0.3s ease-in-out;
+	-webkit-transition: color 0.3s ease-in-out,background 0.3s ease-in-out;
+}
+
+.glossaryLeft {
+	width: 440px;
+	font-size: 18px;
+	overflow: hidden;
+	float: left;
+	font-family: Stag Sans Web;
+	background: #e5e6e7;
+	height: 875px;
+	border-radius: 15px 0px 0px 15px;
+	position: relative;
+}
+
+.greekDef .glossaryExample {
+	font-family: calibri;
+	font-weight: bold;
+	color: #0c0cad;
+	margin-top: 16px;
+	display: none;
+	font-size: 30px;
+	line-height: 28px;
+}
+
+.glossaryTitle {
+	font-size: 30px;
+	color: #969696;
+	display: inline-block;
+	padding-left: 20px;
+	width: 110px;
+}
+
+.glossaryModules,.glossaryLessons {
+	margin-top: 10px;
+	overflow: hidden;
+	position: relative;
+}
+
+.selectMods {
+	font-size: 30px;
+	color: #969696;
+	text-align: center;
+	margin: 0px 10px;
+	padding: 8px 7px;
+	cursor: pointer;
+	display: inline-block;
+	border-bottom: 2px solid transparent;
+}
+
+.glossaryAlphabetically {
+}
+
+.modSelected,.glLetterSelected {
+	border-bottom: 2px solid #ff0037 !important;
+	color: #ff0037;
+	z-index: 10;
+}
+
+.glossaryTitle,.glossaryModsWrapper {
+	float: left;
+}
+
+.glossaryModsWrapper {
+}
+
+.glossarySearch {
+	width: 380px;
+	height: 30px;
+	margin: 11px 0px 0px 20px;
+}
+
+.glossarySearch input {
+	width: 100%;
+	outline: none;
+	border: none;
+	height: 50px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	border-radius: 15px;
+	padding: 0px 15px;
+	font-size: 30px;
+}
+
+.glossaryMain {
+	height: 885px;
+	position: relative;
+}
+
+.glossaryWordScrollWrapper {
+	width: 397px;
+	overflow: hidden;
+	font-family: Stag Sans Web;
+	height: 764px;
+	margin-top: 24px;
+	padding-right: 40px;
+	font-size: 30px;
+}
+
+.glossaryWordWrapper {
+	overflow: hidden;
+}
+
+.mainOptions {
+	z-index: -1;
+}
+
+.glossaryAlpha {
+	font-size: 30px;
+	color: #969696;
+}
+
+.glossaryAlpha>div {
+	overflow: hidden;
+	position: relative;
+}
+
+.glossaryAlphaHeader {
+	float: left;
+	width: 110px;
+	min-height: 1px;
+	padding: 8px 15px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.glossaryAlphaNumbers {
+	float: left;
+}
+
+.glossaryAlphaNumbers span {
+	text-align: center;
+	margin: 0px 8px;
+	padding: 8px 8px;
+	cursor: pointer;
+	width: 16px;
+	display: inline-block;
+	border-bottom: 2px solid transparent;
+}
+
+.glossaryWordWrapper>div {
+	padding: 14px 0px 14px 22px;
+}
+
+.word {
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.word:not(:last-child) {
+	border-bottom: 1px solid #c8c8c8;
+}
+
+.glossaryExtra {
+	float: left;
+	width: 740px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding-left: 10px;
+	font-family: 'Stag Sans Web';
+	height: 690px;
+	overflow: hidden;
+}
+
+.glossaryName {
+	font-size: 50px;
+	font-weight: bold;
+	background: #efff6f;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	border-radius: 10px;
+	padding: 34px 27px 34px 32px;
+	position: relative;
+	color: #231f2d;
+}
+
+.glSvg svg{
+	cursor:pointer;
+}
+
+.glSvg svg circle,.glSvg svg path{
+}
+
+.glSvg{
+	float:right;
+	margin-right: 10px;
+	margin-bottom: 20px;
+}
+
+.glName>span {
+	font-weight: normal;
+	font-style: italic;
+	color: rgb(241,90,36);
+}
+
+.glossaryDefinition {
+	padding-left: 32px;
+	margin-top: 14px;
+	font-size: 30px;
+	color: #505050;
+	width: 690px;
+}
+
+.glossaryExtraCont>div:not(.wlScrollCont) {
+	overflow: hidden;
+}
+
+.glossaryExtraCont>div:not(:last-child) {
+	padding-bottom: 25px;
+}
+
+.glossaryExtra>div:not(:nth-last-child(-n+2)) {
+}
+
+.vocListWrapper {
+	width: 810px;
+	height: 437px;
+	background: url('Images/vocBackground.png') no-repeat;
+	margin-top: -141px;
+	text-align: center;
+	background-color: white;
+	padding-left: 38px;
+	padding-top: 12px;
+}
+
+.vocListWrapper img {
+	vertical-align: middle;
+}
+
+.helper {
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.greekDef>div {
+	float: left;
+	line-height: 20px;
+}
+
+.showgreekDef {
+	margin-left: 32px;
+	font-size: 30px;
+	margin-top: 10px;
+	line-height: 30px;
+	padding: 7px 20px;
+	color: white;
+	background: #969696;
+	cursor: pointer;
+	border-radius: 15px;
+}
+
+.glossaryExample {
+	font-style: italic;
+	font-size: 30px;
+	color: rgb(50,50,50);
+	margin-left: 27px;
+	font-size: 30px;
+}
+
+.eg {
+	padding-left: 15px;
+	font-style: italic;
+	font-size: 25px;
+	height: 40px;
+	color: #969696;
+	font-weight: bold;
+	line-height: 40px;
+}
+
+.Opposite>div:first-child {
+	padding-left: 15px;
+	font-style: italic;
+	font-size: 25px;
+	color: #969696;
+	font-weight: bold;
+	display: inline-block;
+	width: 114px;
+	padding-top: 8px;
+	vertical-align: top;
+}
+
+.Deriv>div:last-child {
+	font-style: italic;
+	font-size: 30px;
+	color: rgb(50,50,50);
+	width: 670px;
+	padding-left: 27px;
+	padding-top: 5px;
+}
+
+.Opposite>div:last-child {
+	font-style: italic;
+	font-size: 30px;
+	color: rgb(50,50,50);
+	width: 580px;
+	padding-left: 14px;
+	display: inline-block;
+	padding-top: 5px;
+}
+
+.vocImage {
+	width: 55px;
+	height: 55px;
+	line-height: 55px;
+	text-align: center;
+	background: white;
+	margin-right: 20px;
+	margin-bottom: 4px;
+	display: inline-block;
+}
+
+.vocImage img {
+/* width: 100%; */
+	height: 100%;
+}
+
+.vocList .word span {
+	vertical-align: middle;
+}
+
+span.vocImage {
+}
+
+.vocList .glossaryDefinition,.vocList .glexExample {
+	display: none !important;
+}
+
+.word svg {
+	margin-right: 10px;
+	vertical-align: top;
+	margin-left: 2px;
+	margin-top: 7px;
+}
+
+.glossary .word span {
+	width: 366px;
+	display: inline-block;
+}
+
+.wordWl svg {
+	fill: rgb(241,90,36) !important;
+}
+
+.lastWl {
+	font-size: 16px;
+	font-weight: 300;
+	display: inline-block;
+	float: right;
+	padding: 0px 15px;
+	color: rgb(62,112,136);
+	border-radius: 13px;
+	margin-bottom: 20px;
+	clear: both;
+	cursor: pointer;
+	line-height: 23px;
+	height: 25px;
+}
+
+.lastWl svg {
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.glossaryExtra,.glossaryModules,.glossaryLessons {
+	display: none;
+}
+
+.glossaryExtraCont>div:nth-child(2) {
+	overflow: hidden;
+}
+
+.wordselected {
+	background: rgb(239,255,111);
+}
+
+.wordlistBtn svg {
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+.word,.glossaryModsWrapper {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	z-index: 10;
+	position: relative;
+	vertical-align: middle;
+}
+
+.glossaryModsWrapper .selectMods {
+	margin: 0px 7px;
+}
